@@ -1,0 +1,85 @@
+h1,h2,h3,h4{
+	margin-top: 0px;
+	-webkit-font-smoothing: antialiased;
+  	-moz-osx-font-smoothing: grayscale;
+  	color: var(--color-gris);
+}
+
+:root {
+	--color-azul: #30a2e2;
+	--color-gris: #333333;
+  
+}
+
+@import url('https://fonts.googleapis.com/css?family=Poppins:300,400,600');
+
+body{
+	font-family: 'Poppins', sans-serif;
+}
+.container{
+  max-width: 1200px;
+  margin: auto;
+  padding: 5px 15px;
+  h2{
+  	font-size: 40px;
+  	text-align: center;
+  	color: #fff;
+  	font-weight: 600;
+  	margin-top: 115px;
+  }
+  p{
+  	text-align: center;
+  	font-weight: 300;
+  }
+}
+section.welcome{
+	nav{
+		width: 100%;
+		text-align: right;
+		padding: 10px 15px;
+		a{
+			font-size: 20px;
+			font-weight: 600;
+			color: #fff;
+			text-decoration: none;
+			&.active{
+				color: #FFE200;
+			}
+		}
+	}
+	figure.logo{
+		max-width: 405px;
+		height: auto;
+		margin: auto;
+		margin-top: 63px;
+		display: block;
+		img{
+			width: 100%;
+		}
+	}
+
+	.item-info{
+		background: rgba(28, 105, 105, 0.7);
+		padding: 10px 15px;
+		margin-top: 112px;
+		p{
+			color: #fff;
+			text-align: center;
+			font-size: 30px;
+			font-weight: 300;
+			span{
+				font-weight: 600;
+
+			}
+		}
+	}
+}
+
+body{
+	background: #ccc;
+	height: 100vh;
+}
+
+
+
+
