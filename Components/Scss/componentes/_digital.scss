@@ -1,0 +1,25 @@
+section.digital{
+	.item-col{
+		align-items: center;
+
+		figure.digital{
+			width: 650px;
+			height: auto;
+			img{
+				width: 100%;}
+		}
+		.item-content{
+			background: #EDEDED;
+			padding: 60px 20px;
+			border: 1px solid rgba(112, 112, 112, 0.22);
+			p{
+				font-size: 21px;
+				font-weight: 300;
+				span{
+					color: #3B3C3E;
+					font-weight: 700;
+				}
+			}
+		}
+	}
+}

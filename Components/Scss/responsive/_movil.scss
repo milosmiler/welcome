@@ -1,9 +1,31 @@
 @media only screen and (max-width: 767px) {
+
+	body{
+		background: url('../images/tablet.jpg');
+	}
+	section.welcome nav{
+		text-align: center;
+	}
+	section.welcome .item-info p{
+		font-size: 18px;
+		span{
+			font-size: 17px;
+		}
+	}
   
    
 }
 
 
 @media only screen and (max-width: 320px) {
+	body{
+		background: url('../images/mobile.jpg');
+	}
+	section.welcome .item-info p{
+		font-size: 17px;
+		span{
+			font-size: 16px;
+		}
+	}
 	
 }

@@ -2,12 +2,13 @@
 <html lang="es">
   <head>
     <meta charset="utf-8">
-    <title>welcome</title>
+    <title>CONFIA</title>
     <link href="css/style.css" rel="stylesheet" type="text/css">
     <link href="css/all.min.css" rel="stylesheet" type="text/css">
     <link rel="shortcut icon" type="image/x-icon" href="images/favicon.ico">
     <meta name="description" content="descripcion del sitio web">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
     <meta property="og:title" content=" ">
     <meta property="og:site_name" content=" ">
     <meta property="og:url" content=" ">
@@ -15,16 +16,139 @@
     <meta property="og:image" content=" ">
   </head>
   <body>
-    <section class="welcome">
-      <nav><a href="#">SPANISH </a><a>| </a><a class="active" href="#">ENGLISH</a></nav>
+    <valores class="pug"></valores>
+    <covertura class="pug"></covertura>
+    <section class="solicitud">
       <div class="container">
-        <figure class="logo"><img src="images/logo.svg" alt="welcome"></figure>
-        <h2>UPDATING OUR SITE</h2>
-        <div class="item-info">
-          <p>FOR MORE INFORMATION, CONTACT <br> <span>HOLA@ENGLISHTRAININGUNIVERSE.COM</span></p>
+        <div class="item-nav flex">
+          <h2>SELECCIONE EL TIPO DE SOLICITUD:</h2>
+          <ul class="nav flex" id="nav-tab">
+            <li class="active"><a href="#tab1">ARRENDATARIO</a></li>
+            <li><a href="#tab2">ARRENDADOR</a></li>
+          </ul>
+        </div>
+        <div class="item-instrucciones">
+          <p>COMPLETE LOS SIGUIENTES CAMPOS, TODOS SON OBLIGATORIOS</p>
+        </div>
+        <div class="tab-content">
+          <div class="tab-pane active" id="tab1">
+            <div class="acordeon">
+              <h2 class="acordeon__titulo">Titulo</h2>
+              <p class="acordeon__contenido">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis, ex, eligendi.i</p>
+            </div>
+            <div class="acordeon">
+              <h2 class="acordeon__titulo">Titulo 2</h2>
+              <p class="acordeon__contenido">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis, ex, eligendi.i</p>
+            </div>
+          </div>
+          <div class="tab-pane" id="tab2"> Conteúdo Secundário</div>
         </div>
       </div>
     </section>
+    <section class="digital">
+      <div class="container flex">
+        <div class="item-col">
+          <figure class="digital"><img src="images/digital2.png"></figure>
+        </div>
+        <div class="item-col flex">
+          <div class="item-content">
+            <p>Si eres <span>asesor inmobiliario </span>y deseas aumentar tus ingresos , contáctanos y conoce nuestro esquema de comisiones.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="formulario-asesor">
+      <div class="container">
+        <form class="flex">
+          <div class="item-col">
+            <p>COMPLETE NUESTRO FORMULARIO <br><span>TODOS LOS CAMPOS SOIN OBLIGATORIOS</span></p>
+            <div class="item-box">
+              <label>NOMBRE</label>
+              <input class="data" type="text" name="nombre">
+            </div>
+            <div class="item-box">
+              <label>TELÉFONO (CASA O CELULAR)</label>
+              <input class="data" type="text" name="telefono">
+            </div>
+          </div>
+          <div class="item-col">
+            <div class="item-box">
+              <label>TIPO</label>
+              <select>
+                <option>SELECCIONE UNO</option>
+              </select>
+            </div>
+            <div class="item-box">
+              <label>E-MAIL</label>
+              <input class="data" type="text" name="email">
+            </div>
+          </div>
+        </form>
+      </div>
+    </section>
+    <section class="digital">
+      <div class="container flex">
+        <div class="item-col">
+          <figure class="digital"><img src="images/digital.png"></figure>
+        </div>
+        <div class="item-col flex">
+          <div class="item-content">
+            <p>Si deseas <span>actualizar a tu equipo</span>, en temas de prevención de fraudes , verificación y autentificación de documentos ,procesos legales y todo lo relacionado con el contrato de arrendamiento , contactanos para agendar una capacitación , son totalmente gratuitas.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="actualizar">
+      <div class="container">
+        <form class="flex">
+          <div class="item-col">
+            <p>COMPLETE NUESTRO FORMULARIO <br><span>TODOS LOS CAMPOS SOIN OBLIGATORIOS</span></p>
+            <div class="item-box">
+              <label>EMPRESA</label>
+              <input class="data" type="text" name="empresa">
+            </div>
+            <div class="item-box">
+              <label>TELÉFONO</label>
+              <input class="data" type="number" name="telefono">
+            </div>
+          </div>
+          <div class="item-col">
+            <div class="item-box">
+              <label>NOMBRE DEL CONTACTO</label>
+              <input class="data" type="text" name="contacto">
+            </div>
+            <div class="item-box">
+              <label>E-MAIL</label>
+              <input class="data" type="email" name="email">
+            </div>
+          </div>
+          <div class="row">
+            <label>COMENTARIOS</label>
+            <textarea name="comentarios"></textarea>
+          </div>
+          <button>ENVIAR REGISTRO<i class="fa fa-arrow-right"></i></button>
+        </form>
+      </div>
+    </section>
+    <footer>
+      <div class="container flex">
+        <div class="item-col">
+          <figure class="logo"><img src="images/footer.png" alt="confia"></figure>
+          <p>(52)6731 - 4468</p>
+        </div>
+        <div class="item-col"><a href="">INICIO</a><a href="">NOSOTROS</a><a href="">COBERTURAS</a><a href="">COSTOS</a><a href="">SOLICITUDES</a><a href="">ASESORES</a><a href="">INMOBILIARIAS</a></div>
+        <div class="item-col">
+          <h2>CONTÁCTANOS</h2>
+          <ul>
+            <li><a class="cicle" href=""><i class="fab fa-facebook-f"></i></a></li>
+            <li><a class="cicle" href=""><i class="fas fa-envelope-open"></i></a></li>
+            <li><a class="cicle" href=""><i class="fas fa-phone"></i></a></li>
+            <li><a class="cicle wattsap" href=""><i class="fab fa-whatsapp"></i></a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="base"><a href="">TÉRMINOS Y CONDICIONES </a><a>|</a><a href="">POLITICAS DEL SITIO</a></div>
+    </footer>
     <script src="js/jquery-1.11.3.min.js"></script>
     <script src="js/owl.carousel.min.js" type="text/javascript"></script>
     <script src="js/main.js" type="text/javascript"></script>

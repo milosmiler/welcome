@@ -1,26 +1,27 @@
-console.log('hello');
+(function () {
+  function onTabClick(event) {
+    var actives = document.querySelectorAll('.active');
 
-(function ($) {
-    "use strict";
+    // deactivate existing active tab and panel
+    for (var i = 0; i < actives.length; i++) {
+      actives[i].className = actives[i].className.replace('active', '');
+    }
 
-    $('.owl-carousel').owlCarousel({
-        loop: true,
-        margin: 10,
-        nav: false,
-        navigationText: ["<i class='fa fa-angle-left'></i>", "<i class='fa fa-angle-right'></i>"],
-        dots: false,
-        autoplay:true,
-        autoplayTimeout:8000,
-        responsive: {
-            0: {
-                items: 1
-            },
-            600: {
-                items: 1
-            },
-            1000: {
-                items: 1
-            }
-        }
-    });
-})(jQuery);
+    // activate new tab and panel
+    event.target.parentElement.className += ' active';
+    document.getElementById(event.target.href.split('#')[1]).className += ' active';
+  }
+
+  var el = document.getElementById('nav-tab');
+
+  el.addEventListener('click', onTabClick, false);
+})();
+
+$('.acordeon').on('click', 'h2', function () {
+  console.log('hola');
+  var t = $(this);
+  var tp = t.next();
+  var p = t.parent().siblings().find('p');
+  tp.slideToggle();
+  p.slideUp();
+});

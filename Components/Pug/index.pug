@@ -2,33 +2,27 @@ doctype html
 html(lang="es")
 	head
 		meta(charset="utf-8")
-		title welcome
+		title CONFIA
 		link(href="css/style.css", rel="stylesheet", type="text/css")
 		link(href="css/all.min.css", rel="stylesheet", type="text/css")
 		link(rel='shortcut icon', type='image/x-icon', href='images/favicon.ico')
 		meta(name='description', content='descripcion del sitio web')
 		meta(name='viewport', content='width=device-width, initial-scale=1')
+		link(rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous")
 		meta(property='og:title', content=' ')
 		meta(property='og:site_name', content=' ')
 		meta(property='og:url', content=' ')
 		meta(property='og:description', content=' ')
 		meta(property='og:image', content=' ')
 	body
-		include block/slider.pug
-		section.welcome
-			nav
-				a(href="#") SPANISH 
-				a | 
-				a.active(href="#") ENGLISH
-			.container
-				figure.logo
-					img(src="images/logo.svg" alt="welcome")
-				h2 UPDATING OUR SITE
-				.item-info
-					p FOR MORE INFORMATION, CONTACT #[br] 
-						span HOLA@ENGLISHTRAININGUNIVERSE.COM
-
-
+		include block/header.pug
+		include block/nosotros.pug
+		include block/valores.pug
+		include block/covertura.pug
+		include block/solicitud.pug
+		include block/formulario-asesor.pug
+		include block/digital.pug
+		include block/formulario-actualizar.pug
 		include block/footer.pug
 		script(src="js/jquery-1.11.3.min.js")
 		script(src='js/owl.carousel.min.js', type="text/javascript")

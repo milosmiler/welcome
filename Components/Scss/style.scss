@@ -14,7 +14,12 @@ Version: 1.2
 
 /*** GENERAL ***/
 @import "_header.scss";
-@import "componentes/_nav.scss";
+@import "componentes/_nosotros.scss";
+@import "componentes/_digital.scss";
+@import "componentes/_valores.scss";
+@import "componentes/_solicitud.scss";
+@import "componentes/_formulario-asesor.scss";
+@import "componentes/_formulario-actualizar.scss";
 @import "_footer.scss";
 /********** RESPONSIVE ***********/
 @import "responsive/_desktop.scss";

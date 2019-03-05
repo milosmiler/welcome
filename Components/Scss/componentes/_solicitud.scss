@@ -1,0 +1,95 @@
+section.solicitud {
+  padding:20px 15px;
+  .container{
+    h2{
+        background: #AEB2B2;
+        color: #FCFCFC;
+        font-size: 26px;
+        width: 40%;
+        line-height: 79px;
+        text-align: center;
+    }
+  }
+  ul {
+    width: 60%;
+        list-style: none;
+        li {
+            display: inline-block;
+            width: 50%;
+            height: 80px;
+            text-align: center;
+            line-height: 75px;
+            background: #EDEDED;
+            color: white; 
+            font-size: 26px;
+            &.active{
+                background: var(--color-caribbean-green);
+                a{
+                   color: white; 
+                   font-size: 26px;
+                   font-weight: 600;
+
+                }
+            }
+        }
+        &.nav{
+            flex-wrap: wrap;
+            a{
+              color: white; 
+              text-decoration: none; 
+              font-size: 26px;
+              font-weight: 300;
+              color: #AEAFB1;
+            }
+
+            
+        }
+
+    }
+    .tab-content{
+        width: 100%;
+        .acordeon {
+            width: 70%;
+            margin: auto;
+            &__titulo {
+                color: rgba(#fff,.5);
+                background: #111;
+                line-height: 2.8;
+                padding: 0 1em;
+                font-size: 1.2em;
+                margin: 0;
+                border-bottom: 1px solid rgba(#fff,.05);
+                box-shadow: 0 -1px 0 0 #000 inset;
+                text-shadow: 1px 1px #000;
+                cursor: pointer;
+            }
+            &__contenido {
+                display: none;
+                margin: 0;
+                background: rgba(#fff,.5);
+                padding: 1em 1em 1.5em;
+            }
+        }
+
+    }
+     .item-instrucciones{
+            width: 100%;
+            margin-top: 50px;
+            border-bottom: 1px solid #3B3C3E;
+            padding-bottom: 5px;
+            margin-bottom: 15px;
+            p{
+                font-size: 14px;
+                color: #3B3C3E;
+                font-weight: 600;
+            }
+        }
+}
+
+.tab-pane {
+    display: none;
+}
+.tab-pane.active {
+    display: block;
+     
+}
