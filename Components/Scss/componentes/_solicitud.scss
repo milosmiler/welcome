@@ -20,12 +20,12 @@ section.solicitud {
             text-align: center;
             line-height: 75px;
             background: #EDEDED;
-            color: white; 
+            color: white;
             font-size: 26px;
             &.active{
                 background: var(--color-caribbean-green);
                 a{
-                   color: white; 
+                   color: white;
                    font-size: 26px;
                    font-weight: 600;
 
@@ -35,21 +35,21 @@ section.solicitud {
         &.nav{
             flex-wrap: wrap;
             a{
-              color: white; 
-              text-decoration: none; 
+              color: white;
+              text-decoration: none;
               font-size: 26px;
               font-weight: 300;
               color: #AEAFB1;
             }
 
-            
+
         }
 
     }
     .tab-content{
         width: 100%;
         .acordeon {
-            width: 70%;
+            width: 100%;
             margin: auto;
             &__titulo {
                 color: rgba(#fff,.5);
@@ -62,12 +62,58 @@ section.solicitud {
                 box-shadow: 0 -1px 0 0 #000 inset;
                 text-shadow: 1px 1px #000;
                 cursor: pointer;
+                width: 100%;
             }
             &__contenido {
                 display: none;
                 margin: 0;
                 background: rgba(#fff,.5);
                 padding: 1em 1em 1.5em;
+            }
+            form.flex{
+                flex-wrap: wrap;
+                justify-content: space-around;
+                .item-box{
+                    background: #EDEDED;
+                    margin-bottom: 20px;
+                    padding: 30px;
+                    label{
+                        color: #3B3C3E;
+                    }
+                    input.data{
+                        background-color: transparent;
+    					width: 100%;
+    					height: 50px;
+    					border: none;
+                    }
+                    select{
+    					width: 100%;
+    					height: 50px;
+    					background-color: transparent;
+    					color: white;
+    					border: none;
+    				}
+
+                }
+                .item-col{
+                    width: 33%;
+                }
+                .item-Titulo{
+                    width: 100%;
+                    h3{
+                        width: 100%;
+                    }
+                }
+                .item-col-vert{
+                    width: 100%;
+                    .item-box-red{
+                        width: 75%;
+                        background: red;
+                        p{
+                            color: white;
+                        }
+                    }
+                }
             }
         }
 
@@ -91,5 +137,5 @@ section.solicitud {
 }
 .tab-pane.active {
     display: block;
-     
+
 }
