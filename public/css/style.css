@@ -484,16 +484,13 @@ section.solicitud {
       width: 100%;
       margin: auto; }
       section.solicitud .tab-content .acordeon__titulo {
-        color: rgba(255, 255, 255, 0.5);
-        background: #111;
+        color: white;
+        background: #001434;
         line-height: 2.8;
         padding: 0 1em;
-        font-size: 1.2em;
-        margin: 0;
-        border-bottom: 1px solid rgba(255, 255, 255, 0.05);
-        box-shadow: 0 -1px 0 0 #000 inset;
-        text-shadow: 1px 1px #000;
+        font-size: 20px;
         cursor: pointer;
+        text-align: left;
         width: 100%; }
       section.solicitud .tab-content .acordeon__contenido {
         display: none;
@@ -508,13 +505,13 @@ section.solicitud {
         section.solicitud .tab-content .acordeon form.flex .item-box {
           background: #EDEDED;
           margin-bottom: 20px;
-          padding: 30px; }
+          padding: 10px 15px; }
           section.solicitud .tab-content .acordeon form.flex .item-box label {
             color: #3B3C3E; }
           section.solicitud .tab-content .acordeon form.flex .item-box input.data {
             background-color: transparent;
             width: 100%;
-            height: 50px;
+            height: 40px;
             border: none; }
           section.solicitud .tab-content .acordeon form.flex .item-box select {
             width: 100%;
@@ -526,15 +523,46 @@ section.solicitud {
           width: 33%; }
         section.solicitud .tab-content .acordeon form.flex .item-Titulo {
           width: 100%; }
+          section.solicitud .tab-content .acordeon form.flex .item-Titulo span {
+            background-color: white;
+            z-index: 1;
+            position: relative;
+            padding: 3px 5px; }
           section.solicitud .tab-content .acordeon form.flex .item-Titulo h3 {
-            width: 100%; }
+            width: 100%;
+            margin-bottom: 15px;
+            position: relative;
+            background-color: white; }
+            section.solicitud .tab-content .acordeon form.flex .item-Titulo h3:before {
+              content: '';
+              width: 100%;
+              height: 1px;
+              background-color: #3B3C3E;
+              right: 0px;
+              top: 11px;
+              position: absolute; }
         section.solicitud .tab-content .acordeon form.flex .item-col-vert {
-          width: 100%; }
+          width: 100%;
+          -ms-flex-pack: justify;
+              justify-content: space-between; }
+          section.solicitud .tab-content .acordeon form.flex .item-col-vert .item-box {
+            width: 32%; }
+            section.solicitud .tab-content .acordeon form.flex .item-col-vert .item-box select {
+              color: #949598; }
+          section.solicitud .tab-content .acordeon form.flex .item-col-vert .item-box-big {
+            width: 100%; }
+            section.solicitud .tab-content .acordeon form.flex .item-col-vert .item-box-big .item-check {
+              width: 20px; }
           section.solicitud .tab-content .acordeon form.flex .item-col-vert .item-box-red {
             width: 75%;
-            background: red; }
+            margin-left: 10px; }
             section.solicitud .tab-content .acordeon form.flex .item-col-vert .item-box-red p {
-              color: white; }
+              background: red;
+              color: white;
+              padding: 10px;
+              font-size: 17px;
+              font-weight: 400;
+              padding: 16px 10px; }
   section.solicitud .item-instrucciones {
     width: 100%;
     margin-top: 50px;
@@ -578,7 +606,7 @@ section.formulario-asesor {
         background-color: var(--color-calypso);
         margin-bottom: 20px;
         border: 1px solid #707070;
-        padding: 30px; }
+        padding: 10px 15px; }
         section.formulario-asesor form .item-col .item-box input.data {
           background-color: transparent;
           width: 100%;
@@ -635,7 +663,7 @@ section.actualizar {
         padding: 5px;
         margin-bottom: 20px;
         border: 1px solid #707070;
-        padding: 30px; }
+        padding: 10px 15px; }
         section.actualizar .container form .item-box input.data {
           background-color: transparent;
           width: 100%;

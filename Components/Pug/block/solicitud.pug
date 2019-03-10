@@ -12,7 +12,7 @@ section.solicitud
 		.tab-content
 			#tab1.tab-pane.active
 				.acordeon
-					h2.acordeon__titulo Titulo
+					h2.acordeon__titulo SOLICITUD PARA PERSONAS FÍSICAS
 					.acordeon__contenido
 						form.flex
 							.item-col
@@ -46,7 +46,8 @@ section.solicitud
 									label E-MAIL
 									input.data(type="text" name="telefono")
 							.item-Titulo
-								h3 DATOS LABORALES
+								h3 
+									span DATOS LABORALES
 							.item-col
 								.item-box
 									label PROFECION
@@ -78,28 +79,49 @@ section.solicitud
 									label E-MAIL
 									input.data(type="text" name="telefono")
 							.item-Titulo
-								h3 DOMICILIO ACTUAL DE TRABAJO
+								h3 
+									span DOMICILIO ACTUAL DE TRABAJO
 							.item-col-vert.flex
 								.item-box
 									label COLONIA
-									input.data(type="text" name="telefono")
+									select
+										option Colonia
 								.item-box
-									label DELEGACION
-									input.data(type="text" name="telefono")
+									label DELEGACIÓN O MUNICIPIO
+									select
+										option SELECCIONE UNO
 								.item-box
-									label GIRO EMPRESA
+									label GIRO DE LA EMPRESA
 									input.data(type="text" name="telefono")
 							.item-col-vert.flex
 								.item-box
 									label COLONIA
 									input.data(type="text" name="telefono")
 								.item-box-red
-									p DOCUMENTOS REQUERIDOS : 1 - IDENTIFICACIÓN OFICIAL (INE - PASAPORTE), 2 - COMPROBANTE DE INGRESOS, 3-ÚLTIMOS RECIBOS DE SALARIO O ESTADOS DE CUENTA BANCARIOS O ÚLTIMAS 2 DECLARACIONES DE IMPUESTOS, 3- CARTA DE CONSTANCIA DE LA EMPRESA QUE TRABAJA.
-							.item-col-vert
+									p 
+										strong DOCUMENTOS REQUERIDOS : 
+										| 1 - IDENTIFICACIÓN OFICIAL (INE - PASAPORTE), 2 - COMPROBANTE DE INGRESOS, 3-ÚLTIMOS RECIBOS DE SALARIO O ESTADOS DE CUENTA BANCARIOS O ÚLTIMAS 2 DECLARACIONES DE IMPUESTOS, 3- CARTA DE CONSTANCIA DE LA EMPRESA QUE TRABAJA.
+							//- .item-col-vert
+							//- 	.item-box-big
+							//- 		.item-text
+							//- 			p REQUIERE FACTURA DEL PAGO DE LA PÓLIZA
+							//- 				span REQUIERE FACTURA DEL PAGO DE LA PÓLIZA
+							//- 		.item-check
+							//- 		.item-check
+							.item-Titulo
+								h3 
+									span REFERENCIA DE ARRENDAMIENTO
+							.item-col-vert.flex
 								.item-box
-									p REQUIERE FACTURA DEL PAGO DE LA PÓLIZA
-										span REQUIERE FACTURA DEL PAGO DE LA PÓLIZA
-								.item-check
+									label NOMBRE DE SU ACTUAL ARRENDADOR
+									input.data(type="text" name="telefono")
+								.item-box
+									label TELÉFONO
+									input.data(type="text" name="telefono")
+								.item-box
+									label MONTO DE RENTA
+									input.data(type="text" name="telefono")
+
 
 
 								
