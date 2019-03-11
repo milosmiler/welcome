@@ -225,7 +225,7 @@ section.solicitud
 								.item-box-xl
 									label TRAMITE DE PÓLIZA
 									select 
-										option .item-col-vert
+										option SELECCIONE UNO
 							.item-Titulo
 								h3 
 									span DATOS DEL PROFESIONAL INMOBILIARIO
@@ -256,6 +256,25 @@ section.solicitud
 								.item-box
 									label HORA FIRMA
 									input.data(type='time', name='upload-release')
+							.item-col-vert.flex
+								.item-box
+									label LUGAR PARA LA FIRMA
+									input.data(type="text" name="telefono")
+								.item-col-check
+									.item-box-big.flex
+										.item-text
+											p ADMINISTRA EL #[br] INMUEBLE
+										.combo-check
+											.item-check SI
+											.item-check NO
+								.item-col-check
+									.item-box-big.flex
+										.item-text
+											p ES ADMINISTRADOR #[br] DE INMUEBLES
+										.combo-check
+											.item-check SI
+											.item-check NO
+							
 							.item-Titulo
 								h3 
 									span DATOS DEL PROPIETARIO
@@ -266,6 +285,7 @@ section.solicitud
 								.item-box.two-medio
 									label DOMICILIO
 									input.data(type='text', name='upload-release')
+									
 							.item-col-two.flex
 								.item-box
 									label DELEGACIÓN O MUNICIPIO
@@ -275,6 +295,45 @@ section.solicitud
 									label PERSONA QUE LO SOLICITA
 									select
 										option SELECCIONE UNO
+							.item-col-four.flex
+								.item-box-select
+									label ESTADO
+									select
+										option SELECCIONE UNO
+								.item-box
+									label TELEFONO
+									input.data(type='text', name='upload-release')
+								.item-box
+									label CEL
+									input.data(type='text', name='upload-release')
+								.item-box
+									label EMAIL
+									input.data(type='text', name='upload-release')
+							.item-col-vert
+								.item-box-xl
+									label PARA EL PAGO DE RENTAS EN:
+									select 
+										option DEPOSITO Y/O TRANSFERENCIA BANCARIA
+							.item-col-two.flex
+								.item-box
+									label TITULAR DE LA CUENTA
+									input.data(type='text', name='text')
+								.item-box
+									label BANCO
+									select
+										option SELECCIONE UNO
+							.item-col-two.flex
+								.item-box
+									label No. CUENTA
+									input.data(type='text', name='text')
+								.item-box
+									label CUENTA CLABE
+									input.data(type='text', name='text')
+								
+							
+							
+							
+							
 							.item-Titulo
 								h3 
 									span DATOS DEL ARRENDAMIENTO

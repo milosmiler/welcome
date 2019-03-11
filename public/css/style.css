@@ -624,6 +624,12 @@ section.solicitud {
               margin-right: 15px; }
               section.solicitud .tab-content .acordeon form.flex .item-col-vert .item-box-xls .item-combo-text:last-child {
                 margin-right: 0px; }
+        section.solicitud .tab-content .acordeon form.flex .item-col-check {
+          width: 33%; }
+          section.solicitud .tab-content .acordeon form.flex .item-col-check .item-text {
+            width: 60% !important; }
+          section.solicitud .tab-content .acordeon form.flex .item-col-check .item-box-big {
+            padding: 22px 15px; }
         section.solicitud .tab-content .acordeon form.flex .item-col-center {
           width: 100%;
           -ms-flex-pack: center;
@@ -653,6 +659,25 @@ section.solicitud {
             width: 49%; }
           section.solicitud .tab-content .acordeon form.flex .item-col-two select {
             color: #949598; }
+        section.solicitud .tab-content .acordeon form.flex .item-col-four {
+          width: 100%;
+          -ms-flex-pack: justify;
+              justify-content: space-between; }
+          section.solicitud .tab-content .acordeon form.flex .item-col-four .item-box {
+            width: 25%;
+            margin-left: 10px; }
+          section.solicitud .tab-content .acordeon form.flex .item-col-four .item-box-select {
+            width: 30%;
+            background: #EDEDED;
+            margin-bottom: 20px;
+            padding: 10px 15px; }
+            section.solicitud .tab-content .acordeon form.flex .item-col-four .item-box-select label {
+              color: #3B3C3E; }
+          section.solicitud .tab-content .acordeon form.flex .item-col-four select {
+            color: #949598;
+            background: transparent;
+            width: 100%;
+            border: none; }
   section.solicitud .item-instrucciones {
     width: 100%;
     margin-top: 50px;

@@ -220,6 +220,15 @@ section.solicitud {
                         }
                     }
                 }
+                .item-col-check{
+                    width: 33%;
+                    .item-text{
+                        width: 60%!important;
+                    }
+                    .item-box-big{
+                        padding: 22px 15px;
+                    }
+                }
                 .item-col-center{
                     width: 100%;
                     justify-content: center;
@@ -252,6 +261,30 @@ section.solicitud {
                     select{
                             color: #949598;
                         }
+                }
+                .item-col-four{
+                    width: 100%;
+                    justify-content: space-between;
+                    .item-box{
+                        width: 25%;
+                        margin-left: 10px;
+                    }
+                    .item-box-select{
+                        width: 30%;
+                        background: #EDEDED;
+                        margin-bottom: 20px;
+                        padding: 10px 15px;
+                        label{
+                            color: #3B3C3E;
+                        }
+                    }
+                    select{
+                        color: #949598;
+                        background: transparent;
+                        width: 100%;
+                        border: none;
+                    }
+
                 }
             }
         }
