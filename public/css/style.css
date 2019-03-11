@@ -557,9 +557,36 @@ section.solicitud {
             border: none;
             color: #949598; }
           section.solicitud .tab-content .acordeon form.flex .item-col-vert .item-box-big {
-            width: 100%; }
-            section.solicitud .tab-content .acordeon form.flex .item-col-vert .item-box-big .item-check {
-              width: 20px; }
+            width: 100%;
+            background: #EDEDED;
+            margin-bottom: 15px;
+            -ms-flex-pack: justify;
+                justify-content: space-between; }
+            section.solicitud .tab-content .acordeon form.flex .item-col-vert .item-box-big .combo-check {
+              width: 100px;
+              -ms-flex-pack: justify;
+                  justify-content: space-between;
+              display: -ms-flexbox;
+              display: flex; }
+              section.solicitud .tab-content .acordeon form.flex .item-col-vert .item-box-big .combo-check .item-check {
+                width: 50px;
+                height: 50px;
+                border: 1px solid #707070;
+                color: #3B3C3E;
+                text-align: center;
+                line-height: 50px;
+                position: relative;
+                cursor: pointer; }
+                section.solicitud .tab-content .acordeon form.flex .item-col-vert .item-box-big .combo-check .item-check:last-child {
+                  right: 1px; }
+            section.solicitud .tab-content .acordeon form.flex .item-col-vert .item-box-big .item-text {
+              width: 40%;
+              padding: 5px; }
+              section.solicitud .tab-content .acordeon form.flex .item-col-vert .item-box-big .item-text p {
+                font-size: 18px; }
+                section.solicitud .tab-content .acordeon form.flex .item-col-vert .item-box-big .item-text p span {
+                  font-size: 16px;
+                  font-weight: 300; }
           section.solicitud .tab-content .acordeon form.flex .item-col-vert .item-box-red {
             width: 75%;
             margin-left: 10px; }

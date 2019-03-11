@@ -138,8 +138,37 @@ section.solicitud {
                     }
                     .item-box-big{
                         width: 100%;
-                        .item-check{
-                            width: 20px;
+                        background: #EDEDED;
+                        margin-bottom: 15px;
+                        justify-content: space-between;
+                        .combo-check{
+                            width: 100px;
+                            justify-content: space-between;
+                            display: flex;
+                            .item-check{
+                                width: 50px;
+                                height: 50px;
+                                border: 1px solid #707070;
+                                color: #3B3C3E;
+                                text-align: center;
+                                line-height: 50px;
+                                position: relative;
+                                cursor: pointer;
+                                &:last-child{
+                                    right: 1px;
+                                }
+                            }
+                        }
+                        .item-text{
+                            width: 40%;
+                            padding: 5px;
+                            p{
+                                font-size: 18px;
+                                span{
+                                    font-size: 16px;
+                                    font-weight: 300;
+                                }
+                            }
                         }
                     }
                     .item-box-red{
@@ -247,8 +276,9 @@ section.solicitud {
 }
 .tab-pane.active {
     display: block;
-
 }
+
+
 
 .medio{
     width: 30%!important;

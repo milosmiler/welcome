@@ -101,13 +101,15 @@ section.solicitud
 									p 
 										strong DOCUMENTOS REQUERIDOS : 
 										| 1 - IDENTIFICACIÓN OFICIAL (INE - PASAPORTE), 2 - COMPROBANTE DE INGRESOS, 3-ÚLTIMOS RECIBOS DE SALARIO O ESTADOS DE CUENTA BANCARIOS O ÚLTIMAS 2 DECLARACIONES DE IMPUESTOS, 3- CARTA DE CONSTANCIA DE LA EMPRESA QUE TRABAJA.
-							//- .item-col-vert
-							//- 	.item-box-big
-							//- 		.item-text
-							//- 			p REQUIERE FACTURA DEL PAGO DE LA PÓLIZA
-							//- 				span REQUIERE FACTURA DEL PAGO DE LA PÓLIZA
-							//- 		.item-check
-							//- 		.item-check
+							.item-col-vert
+								.item-box-big.flex
+									.item-text
+										p REQUIERE FACTURA DEL PAGO DE LA PÓLIZA #[br]
+											span REQUIERE FACTURA DEL PAGO DE LA PÓLIZA
+									.combo-check
+										.item-check SI
+										.item-check NO
+											
 							.item-Titulo
 								h3 
 									span REFERENCIA DE ARRENDAMIENTO
@@ -197,6 +199,13 @@ section.solicitud
 										input.data(type="number" name="telefono")
 										input.data(type="number" name="telefono")
 										input.data(type="number" name="telefono")
+							.item-col-vert
+								.item-box-big.flex
+									.item-text
+										p REQUIERE COMPROBANTE FISCAL DEL ARRENDAMIENTO
+									.combo-check
+										.item-check SI
+										.item-check NO
 							.item-col-center.flex
 								button.cancelar CANCELAR
 								button.enviar ENVIAR
@@ -291,6 +300,7 @@ section.solicitud
 								.item-box-xl
 									label OBSERVACIONES
 									textarea
+							
 							.item-col-center.flex
 								button.cancelar CANCELAR
 								button.enviar ENVIAR
