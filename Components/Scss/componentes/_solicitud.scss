@@ -220,6 +220,9 @@ section.solicitud {
                     .item-box{
                         width: 49%;
                     }
+                    select{
+                            color: #949598;
+                        }
                 }
             }
         }
@@ -245,4 +248,25 @@ section.solicitud {
 .tab-pane.active {
     display: block;
 
+}
+
+.medio{
+    width: 30%!important;
+    margin-right: 10px;
+}
+.two-medio{
+    width: 70%!important;
+}
+
+textarea{
+    background: transparent;
+    width: 100%;
+    border: none;
+}
+
+
+input.calendar {
+  background-image: url('https://bytebucket.org/fuoricitta/form-best-practice/raw/197f5e38bea1d53b52102b6c98e0e6b129dd6908/Examples/assets/img/calendar.png?token=b57efe00e0e5d28327a3b62e263519c284c70d53');
+  background-repeat: no-repeat;
+  background-position: right 10px center;
 }

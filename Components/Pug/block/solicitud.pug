@@ -237,6 +237,65 @@ section.solicitud
 								.item-box
 									label E-MAIL
 									input.data(type="text" name="telefono")
+							.item-col-vert.flex
+								.item-box
+									label FECHA DE LA SOLICITUD
+									input.data.calendar(type='date', name='upload-release')
+								.item-box
+									label FECHA FIRMA
+									input.data.calendar(type='date', name='upload-release')
+								.item-box
+									label HORA FIRMA
+									input.data(type='time', name='upload-release')
+							.item-Titulo
+								h3 
+									span DATOS DEL PROPIETARIO
+							.item-col-vert.flex
+								.item-box.medio
+									label NOMBRE
+									input.data(type='text', name='upload-release')
+								.item-box.two-medio
+									label DOMICILIO
+									input.data(type='text', name='upload-release')
+							.item-col-two.flex
+								.item-box
+									label DELEGACIÓN O MUNICIPIO
+									select
+										option SELECCIONE UNO
+								.item-box
+									label PERSONA QUE LO SOLICITA
+									select
+										option SELECCIONE UNO
+							.item-Titulo
+								h3 
+									span DATOS DEL ARRENDAMIENTO
+								.item-col-vert
+									.item-box-xl
+										label TIPO DE INMUEBLE
+										select 
+											option SELECCIONE UNO
+
+
+							.item-Titulo
+								h3 
+									span NOMBRE DE QUIEN SE EXTIENDE EL RECIBO DE PAGO DE PÓLIZA
+							.item-col-two.flex
+								.item-box
+									label NOMBRE DE QUIEN SE EXTIENDE EL RECIBO DE PAGO DE PÓLIZA
+									select
+										option SELECCIONE UNO
+								.item-box
+									label EN DADO DE SELECCIONAR OTRO PROPORCIONE EL DATO
+									input.data(type='text', name='text')
+							.item-col-vert
+								.item-box-xl
+									label OBSERVACIONES
+									textarea
+							.item-col-center.flex
+								button.cancelar CANCELAR
+								button.enviar ENVIAR
+
+
 
 
 
