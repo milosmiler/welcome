@@ -128,6 +128,14 @@ section.solicitud {
                             color: #949598;
                         }
                     }
+                     select{
+                        width: 100%;
+                        height: 50px;
+                        background-color: transparent;
+                        color: white;
+                        border: none;
+                        color: #949598;
+                    }
                     .item-box-big{
                         width: 100%;
                         .item-check{
@@ -145,6 +153,72 @@ section.solicitud {
                             font-weight: 400;
                             padding: 16px 10px;
                         }
+                    }
+                    .item-box-xl{
+                        background: #EDEDED;
+                        margin-bottom: 20px;
+                        padding: 10px 15px;
+                        label{
+                            color: #3B3C3E;
+                        }
+                        input.data{
+                            background-color: transparent;
+                            width: 100%;
+                            height: 40px;
+                            border: none;
+                        }
+
+                    }
+                    .item-box-xls{
+                        background: #EDEDED;
+                        margin-bottom: 20px;
+                        padding: 10px 15px;
+                        label{
+                            color: #3B3C3E;
+                        }
+                        input.data{
+                            background-color: transparent;
+                            width: 100%;
+                            height: 40px;
+                            border: none;
+                            border-bottom: 1px solid #3B3C3E;
+                        }
+                        .item-combo-text{
+                            margin-right: 15px;
+                            &:last-child{
+                                margin-right: 0px;
+                            }
+                        }
+                    }
+                }
+                .item-col-center{
+                    width: 100%;
+                    justify-content: center;
+                    .cancelar{
+                        width: 320px;
+                        height: 50px;
+                        margin-right: 10px;
+                        border: none;
+                        background-color: #3B3C3E;
+                        border-radius: 5px;
+                        color: white;
+                        font-size: 21px;
+                    }
+                    .enviar{
+                        width: 320px;
+                        height: 50px;
+                        border: none;
+                        border-radius: 5px;
+                        background-color: #0BBFAC;
+                        color: white;
+                        font-size: 21px;
+                    }
+                }
+                .item-col-two{
+                    justify-content: space-between;
+                    width: 100%;
+                    .item-box{
+                        width: 49%;
                     }
                 }
             }
