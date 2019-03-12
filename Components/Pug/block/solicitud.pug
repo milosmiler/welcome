@@ -9,483 +9,540 @@ section.solicitud
 					a(href='#tab2') ARRENDADOR
 		.item-instrucciones
 			p COMPLETE LOS SIGUIENTES CAMPOS, TODOS SON OBLIGATORIOS
+		
+					
 		.tab-content
 			#tab1.tab-pane.active
-				.acordeon
-					h2.acordeon__titulo SOLICITUD PARA PERSONAS FÍSICAS
-					.acordeon__contenido
-						form.flex
-							.item-col
-								.item-box
-									label NOMBRE
-									input.data(type="text" name="nombre")
-								.item-box
-									label DOMICILIO
-									input.data(type="text" name="rfc")
-								.item-box
-									label TELEFONO
-									input.data(type="text" name="telefono")
-							.item-col
-								.item-box
-									label RFC
-									input.data(type="text" name="telefono")
-								.item-box
-									label COLONIA
-									input.data(type="text" name="telefono")
-								.item-box
-									label CELULAR
-									input.data(type="text" name="telefono")
-							.item-col
-								.item-box
-									label ESTADO CIVIL
-									input.data(type="text" name="telefono")
-								.item-box
-									label DELEGACIÓN O MUNICIPIO
-									input.data(type="text" name="telefono")
-								.item-box
-									label E-MAIL
-									input.data(type="text" name="telefono")
-							.item-Titulo
-								h3 
-									span DATOS LABORALES
-							.item-col
-								.item-box
-									label PROFECION
-									input.data(type="text" name="telefono")
-								.item-box
-									label ANTIGUEDAD
-									input.data(type="text" name="telefono")
-								.item-box
-									label JEFE INMEDIATO
-									input.data(type="text" name="telefono")
-							.item-col
-								.item-box
-									label INGRESO MENSUAL
-									input.data(type="text" name="telefono")
-								.item-box
-									label PUESTOS
-									input.data(type="text" name="telefono")
-								.item-box
-									label PUESTO
-									input.data(type="text" name="telefono")
-							.item-col
-								.item-box
-									label EMPRESA DONDE TRABAJA
-									input.data(type="text" name="telefono")
-								.item-box
-									label HORARIO LABORAL
-									input.data(type="text" name="telefono")
-								.item-box
-									label E-MAIL
-									input.data(type="text" name="telefono")
-							.item-Titulo
-								h3 
-									span DOMICILIO ACTUAL DE TRABAJO
-							.item-col-vert.flex
-								.item-box
-									label COLONIA
-									select
-										option Colonia
-								.item-box
-									label DELEGACIÓN O MUNICIPIO
-									select
-										option SELECCIONE UNO
-								.item-box
-									label GIRO DE LA EMPRESA
-									input.data(type="text" name="telefono")
-							.item-col-vert.flex
-								.item-box
-									label COLONIA
-									input.data(type="text" name="telefono")
+				section.acordion
+					ul#toggle
+						li.acordion-item SOLICITUD PARA PERSONAS FÍSICAS
+							i.fa.fa-angle-down
+						.item-content.active
+							form.flex
+								.item-col
+									.item-box
+										label NOMBRE
+										input.data(type="text" name="nombre")
+									.item-box
+										label DOMICILIO
+										input.data(type="text" name="rfc")
+									.item-box
+										label TELEFONO
+										input.data(type="text" name="telefono")
+								.item-col
+									.item-box
+										label RFC
+										input.data(type="text" name="telefono")
+									.item-box
+										label COLONIA
+										input.data(type="text" name="telefono")
+									.item-box
+										label CELULAR
+										input.data(type="text" name="telefono")
+								.item-col
+									.item-box
+										label ESTADO CIVIL
+										input.data(type="text" name="telefono")
+									.item-box
+										label DELEGACIÓN O MUNICIPIO
+										input.data(type="text" name="telefono")
+									.item-box
+										label E-MAIL
+										input.data(type="text" name="telefono")
+								.item-Titulo
+									h3 
+										span DATOS LABORALES
+								.item-col
+									.item-box
+										label PROFECION
+										input.data(type="text" name="telefono")
+									.item-box
+										label ANTIGUEDAD
+										input.data(type="text" name="telefono")
+									.item-box
+										label JEFE INMEDIATO
+										input.data(type="text" name="telefono")
+								.item-col
+									.item-box
+										label INGRESO MENSUAL
+										input.data(type="text" name="telefono")
+									.item-box
+										label PUESTOS
+										input.data(type="text" name="telefono")
+									.item-box
+										label PUESTO
+										input.data(type="text" name="telefono")
+								.item-col
+									.item-box
+										label EMPRESA DONDE TRABAJA
+										input.data(type="text" name="telefono")
+									.item-box
+										label HORARIO LABORAL
+										input.data(type="text" name="telefono")
+									.item-box
+										label E-MAIL
+										input.data(type="text" name="telefono")
+								.item-Titulo
+									h3 
+										span DOMICILIO ACTUAL DE TRABAJO
+								.item-col-vert.flex
+									.item-box
+										label COLONIA
+										select
+											option Colonia
+									.item-box
+										label DELEGACIÓN O MUNICIPIO
+										select
+											option SELECCIONE UNO
+									.item-box
+										label GIRO DE LA EMPRESA
+										input.data(type="text" name="telefono")
+								.item-col-vert.flex
+									.item-box
+										label COLONIA
+										input.data(type="text" name="telefono")
+									.item-box-red
+										p 
+											strong DOCUMENTOS REQUERIDOS : 
+											| 1 - IDENTIFICACIÓN OFICIAL (INE - PASAPORTE), 2 - COMPROBANTE DE INGRESOS, 3-ÚLTIMOS RECIBOS DE SALARIO O ESTADOS DE CUENTA BANCARIOS O ÚLTIMAS 2 DECLARACIONES DE IMPUESTOS, 3- CARTA DE CONSTANCIA DE LA EMPRESA QUE TRABAJA.
+								.item-col-vert
+									.item-box-big.flex
+										.item-text
+											p REQUIERE FACTURA DEL PAGO DE LA PÓLIZA #[br]
+												span REQUIERE FACTURA DEL PAGO DE LA PÓLIZA
+										.combo-check
+											.item-check SI
+											.item-check NO
+												
+								.item-Titulo
+									h3 
+										span REFERENCIA DE ARRENDAMIENTO
+								.item-col-vert.flex
+									.item-box
+										label NOMBRE DE SU ACTUAL ARRENDADOR
+										input.data(type="text" name="telefono")
+									.item-box
+										label TELÉFONO
+										input.data(type="text" name="telefono")
+									.item-box
+										label MONTO DE RENTA
+										input.data(type="text" name="telefono")
+								.item-col-vert
+									.item-box-xl
+										label DOMICILIO DEL INMUEBLE ARRENDADO
+										input.data(type="text" name="telefono")
+								.item-col-vert
+									.item-box-xl
+										label ¿POR QUÉ DESEA CAMBIARSE DEL INMUEBLE?
+										input.data(type="text" name="telefono")
+								.item-Titulo
+									h3 
+										span REFERENCIAS PERSONALES
+								.item-col-vert
+									.item-box-xls.flex
+										.item-combo-text
+											label NOMBRE DE FAMILIARES (QUE NO VIVAN CON USTED)
+											input.data(type="text" name="telefono" placeholder="1.-")
+											input.data(type="text" name="telefono" placeholder="2.-")
+											input.data(type="text" name="telefono" placeholder="3.-")
+
+										.item-combo-text
+											label TELÉFONO
+											input.data(type="number" name="telefono")
+											input.data(type="number" name="telefono")
+											input.data(type="number" name="telefono")
+								.item-col-vert
+									.item-box-xls.flex
+										.item-combo-text
+											label NOMBRE DE FAMILIARES (QUE NO VIVAN CON USTED)
+											input.data(type="text" name="telefono" placeholder="1.-")
+											input.data(type="text" name="telefono" placeholder="2.-")
+											input.data(type="text" name="telefono" placeholder="3.-")
+
+										.item-combo-text
+											label TELÉFONO
+											input.data(type="number" name="telefono")
+											input.data(type="number" name="telefono")
+											input.data(type="number" name="telefono")
+								.item-col-vert
+									.item-box-xls.flex
+										.item-combo-text
+											label NOMBRE DE FAMILIARES (QUE NO VIVAN CON USTED)
+											input.data(type="text" name="telefono" placeholder="1.-")
+											input.data(type="text" name="telefono" placeholder="2.-")
+											input.data(type="text" name="telefono" placeholder="3.-")
+
+										.item-combo-text
+											label TELÉFONO
+											input.data(type="number" name="telefono")
+											input.data(type="number" name="telefono")
+											input.data(type="number" name="telefono")
+								.item-col-vert
+									.item-box-xls.flex
+										.item-combo-text
+											label NOMBRE DE FAMILIARES (QUE NO VIVAN CON USTED)
+											input.data(type="text" name="telefono" placeholder="1.-")
+											input.data(type="text" name="telefono" placeholder="2.-")
+											input.data(type="text" name="telefono" placeholder="3.-")
+
+										.item-combo-text
+											label TELÉFONO
+											input.data(type="number" name="telefono")
+											input.data(type="number" name="telefono")
+											input.data(type="number" name="telefono")
+								.item-col-vert
+									.item-box-xls.flex
+										.item-combo-text
+											label NOMBRE DE FAMILIARES (QUE NO VIVAN CON USTED)
+											input.data(type="text" name="telefono" placeholder="1.-")
+											input.data(type="text" name="telefono" placeholder="2.-")
+											input.data(type="text" name="telefono" placeholder="3.-")
+
+										.item-combo-text
+											label TELÉFONO
+											input.data(type="number" name="telefono")
+											input.data(type="number" name="telefono")
+											input.data(type="number" name="telefono")
+								.item-col-vert
+									.item-box-big.flex
+										.item-text
+											p REQUIERE COMPROBANTE FISCAL DEL ARRENDAMIENTO
+										.combo-check
+											.item-check SI
+											.item-check NO
+								.item-col-center.flex
+									button.cancelar CANCELAR
+									button.enviar ENVIAR
+
+							
+						li.acordion-item FIADOR
+							i.fa.fa-angle-down
+						.item-content
+							form.flex 
+								.item-Titulo
+									h3 
+										span FIADOR (PERSONA FÍSICA)
+								.item-col-two.flex
+									.item-col-vert
+										.item-box-big.flex
+											.item-text
+												p HA ESTADO USTED AFIANZADO
+											.combo-check
+												.item-check SI
+												.item-check NO
+									.item-box
+										label CON QUÉ AFIANZADORA
+										select 
+											option SELECCIONE UNO
+								.item-col-vert.flex
+									.item-box
+										label NOMBRE DE SU OBLIGADO SOLIDARIO (FIADOR)
+										input.data(type="text" name="telefono")
+										
+									.item-box
+										label ¿QUÉ PARENTESCO TIENE CON EL FIADOR?
+										select
+											option Colonia
+											
+									.item-box
+										label ESTADO CIVIL DEL FIADOR
+										select
+											option SELECCIONE UNO
+								.item-col-two.flex
+									.item-box
+										label DELEGACIÓN O MUNICIPIO
+										select 
+											option SELECCIONE UNO
+									
+									.item-box
+										label COLONIA
+										select 
+											option SELECCIONE UNO
+								
+								.item-col-vert.flex
+									.item-box
+										label TELÉFONO
+										input.data(type="text" name="telefono")
+										
+									.item-box
+										label CELULAR
+										input.data(type="text" name="telefono")
+											
+									.item-box
+										label E-MAIL
+										input.data(type="text" name="telefono")
 								.item-box-red
 									p 
 										strong DOCUMENTOS REQUERIDOS : 
 										| 1 - IDENTIFICACIÓN OFICIAL (INE - PASAPORTE), 2 - COMPROBANTE DE INGRESOS, 3-ÚLTIMOS RECIBOS DE SALARIO O ESTADOS DE CUENTA BANCARIOS O ÚLTIMAS 2 DECLARACIONES DE IMPUESTOS, 3- CARTA DE CONSTANCIA DE LA EMPRESA QUE TRABAJA.
-							.item-col-vert
-								.item-box-big.flex
-									.item-text
-										p REQUIERE FACTURA DEL PAGO DE LA PÓLIZA #[br]
-											span REQUIERE FACTURA DEL PAGO DE LA PÓLIZA
-									.combo-check
-										.item-check SI
-										.item-check NO
-											
-							.item-Titulo
-								h3 
-									span REFERENCIA DE ARRENDAMIENTO
-							.item-col-vert.flex
-								.item-box
-									label NOMBRE DE SU ACTUAL ARRENDADOR
-									input.data(type="text" name="telefono")
-								.item-box
-									label TELÉFONO
-									input.data(type="text" name="telefono")
-								.item-box
-									label MONTO DE RENTA
-									input.data(type="text" name="telefono")
-							.item-col-vert
-								.item-box-xl
-									label DOMICILIO DEL INMUEBLE ARRENDADO
-									input.data(type="text" name="telefono")
-							.item-col-vert
-								.item-box-xl
-									label ¿POR QUÉ DESEA CAMBIARSE DEL INMUEBLE?
-									input.data(type="text" name="telefono")
-							.item-Titulo
-								h3 
-									span REFERENCIAS PERSONALES
-							.item-col-vert
-								.item-box-xls.flex
-									.item-combo-text
-										label NOMBRE DE FAMILIARES (QUE NO VIVAN CON USTED)
-										input.data(type="text" name="telefono" placeholder="1.-")
-										input.data(type="text" name="telefono" placeholder="2.-")
-										input.data(type="text" name="telefono" placeholder="3.-")
-
-									.item-combo-text
-										label TELÉFONO
-										input.data(type="number" name="telefono")
-										input.data(type="number" name="telefono")
-										input.data(type="number" name="telefono")
-							.item-col-vert
-								.item-box-xls.flex
-									.item-combo-text
-										label NOMBRE DE FAMILIARES (QUE NO VIVAN CON USTED)
-										input.data(type="text" name="telefono" placeholder="1.-")
-										input.data(type="text" name="telefono" placeholder="2.-")
-										input.data(type="text" name="telefono" placeholder="3.-")
-
-									.item-combo-text
-										label TELÉFONO
-										input.data(type="number" name="telefono")
-										input.data(type="number" name="telefono")
-										input.data(type="number" name="telefono")
-							.item-col-vert
-								.item-box-xls.flex
-									.item-combo-text
-										label NOMBRE DE FAMILIARES (QUE NO VIVAN CON USTED)
-										input.data(type="text" name="telefono" placeholder="1.-")
-										input.data(type="text" name="telefono" placeholder="2.-")
-										input.data(type="text" name="telefono" placeholder="3.-")
-
-									.item-combo-text
-										label TELÉFONO
-										input.data(type="number" name="telefono")
-										input.data(type="number" name="telefono")
-										input.data(type="number" name="telefono")
-							.item-col-vert
-								.item-box-xls.flex
-									.item-combo-text
-										label NOMBRE DE FAMILIARES (QUE NO VIVAN CON USTED)
-										input.data(type="text" name="telefono" placeholder="1.-")
-										input.data(type="text" name="telefono" placeholder="2.-")
-										input.data(type="text" name="telefono" placeholder="3.-")
-
-									.item-combo-text
-										label TELÉFONO
-										input.data(type="number" name="telefono")
-										input.data(type="number" name="telefono")
-										input.data(type="number" name="telefono")
-							.item-col-vert
-								.item-box-xls.flex
-									.item-combo-text
-										label NOMBRE DE FAMILIARES (QUE NO VIVAN CON USTED)
-										input.data(type="text" name="telefono" placeholder="1.-")
-										input.data(type="text" name="telefono" placeholder="2.-")
-										input.data(type="text" name="telefono" placeholder="3.-")
-
-									.item-combo-text
-										label TELÉFONO
-										input.data(type="number" name="telefono")
-										input.data(type="number" name="telefono")
-										input.data(type="number" name="telefono")
-							.item-col-vert
-								.item-box-big.flex
-									.item-text
-										p REQUIERE COMPROBANTE FISCAL DEL ARRENDAMIENTO
-									.combo-check
-										.item-check SI
-										.item-check NO
-							.item-col-center.flex
-								button.cancelar CANCELAR
-								button.enviar ENVIAR
-
-
-								
-				.acordeon
-					h2.acordeon__titulo FIADOR
-					.acordeon__contenido
-						form.flex 
-							.item-Titulo
-								h3 
-									span FIADOR (PERSONA FÍSICA)
-							.item-col-two.flex
+								.item-Titulo
+									h3 
+										span FIADOR (PERSONA MORAL )
+								.item-col-vert.flex
+									.item-box.two-medio.margin-derecho
+										label RAZÓN SOCIAL
+										input.data(type='text', name='upload-release') 
+									.item-box.medio
+										label RFC
+										input.data(type='text', name='upload-release')
 								.item-col-vert
-									.item-box-big.flex
-										.item-text
-											p HA ESTADO USTED AFIANZADO
-										.combo-check
-											.item-check SI
-											.item-check NO
-								.item-box
-									label CON QUÉ AFIANZADORA
-									select 
-										option SELECCIONE UNO
-							.item-col-vert.flex
-								.item-box
-									label NOMBRE DE SU OBLIGADO SOLIDARIO (FIADOR)
-									input.data(type="text" name="telefono")
-									
-								.item-box
-									label ¿QUÉ PARENTESCO TIENE CON EL FIADOR?
-									select
-										option Colonia
+									.item-box-xl
+										label DOMICILIO
+										input.data(type="text" name="domicilio")
+								.item-col-two.flex
+									.item-box
+										label COLONIA
+										select 
+											option SELECCIONE UNO
+									.item-box
+										label DELEGACIÓN O MUNICIPIO
+										select 
+											option SELECCIONE UNO
+								.item-col-vert.flex
+									.item-box
+										label TELÉFONO
+										input.data(type="text" name="telefono")
 										
-								.item-box
-									label ESTADO CIVIL DEL FIADOR
-									select
-										option SELECCIONE UNO
-							.item-col-two.flex
-								.item-box
-									label DELEGACIÓN O MUNICIPIO
-									select 
-										option SELECCIONE UNO
-								
-								.item-box
-									label COLONIA
-									select 
-										option SELECCIONE UNO
-							
-							.item-col-vert.flex
-								.item-box
-									label TELÉFONO
-									input.data(type="text" name="telefono")
-									
-								.item-box
-									label CELULAR
-									input.data(type="text" name="telefono")
+									.item-box
+										label GIRO DE LA EMPRESA
+										input.data(type="text" name="telefono")
+											
+									.item-box
+										label PÁGINA WEB
+										input.data(type="text" name="telefono")
+								.item-col-vert.flex
+									.item-box
+										label REPRESENTANTE LEGAL
+										input.data(type="text" name="telefono")
 										
-								.item-box
-									label E-MAIL
-									input.data(type="text" name="telefono")
-							.item-box-red
-								p 
-									strong DOCUMENTOS REQUERIDOS : 
-									| 1 - IDENTIFICACIÓN OFICIAL (INE - PASAPORTE), 2 - COMPROBANTE DE INGRESOS, 3-ÚLTIMOS RECIBOS DE SALARIO O ESTADOS DE CUENTA BANCARIOS O ÚLTIMAS 2 DECLARACIONES DE IMPUESTOS, 3- CARTA DE CONSTANCIA DE LA EMPRESA QUE TRABAJA.
-							.item-Titulo
-								h3 
-									span FIADOR (PERSONA MORAL )
-							.item-col-vert
-								.item-box-xl
-									label DOMICILIO
-									input.data(type="text" name="domicilio")
-							.item-col-two.flex
-								.item-box
-									label COLONIA
-									select 
-										option SELECCIONE UNO
-								.item-box
-									label DELEGACIÓN O MUNICIPIO
-									select 
-										option SELECCIONE UNO
-							.item-col-vert.flex
-								.item-box
-									label TELÉFONO
-									input.data(type="text" name="telefono")
-									
-								.item-box
-									label GIRO DE LA EMPRESA
-									input.data(type="text" name="telefono")
+									.item-box
+										label PUESTO
+										input.data(type="text" name="telefono")
+											
+									.item-box
+										label ACTA CONSTITUTIVA No.
+										input.data(type="text" name="telefono")
+								.item-col-vert.flex
+									.item-box.medio
+										label PODER REP. LEGAL No.
+										input.data(type='text', name='upload-release')
+									.item-box.two-medio
+										label DOMICILIO PARTICULAR DEL REP. LEGAL
+										input.data(type='text', name='upload-release') 
+								.item-col-two.flex
+									.item-box
+										label COLONIA
+										select 
+											option SELECCIONE UNO
+									.item-box
+										label DELEGACIÓN O MUNICIPIO
+										select 
+											option SELECCIONE UNO
+								.item-col-vert.flex
+									.item-box
+										label TELÉFONO PARTICULAR
+										input.data(type="text" name="telefono")
 										
-								.item-box
-									label PÁGINA WEB
-									input.data(type="text" name="telefono")
-							.item-col-vert.flex
-								.item-box
-									label REPRESENTANTE LEGAL
-									input.data(type="text" name="telefono")
-									
-								.item-box
-									label PUESTO
-									input.data(type="text" name="telefono")
-										
-								.item-box
-									label ACTA CONSTITUTIVA No.
-									input.data(type="text" name="telefono")
-							
-								
-							
-							
+									.item-box
+										label CEL
+										input.data(type="text" name="telefono")
+											
+									.item-box
+										label E-MAIL
+										input.data(type="text" name="telefono")
+								.item-col-vert
+									.item-box-xl
+										label DOMICILIO DEL INMUEBLE EN GARANTÍA
+										input.data(type="text" name="domicilio")
+								.item-col-two.flex
+									.item-box
+										label COLONIA
+										select 
+											option SELECCIONE UNO
+									.item-box
+										label DELEGACIÓN O MUNICIPIO
+										select 
+											option SELECCIONE UNO
+								.item-box-red
+									p 
+										strong DOCUMENTOS REQUERIDOS : 
+										| 1 - IDENTIFICACIÓN OFICIAL (INE - PASAPORTE), 2 - COMPROBANTE DE INGRESOS, 3-ÚLTIMOS RECIBOS DE SALARIO O ESTADOS DE CUENTA BANCARIOS O ÚLTIMAS 2 DECLARACIONES DE IMPUESTOS, 3- CARTA DE CONSTANCIA DE LA EMPRESA QUE TRABAJA.
+								.item-leyenda
+									p EL SOLICITANTE Y SU FIADOR MANIFIESTAN BAJO PROTESTA DE DECIR QUE LA INFORMACIÓN AQUÍ PROPORCIONADA SE ENCUENTRA APEGADA ESTRICTAMENTE A LA REALIDAD Y POR LO TANTO, SON RESPONSABLES DE LA VERACIDAD DE LA MISMA, PARA TODOS LOS EFECTOS LEGALES.
+									p.color-base Indispensable llenar todos los espacios. En caso contrario no se dará trámite a su solicitud.
+								.item-col-center.flex
+									button.cancelar CANCELAR
+									button.enviar ENVIAR
+
+						
+												
 		.tab-content
 			#tab2.tab-pane
-				.acordeon
-					h2.acordeon__titulo FORMATO PARA EL ASESOR O PROPIETARIO
-					.acordeon__contenido 
-						form.flex
-							.item-col-vert
-								.item-box-xl
-									label TRAMITE DE PÓLIZA
-									select 
-										option SELECCIONE UNO
-							.item-Titulo
-								h3 
-									span DATOS DEL PROFESIONAL INMOBILIARIO
-							.item-col-two.flex
-								.item-box
-									label NOMBRE DE LA COMPAÑÍA
-									input.data(type="text" name="telefono")
-								.item-box
-									label PERSONA QUE LO SOLICITA
-									input.data(type="text" name="telefono")
-							.item-col-vert.flex
-								.item-box
-									label TELÉFONO
-									input.data(type="text" name="telefono")
-								.item-box
-									label CELULAR
-									input.data(type="text" name="telefono")
-								.item-box
-									label E-MAIL
-									input.data(type="text" name="telefono")
-							.item-col-vert.flex
-								.item-box
-									label FECHA DE LA SOLICITUD
-									input.data.calendar(type='date', name='upload-release')
-								.item-box
-									label FECHA FIRMA
-									input.data.calendar(type='date', name='upload-release')
-								.item-box
-									label HORA FIRMA
-									input.data(type='time', name='upload-release')
-							.item-col-vert.flex
-								.item-box
-									label LUGAR PARA LA FIRMA
-									input.data(type="text" name="telefono")
-								.item-col-check
-									.item-box-big.flex
-										.item-text
-											p ADMINISTRA EL #[br] INMUEBLE
-										.combo-check
-											.item-check SI
-											.item-check NO
-								.item-col-check
-									.item-box-big.flex
-										.item-text
-											p ES ADMINISTRADOR #[br] DE INMUEBLES
-										.combo-check
-											.item-check SI
-											.item-check NO
+				form.flex
+					.item-col-vert
+						.item-box-xl
+							label TRAMITE DE PÓLIZA
+							select 
+								option SELECCIONE UNO
+					.item-Titulo
+						h3 
+							span DATOS DEL PROFESIONAL INMOBILIARIO
+					.item-col-two.flex
+						.item-box
+							label NOMBRE DE LA COMPAÑÍA
+							input.data(type="text" name="telefono")
+						.item-box
+							label PERSONA QUE LO SOLICITA
+							input.data(type="text" name="telefono")
+					.item-col-vert.flex
+						.item-box
+							label TELÉFONO
+							input.data(type="text" name="telefono")
+						.item-box
+							label CELULAR
+							input.data(type="text" name="telefono")
+						.item-box
+							label E-MAIL
+							input.data(type="text" name="telefono")
+					.item-col-vert.flex
+						.item-box
+							label FECHA DE LA SOLICITUD
+							input.data.calendar(type='date', name='upload-release')
+						.item-box
+							label FECHA FIRMA
+							input.data.calendar(type='date', name='upload-release')
+						.item-box
+							label HORA FIRMA
+							input.data(type='time', name='upload-release')
+					.item-col-vert.flex
+						.item-box
+							label LUGAR PARA LA FIRMA
+							input.data(type="text" name="telefono")
+						.item-col-check
+							.item-box-big.flex
+								.item-text
+									p ADMINISTRA EL #[br] INMUEBLE
+								.combo-check
+									.item-check SI
+									.item-check NO
+						.item-col-check
+							.item-box-big.flex
+								.item-text
+									p ES ADMINISTRADOR #[br] DE INMUEBLES
+								.combo-check
+									.item-check SI
+									.item-check NO
+					
+					.item-Titulo
+						h3 
+							span DATOS DEL PROPIETARIO
+					.item-col-vert.flex
+						.item-box.medio
+							label NOMBRE
+							input.data(type='text', name='upload-release')
+						.item-box.two-medio
+							label DOMICILIO
+							input.data(type='text', name='upload-release')
 							
-							.item-Titulo
-								h3 
-									span DATOS DEL PROPIETARIO
-							.item-col-vert.flex
-								.item-box.medio
-									label NOMBRE
-									input.data(type='text', name='upload-release')
-								.item-box.two-medio
-									label DOMICILIO
-									input.data(type='text', name='upload-release')
-									
-							.item-col-two.flex
-								.item-box
-									label DELEGACIÓN O MUNICIPIO
-									select
-										option SELECCIONE UNO
-								.item-box
-									label PERSONA QUE LO SOLICITA
-									select
-										option SELECCIONE UNO
-							.item-col-four.flex
-								.item-box-select
-									label ESTADO
-									select
-										option SELECCIONE UNO
-								.item-box
-									label TELEFONO
-									input.data(type='text', name='upload-release')
-								.item-box
-									label CEL
-									input.data(type='text', name='upload-release')
-								.item-box
-									label EMAIL
-									input.data(type='text', name='upload-release')
-							.item-col-vert
-								.item-box-xl
-									label PARA EL PAGO DE RENTAS EN:
-									select 
-										option DEPOSITO Y/O TRANSFERENCIA BANCARIA
-							.item-col-two.flex
-								.item-box
-									label TITULAR DE LA CUENTA
-									input.data(type='text', name='text')
-								.item-box
-									label BANCO
-									select
-										option SELECCIONE UNO
-							.item-col-two.flex
-								.item-box
-									label No. CUENTA
-									input.data(type='text', name='text')
-								.item-box
-									label CUENTA CLABE
-									input.data(type='text', name='text')
-								
-							.item-Titulo
-								h3 
-									span DATOS DEL ARRENDAMIENTO
+					.item-col-two.flex
+						.item-box
+							label DELEGACIÓN O MUNICIPIO
+							select
+								option SELECCIONE UNO
+						.item-box
+							label PERSONA QUE LO SOLICITA
+							select
+								option SELECCIONE UNO
+					.item-col-four.flex
+						.item-box-select
+							label ESTADO
+							select
+								option SELECCIONE UNO
+						.item-box
+							label TELEFONO
+							input.data(type='text', name='upload-release')
+						.item-box
+							label CEL
+							input.data(type='text', name='upload-release')
+						.item-box
+							label EMAIL
+							input.data(type='text', name='upload-release')
+					.item-col-vert
+						.item-box-xl
+							label PARA EL PAGO DE RENTAS EN:
+							select 
+								option DEPOSITO Y/O TRANSFERENCIA BANCARIA
+					.item-col-two.flex
+						.item-box
+							label TITULAR DE LA CUENTA
+							input.data(type='text', name='text')
+						.item-box
+							label BANCO
+							select
+								option SELECCIONE UNO
+					.item-col-two.flex
+						.item-box
+							label No. CUENTA
+							input.data(type='text', name='text')
+						.item-box
+							label CUENTA CLABE
+							input.data(type='text', name='text')
+						
+					.item-Titulo
+						h3 
+							span DATOS DEL ARRENDAMIENTO
 
-							.item-col-vert.flex
-								.item-box
-									label IMPORTE MENSUAL DE RENTA
-									input.data(type="text" name="telefono")
-								.item-box
-									label CUOTA DE MANTENIMIENTO
-									input.data(type="text" name="telefono")
-								.item-col-check
-									.item-box-big.flex
-										.item-text
-											p LA CUOTA ESTA INCLUÍDA EN LA RENTA
-										.combo-check
-											.item-check SI
-											.item-check NO
-							.item-col-vert.flex
-								.item-box
-									label DEPOSITO EN GARANTÍA
-									input.data(type="text" name="garantia")
-								.item-box
-									label VIGENCIA DE CONTRARO
-									input.data.calendar(type='date', name='upload-release')
-								.item-box
-									label DEL : DD/MM/AA AL : DD/MM/AA
-									input.data.calendar(type='date', name='upload-release')
+					.item-col-vert.flex
+						.item-box
+							label IMPORTE MENSUAL DE RENTA
+							input.data(type="text" name="telefono")
+						.item-box
+							label CUOTA DE MANTENIMIENTO
+							input.data(type="text" name="telefono")
+						.item-col-check
+							.item-box-big.flex
+								.item-text
+									p LA CUOTA ESTA INCLUÍDA EN LA RENTA
+								.combo-check
+									.item-check SI
+									.item-check NO
+					.item-col-vert.flex
+						.item-box
+							label DEPOSITO EN GARANTÍA
+							input.data(type="text" name="garantia")
+						.item-box
+							label VIGENCIA DE CONTRARO
+							input.data.calendar(type='date', name='upload-release')
+						.item-box
+							label DEL : DD/MM/AA AL : DD/MM/AA
+							input.data.calendar(type='date', name='upload-release')
 
-							.item-col-vert
-								.item-box-xl
-									label TIPO DE INMUEBLE
-									select 
-										option SELECCIONE UNO
+					.item-col-vert
+						.item-box-xl
+							label TIPO DE INMUEBLE
+							select 
+								option SELECCIONE UNO
 
 
-							.item-Titulo
-								h3 
-									span NOMBRE DE QUIEN SE EXTIENDE EL RECIBO DE PAGO DE PÓLIZA
-							.item-col-two.flex
-								.item-box
-									label NOMBRE DE QUIEN SE EXTIENDE EL RECIBO DE PAGO DE PÓLIZA
-									select
-										option SELECCIONE UNO
-								.item-box
-									label EN DADO DE SELECCIONAR OTRO PROPORCIONE EL DATO
-									input.data(type='text', name='text')
-							.item-col-vert
-								.item-box-xl
-									label OBSERVACIONES
-									textarea
-							
-							.item-col-center.flex
-								button.cancelar CANCELAR
-								button.enviar ENVIAR
+					.item-Titulo
+						h3 
+							span NOMBRE DE QUIEN SE EXTIENDE EL RECIBO DE PAGO DE PÓLIZA
+					.item-col-two.flex
+						.item-box
+							label NOMBRE DE QUIEN SE EXTIENDE EL RECIBO DE PAGO DE PÓLIZA
+							select
+								option SELECCIONE UNO
+						.item-box
+							label EN DADO DE SELECCIONAR OTRO PROPORCIONE EL DATO
+							input.data(type='text', name='text')
+					.item-col-vert
+						.item-box-xl
+							label OBSERVACIONES
+							textarea
+					
+					.item-col-center.flex
+						button.cancelar CANCELAR
+						button.enviar ENVIAR
 
 
 

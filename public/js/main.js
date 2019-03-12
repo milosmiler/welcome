@@ -25,3 +25,18 @@ $('.acordeon').on('click', 'h2', function () {
   tp.slideToggle();
   p.slideUp();
 });
+
+// acordion
+
+let headAcordion = Array.prototype.slice.apply(document.querySelectorAll('.acordion-item'));
+let contentAcordion = Array.prototype.slice.apply(document.querySelectorAll('.item-content'));
+
+document.getElementById('toggle').addEventListener('click', e => {
+  if (e.target.classList.contains('acordion-item')) {
+    let i = headAcordion.indexOf(e.target);
+    contentAcordion.map(acor => acor.classList.remove('active'));
+    contentAcordion[i].classList.toggle('active');
+    headAcordion.map(head => head.classList.remove('active'));
+    headAcordion[i].classList.add('active');
+  }
+});

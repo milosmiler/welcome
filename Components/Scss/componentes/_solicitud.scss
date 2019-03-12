@@ -46,27 +46,9 @@ section.solicitud {
         }
 
     }
-    .tab-content{
-        width: 100%;
-        .acordeon {
-            width: 100%;
-            margin: auto;
-            &__titulo {
-                color: white;
-                background: #001434;
-                line-height: 2.8;
-                padding: 0 1em;
-                font-size: 20px;
-                cursor: pointer;
-                text-align: left;
-                width: 100%;
-            }
-            &__contenido {
-                display: none;
-                margin: 0;
-                background: rgba(#fff,.5);
-                padding: 1em 1em 1.5em;
-            }
+
+
+
             form.flex{
                 flex-wrap: wrap;
                 justify-content: space-around;
@@ -287,9 +269,9 @@ section.solicitud {
 
                 }
             }
-        }
 
-    }
+
+
      .item-instrucciones{
             width: 100%;
             margin-top: 50px;
@@ -329,6 +311,7 @@ textarea{
 
 .item-box-red{
     width: 100%;
+    margin-bottom: 15px;
     p{
         background: red;
         color: white;
@@ -337,6 +320,65 @@ textarea{
         font-weight: 400;
         padding: 15px 10px;
     }
+}
+.item-leyenda{
+    padding: 10px 15px;
+    background: #EDEDED;
+    margin-bottom: 15px;
+    p{
+        text-align: center;
+        font-size: 17px;
+    }
+    p.color-base{
+        color: #001434;
+        font-size: 21px;
+    }
+}
+
+.margin-derecho{
+    margin-right: 15px;
+}
+
+section.acordion{
+	ul{
+		margin: 2em auto;
+        width: 100%;
+		list-style: none;
+		li{
+            background: #001434;
+			width: 100%;
+			border-top: 1px solid #ccc;
+			border-bottom: 1px solid #ccc;
+			padding: 5px 10px;
+			text-align: left;
+			font-size: 16px;
+			cursor: pointer;
+            height: 40px;
+            line-height: 32px;
+			.fa-angle-down{
+				float:right;
+				font-size: 18px;
+			}
+			&.active{
+				background: #446E98;
+				font-weight: 700;
+				.fa.fa-angle-down{
+					transform: rotate(181deg);
+				}
+			}
+
+		}
+		.item-content{
+			display: none;
+			margin-bottom: 10px;
+			position: relative;
+			transition: all .3s;
+			&.active{
+				display: block;
+				padding: 5px;
+			}
+		}
+	}
 }
 
 
