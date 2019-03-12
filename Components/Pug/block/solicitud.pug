@@ -214,7 +214,108 @@ section.solicitud
 								
 				.acordeon
 					h2.acordeon__titulo FIADOR
-					p.acordeon__contenido Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis, ex, eligendi.i
+					.acordeon__contenido
+						form.flex 
+							.item-Titulo
+								h3 
+									span FIADOR (PERSONA FÍSICA)
+							.item-col-two.flex
+								.item-col-vert
+									.item-box-big.flex
+										.item-text
+											p HA ESTADO USTED AFIANZADO
+										.combo-check
+											.item-check SI
+											.item-check NO
+								.item-box
+									label CON QUÉ AFIANZADORA
+									select 
+										option SELECCIONE UNO
+							.item-col-vert.flex
+								.item-box
+									label NOMBRE DE SU OBLIGADO SOLIDARIO (FIADOR)
+									input.data(type="text" name="telefono")
+									
+								.item-box
+									label ¿QUÉ PARENTESCO TIENE CON EL FIADOR?
+									select
+										option Colonia
+										
+								.item-box
+									label ESTADO CIVIL DEL FIADOR
+									select
+										option SELECCIONE UNO
+							.item-col-two.flex
+								.item-box
+									label DELEGACIÓN O MUNICIPIO
+									select 
+										option SELECCIONE UNO
+								
+								.item-box
+									label COLONIA
+									select 
+										option SELECCIONE UNO
+							
+							.item-col-vert.flex
+								.item-box
+									label TELÉFONO
+									input.data(type="text" name="telefono")
+									
+								.item-box
+									label CELULAR
+									input.data(type="text" name="telefono")
+										
+								.item-box
+									label E-MAIL
+									input.data(type="text" name="telefono")
+							.item-box-red
+								p 
+									strong DOCUMENTOS REQUERIDOS : 
+									| 1 - IDENTIFICACIÓN OFICIAL (INE - PASAPORTE), 2 - COMPROBANTE DE INGRESOS, 3-ÚLTIMOS RECIBOS DE SALARIO O ESTADOS DE CUENTA BANCARIOS O ÚLTIMAS 2 DECLARACIONES DE IMPUESTOS, 3- CARTA DE CONSTANCIA DE LA EMPRESA QUE TRABAJA.
+							.item-Titulo
+								h3 
+									span FIADOR (PERSONA MORAL )
+							.item-col-vert
+								.item-box-xl
+									label DOMICILIO
+									input.data(type="text" name="domicilio")
+							.item-col-two.flex
+								.item-box
+									label COLONIA
+									select 
+										option SELECCIONE UNO
+								.item-box
+									label DELEGACIÓN O MUNICIPIO
+									select 
+										option SELECCIONE UNO
+							.item-col-vert.flex
+								.item-box
+									label TELÉFONO
+									input.data(type="text" name="telefono")
+									
+								.item-box
+									label GIRO DE LA EMPRESA
+									input.data(type="text" name="telefono")
+										
+								.item-box
+									label PÁGINA WEB
+									input.data(type="text" name="telefono")
+							.item-col-vert.flex
+								.item-box
+									label REPRESENTANTE LEGAL
+									input.data(type="text" name="telefono")
+									
+								.item-box
+									label PUESTO
+									input.data(type="text" name="telefono")
+										
+								.item-box
+									label ACTA CONSTITUTIVA No.
+									input.data(type="text" name="telefono")
+							
+								
+							
+							
 		.tab-content
 			#tab2.tab-pane
 				.acordeon
@@ -348,6 +449,16 @@ section.solicitud
 										.combo-check
 											.item-check SI
 											.item-check NO
+							.item-col-vert.flex
+								.item-box
+									label DEPOSITO EN GARANTÍA
+									input.data(type="text" name="garantia")
+								.item-box
+									label VIGENCIA DE CONTRARO
+									input.data.calendar(type='date', name='upload-release')
+								.item-box
+									label DEL : DD/MM/AA AL : DD/MM/AA
+									input.data.calendar(type='date', name='upload-release')
 
 							.item-col-vert
 								.item-box-xl

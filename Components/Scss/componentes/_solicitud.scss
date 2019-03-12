@@ -327,6 +327,18 @@ textarea{
     border: none;
 }
 
+.item-box-red{
+    width: 100%;
+    p{
+        background: red;
+        color: white;
+        padding: 10px;
+        font-size: 16px;
+        font-weight: 400;
+        padding: 15px 10px;
+    }
+}
+
 
 input.calendar {
   background-image: url('https://bytebucket.org/fuoricitta/form-best-practice/raw/197f5e38bea1d53b52102b6c98e0e6b129dd6908/Examples/assets/img/calendar.png?token=b57efe00e0e5d28327a3b62e263519c284c70d53');
