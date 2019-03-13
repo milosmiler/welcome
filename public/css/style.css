@@ -945,22 +945,30 @@ footer {
     max-width: 959px !important; } }
 
 @media only screen and (max-width: 767px) {
-  body {
-    background: url("../images/tablet.jpg"); }
-  section.welcome nav {
+  footer > div.container.flex > div:nth-child(2) {
+    display: none; }
+  footer > div.container.flex > .item-col {
+    width: 100%; }
+  footer figure.logo {
+    margin: auto; }
+  footer h3 {
     text-align: center; }
-  section.welcome .item-info p {
-    font-size: 18px; }
-    section.welcome .item-info p span {
-      font-size: 17px; } }
-
-@media only screen and (max-width: 320px) {
-  body {
-    background: url("../images/mobile.jpg"); }
-  section.welcome .item-info p {
-    font-size: 17px; }
-    section.welcome .item-info p span {
-      font-size: 16px; } }
+  footer p {
+    text-align: center; }
+  footer > div.container.flex > .item-col h2 {
+    text-align: center; }
+  footer .item-col ul {
+    text-align: center; }
+  section.actualizar .container form .item-col, section.formulario-asesor form .item-col {
+    width: 100%; }
+  section.actualizar .container form button {
+    margin: auto;
+    margin-top: 15px; }
+  section.digital > .container {
+    -ms-flex-direction: column;
+        flex-direction: column; }
+  section.digital .item-col figure.digital {
+    width: 100%; } }
 
 /********** OWL SLIDER ***********/
 /*
