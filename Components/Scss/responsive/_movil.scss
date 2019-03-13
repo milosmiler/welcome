@@ -35,6 +35,41 @@
 	section.digital .item-col figure.digital{
 		width: 100%;
 	}
+	section.solicitud form.flex .item-col-vert .item-box-xls{
+		flex-direction: column;
+	}
+
+	section.solicitud form.flex .item-col-vert .item-box-xls .item-combo-text{
+		padding-top: 15px;
+	}
+	section.solicitud form.flex .item-col-vert{
+		flex-direction: column;
+	}
+	section.solicitud form.flex .item-col-vert .item-box{
+		width: 100%;
+	}
+	section.solicitud form.flex .item-col-vert .item-box-big .item-text{
+		width: 80%;
+	}
+	section.solicitud form.flex .item-col-vert .item-box-red, section.solicitud form.flex .item-col{
+		width: 100%;
+	}
+	body > section.solicitud > div > div.item-nav.flex{
+		flex-direction: column;
+	}
+	section.solicitud .container h2, section.solicitud ul.nav{
+		width: 100%;
+	}
+	.medio, .two-medio{
+		width: 100%!important;
+	}
+	section.solicitud form.flex .item-col-two{
+		flex-direction: column;
+	}
+	section.solicitud form.flex .item-col-two .item-box{
+		width: 100%;
+	}
+
 
 
 
