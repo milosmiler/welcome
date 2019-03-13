@@ -1,11 +1,21 @@
 footer{
 	background-color: var(--base-color-midnight);
 	padding: 90px 15px 10px;
+	figure.logo{
+		max-width: 215px;
+		img{
+			width: 100%;
+		}
+
+	}
 	a{
 		color: white;
 		text-decoration: none;}
-	h2, p{
+	h2, p, h3{
 		color: white;}
+	h3{
+		margin-bottom: 10px;
+	}
 	.wattsap{
 		background-color: #01E675!important;
 		color: white!important;
@@ -58,14 +68,14 @@ footer{
 					color: var(--base-color-midnight);
 					&.cicle{
 						background-color: white;
-						width: 80px;
-						height: 80px;
-						line-height: 90px;
+						width: 70px;
+						height: 66px;
+						line-height: 77px;
 						border-radius: 100px;
 						text-align: center;
 					}
 					i{
-						font-size: 40px;}
+						font-size: 38px;}
 
 				}
 

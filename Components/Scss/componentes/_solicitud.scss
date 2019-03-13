@@ -62,12 +62,12 @@ section.solicitud {
                     input.data{
                         background-color: transparent;
     					width: 100%;
-    					height: 40px;
+    					height: 35px;
     					border: none;
                     }
                     select{
     					width: 100%;
-    					height: 50px;
+    					height: 35px;
     					background-color: transparent;
     					color: white;
     					border: none;
@@ -112,7 +112,7 @@ section.solicitud {
                     }
                      select{
                         width: 100%;
-                        height: 50px;
+                        height: 35px;
                         background-color: transparent;
                         color: white;
                         border: none;
@@ -175,7 +175,7 @@ section.solicitud {
                         input.data{
                             background-color: transparent;
                             width: 100%;
-                            height: 40px;
+                            height: 35px;
                             border: none;
                         }
 
@@ -190,7 +190,7 @@ section.solicitud {
                         input.data{
                             background-color: transparent;
                             width: 100%;
-                            height: 40px;
+                            height: 35px;
                             border: none;
                             border-bottom: 1px solid #3B3C3E;
                         }
@@ -278,10 +278,21 @@ section.solicitud {
             border-bottom: 1px solid #3B3C3E;
             padding-bottom: 5px;
             margin-bottom: 15px;
+            justify-content: space-between;
             p{
                 font-size: 14px;
                 color: #3B3C3E;
                 font-weight: 600;
+            }
+            a.dowland{
+                color: #0BBFAC;
+                font-size: 14px;
+                text-decoration: none;
+                font-weight: 600;
+                i{
+                    color: #0BBFAC;
+                    margin-right: 5px;
+                }
             }
         }
 }
@@ -345,7 +356,7 @@ section.acordion{
         width: 100%;
 		list-style: none;
 		li{
-            background: #001434;
+            background: #446E98;
 			width: 100%;
 			border-top: 1px solid #ccc;
 			border-bottom: 1px solid #ccc;
@@ -358,9 +369,11 @@ section.acordion{
 			.fa-angle-down{
 				float:right;
 				font-size: 18px;
+                line-height: 34px;
 			}
 			&.active{
-				background: #446E98;
+				
+                background: #001434;
 				font-weight: 700;
 				.fa.fa-angle-down{
 					transform: rotate(181deg);
@@ -375,7 +388,7 @@ section.acordion{
 			transition: all .3s;
 			&.active{
 				display: block;
-				padding: 5px;
+				padding: 15px 5px;
 			}
 		}
 	}

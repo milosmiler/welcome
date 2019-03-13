@@ -492,11 +492,11 @@ section.solicitud {
       section.solicitud form.flex .item-box input.data {
         background-color: transparent;
         width: 100%;
-        height: 40px;
+        height: 35px;
         border: none; }
       section.solicitud form.flex .item-box select {
         width: 100%;
-        height: 50px;
+        height: 35px;
         background-color: transparent;
         color: white;
         border: none; }
@@ -532,7 +532,7 @@ section.solicitud {
           color: #949598; }
       section.solicitud form.flex .item-col-vert select {
         width: 100%;
-        height: 50px;
+        height: 35px;
         background-color: transparent;
         color: white;
         border: none;
@@ -587,7 +587,7 @@ section.solicitud {
         section.solicitud form.flex .item-col-vert .item-box-xl input.data {
           background-color: transparent;
           width: 100%;
-          height: 40px;
+          height: 35px;
           border: none; }
       section.solicitud form.flex .item-col-vert .item-box-xls {
         background: #EDEDED;
@@ -598,7 +598,7 @@ section.solicitud {
         section.solicitud form.flex .item-col-vert .item-box-xls input.data {
           background-color: transparent;
           width: 100%;
-          height: 40px;
+          height: 35px;
           border: none;
           border-bottom: 1px solid #3B3C3E; }
         section.solicitud form.flex .item-col-vert .item-box-xls .item-combo-text {
@@ -664,11 +664,21 @@ section.solicitud {
     margin-top: 50px;
     border-bottom: 1px solid #3B3C3E;
     padding-bottom: 5px;
-    margin-bottom: 15px; }
+    margin-bottom: 15px;
+    -ms-flex-pack: justify;
+        justify-content: space-between; }
     section.solicitud .item-instrucciones p {
       font-size: 14px;
       color: #3B3C3E;
       font-weight: 600; }
+    section.solicitud .item-instrucciones a.dowland {
+      color: #0BBFAC;
+      font-size: 14px;
+      text-decoration: none;
+      font-weight: 600; }
+      section.solicitud .item-instrucciones a.dowland i {
+        color: #0BBFAC;
+        margin-right: 5px; }
 
 .tab-pane {
   display: none; }
@@ -718,7 +728,7 @@ section.acordion ul {
   width: 100%;
   list-style: none; }
   section.acordion ul li {
-    background: #001434;
+    background: #446E98;
     width: 100%;
     border-top: 1px solid #ccc;
     border-bottom: 1px solid #ccc;
@@ -730,9 +740,10 @@ section.acordion ul {
     line-height: 32px; }
     section.acordion ul li .fa-angle-down {
       float: right;
-      font-size: 18px; }
+      font-size: 18px;
+      line-height: 34px; }
     section.acordion ul li.active {
-      background: #446E98;
+      background: #001434;
       font-weight: 700; }
       section.acordion ul li.active .fa.fa-angle-down {
         transform: rotate(181deg); }
@@ -743,7 +754,7 @@ section.acordion ul {
     transition: all .3s; }
     section.acordion ul .item-content.active {
       display: block;
-      padding: 5px; }
+      padding: 15px 5px; }
 
 input.calendar {
   background-image: url("https://bytebucket.org/fuoricitta/form-best-practice/raw/197f5e38bea1d53b52102b6c98e0e6b129dd6908/Examples/assets/img/calendar.png?token=b57efe00e0e5d28327a3b62e263519c284c70d53");
@@ -780,11 +791,11 @@ section.formulario-asesor {
         section.formulario-asesor form .item-col .item-box input.data {
           background-color: transparent;
           width: 100%;
-          height: 50px;
+          height: 35px;
           border: none; }
         section.formulario-asesor form .item-col .item-box select {
           width: 100%;
-          height: 50px;
+          height: 35px;
           background-color: transparent;
           color: white;
           border: none; }
@@ -837,7 +848,7 @@ section.actualizar {
         section.actualizar .container form .item-box input.data {
           background-color: transparent;
           width: 100%;
-          height: 50px;
+          height: 35px;
           border: none; }
       section.actualizar .container form p {
         font-size: 21px;
@@ -853,11 +864,17 @@ section.actualizar {
 footer {
   background-color: var(--base-color-midnight);
   padding: 90px 15px 10px; }
+  footer figure.logo {
+    max-width: 215px; }
+    footer figure.logo img {
+      width: 100%; }
   footer a {
     color: white;
     text-decoration: none; }
-  footer h2, footer p {
+  footer h2, footer p, footer h3 {
     color: white; }
+  footer h3 {
+    margin-bottom: 10px; }
   footer .wattsap {
     background-color: #01E675 !important;
     color: white !important; }
@@ -900,13 +917,13 @@ footer {
         color: var(--base-color-midnight); }
         footer .item-col ul li a.cicle {
           background-color: white;
-          width: 80px;
-          height: 80px;
-          line-height: 90px;
+          width: 70px;
+          height: 66px;
+          line-height: 77px;
           border-radius: 100px;
           text-align: center; }
         footer .item-col ul li a i {
-          font-size: 40px; }
+          font-size: 38px; }
 
 /********** RESPONSIVE ***********/
 @media only screen and (min-width: 1024px) and (max-width: 1280px) {

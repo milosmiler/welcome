@@ -7,15 +7,18 @@ section.solicitud
 					a(href='#tab1') ARRENDATARIO
 				li
 					a(href='#tab2') ARRENDADOR
-		.item-instrucciones
+		.item-instrucciones.flex
 			p COMPLETE LOS SIGUIENTES CAMPOS, TODOS SON OBLIGATORIOS
+			a.dowland(href="#")
+				i.fas.fa-download 
+				| DESCARGUE EL FORMATO
 		
 					
 		.tab-content
 			#tab1.tab-pane.active
 				section.acordion
 					ul#toggle
-						li.acordion-item SOLICITUD PARA PERSONAS FÍSICAS
+						li.acordion-item.active SOLICITUD PARA PERSONAS FÍSICAS
 							i.fa.fa-angle-down
 						.item-content.active
 							form.flex
