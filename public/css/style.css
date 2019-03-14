@@ -378,17 +378,38 @@ header {
   -ms-flex-pack: justify;
       justify-content: space-between;
   -ms-flex-align: center;
-      align-items: center; }
+      align-items: center;
+  padding: 14px 0px; }
   header figure.logo-inicial {
-    max-width: 215px; }
+    max-width: 215px;
+    margin-left: 110px; }
     header figure.logo-inicial img {
       width: 100%; }
-  header aside ul li {
-    list-style: none;
-    display: inline-block;
-    margin-right: 15px; }
-    header aside ul li a {
-      color: #0D3156; }
+  header aside {
+    -ms-flex-align: center;
+        align-items: center; }
+    header aside p {
+      font-size: 13px;
+      color: #0D3156;
+      margin-right: 10px; }
+    header aside ul li {
+      list-style: none;
+      display: inline-block;
+      margin-right: 5px; }
+      header aside ul li a {
+        color: white; }
+        header aside ul li a.cicle {
+          width: 29px;
+          height: 29px;
+          background-color: #0D3156;
+          font-size: 16px;
+          display: inline-block;
+          border-radius: 100px;
+          text-align: center;
+          line-height: 28px; }
+
+.wattsap {
+  background-color: #01E675 !important; }
 
 nav.menu {
   width: 100%;
@@ -449,6 +470,81 @@ span.burger {
   .overlay.open {
     z-index: 1;
     opacity: 1; }
+
+section.nosotros {
+  background-color: #001434; }
+  section.nosotros .container {
+    -ms-flex-align: center;
+        align-items: center; }
+  section.nosotros .item-nosotros {
+    width: 40%;
+    margin-right: 50px;
+    position: relative; }
+    section.nosotros .item-nosotros p {
+      font-size: 18px;
+      color: white;
+      font-weight: 300; }
+    section.nosotros .item-nosotros h2 {
+      color: white;
+      font-size: 20px; }
+  section.nosotros .item-slider {
+    width: 50%;
+    margin-top: -15px; }
+    section.nosotros .item-slider .item img {
+      width: 100%; }
+
+.owl-carousel.owl-nosotros .owl-dots .owl-dot {
+  background-color: #001434;
+  color: white;
+  display: block !important;
+  width: 40px;
+  margin-bottom: 5px;
+  height: 25px; }
+
+.owl-carousel.owl-nosotros .owl-dots {
+  position: absolute;
+  bottom: 5px;
+  right: 5px; }
+
+button.scroll_down {
+  position: absolute;
+  margin-left: auto;
+  margin-right: auto;
+  left: 0;
+  right: 0;
+  height: 40px;
+  width: 20px;
+  bottom: -60px;
+  background-color: transparent;
+  border: 2px solid white;
+  border-radius: 20px;
+  cursor: pointer;
+  outline: none; }
+
+button.scroll_down:before {
+  position: absolute;
+  top: 10px;
+  left: 50%;
+  content: '';
+  width: 6px;
+  height: 6px;
+  margin-left: -3px;
+  background-color: #fff;
+  border-radius: 100%;
+  animation: scroll_down_btn-animation 2s infinite;
+  box-sizing: border-box; }
+
+@keyframes scroll_down_btn-animation {
+  0% {
+    transform: translate(0, 0);
+    opacity: 0; }
+  40% {
+    opacity: 1; }
+  80% {
+    transform: translate(0, 20px);
+    opacity: 0; }
+  100% {
+    opacity: 0; } }
 
 section.covertura {
   background: #C7DFEE; }
@@ -531,7 +627,21 @@ section.valores {
     text-align: center;
     font-size: 20px;
     color: #0D3156;
-    margin-bottom: 20px; }
+    margin-bottom: 60px; }
+  section.valores .item-valores {
+    width: 80px;
+    height: auto; }
+    section.valores .item-valores p {
+      color: #0D3156;
+      font-size: 18px;
+      font-weight: 300;
+      text-align: center;
+      margin-top: 5px; }
+
+.container1 {
+  max-width: 998px;
+  margin: auto;
+  padding: 5px 15px; }
 
 section.solicitud {
   padding: 20px 15px; }
@@ -1085,7 +1195,17 @@ footer {
     -ms-flex-direction: column;
         flex-direction: column; }
   section.solicitud form.flex .item-col-two .item-box {
-    width: 100%; } }
+    width: 100%; }
+  header > aside {
+    display: none !important; }
+  header figure.logo-inicial {
+    margin-right: 15px;
+    margin-left: 50px;
+    max-width: 117px;
+    padding-bottom: 10px;
+    padding-top: 10px; }
+  nav.menu {
+    max-width: 60%; } }
 
 /********** OWL SLIDER ***********/
 /*
@@ -1237,7 +1357,7 @@ footer {
     font-size: 14px;
     margin: 5px;
     padding: 4px 7px;
-    background: #D6D6D6;
+    background: #001434;
     display: inline-block;
     cursor: pointer;
     border-radius: 3px; }
@@ -1256,17 +1376,17 @@ footer {
   text-align: center;
   -webkit-tap-highlight-color: transparent;
   position: absolute;
-  bottom: 0;
-  left: 50%; }
+  bottom: 10px;
+  right: 5px; }
   .owl-theme .owl-dots .owl-dot {
     display: inline-block;
     zoom: 1;
     *display: inline; }
     .owl-theme .owl-dots .owl-dot span {
-      width: 40px;
-      height: 6px;
+      width: 55px;
+      height: 27px;
       margin: 5px 7px;
-      background: #D6D6D6;
+      background: #001434;
       display: block;
       -webkit-backface-visibility: visible;
       transition: opacity 200ms ease; }
@@ -1285,7 +1405,7 @@ footer {
     font-size: 14px;
     margin: 5px;
     padding: 4px 7px;
-    background: #D6D6D6;
+    background: #001434;
     display: inline-block;
     cursor: pointer;
     border-radius: 3px; }
@@ -1304,17 +1424,17 @@ footer {
   text-align: center;
   -webkit-tap-highlight-color: transparent;
   position: absolute;
-  bottom: 0;
-  left: 50%; }
+  bottom: 10px;
+  right: 5px; }
   .owl-theme .owl-dots .owl-dot {
     display: inline-block;
     zoom: 1;
     *display: inline; }
     .owl-theme .owl-dots .owl-dot span {
-      width: 40px;
-      height: 6px;
+      width: 55px;
+      height: 27px;
       margin: 5px 7px;
-      background: #D6D6D6;
+      background: #001434;
       display: block;
       -webkit-backface-visibility: visible;
       transition: opacity 200ms ease; }
@@ -1330,7 +1450,7 @@ footer {
     font-size: 14px;
     margin: 5px;
     padding: 4px 7px;
-    background: #D6D6D6;
+    background: #001434;
     display: inline-block;
     cursor: pointer;
     border-radius: 3px; }
@@ -1349,17 +1469,17 @@ footer {
   text-align: center;
   -webkit-tap-highlight-color: transparent;
   position: absolute;
-  bottom: 0;
-  left: 50%; }
+  bottom: 10px;
+  right: 5px; }
   .owl-theme .owl-dots .owl-dot {
     display: inline-block;
     zoom: 1;
     *display: inline; }
     .owl-theme .owl-dots .owl-dot span {
-      width: 40px;
-      height: 6px;
+      width: 55px;
+      height: 27px;
       margin: 5px 7px;
-      background: #D6D6D6;
+      background: #001434;
       display: block;
       -webkit-backface-visibility: visible;
       transition: opacity 200ms ease; }

@@ -3,24 +3,48 @@ header{
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding: 14px 0px;
     figure.logo-inicial{
         max-width: 215px;
+        margin-left: 110px;
         img{
             width: 100%;
         }
     }
     aside{
+    	align-items: center;
+    	p{
+    		font-size: 13px;
+    		color: #0D3156;
+    		margin-right: 10px;
+    	}
         ul{
             li{
                 list-style: none;
                 display: inline-block;
-                margin-right: 15px;
+                margin-right: 5px;
                 a{
-                    color: #0D3156;
+                	color: white;
+                    
+                    &.cicle{
+                    	width: 29px;
+					    height: 29px;
+					    background-color: #0D3156;
+					    font-size: 16px;
+					    display: inline-block;
+					    border-radius: 100px;
+					    text-align: center;
+					    line-height: 28px;
+                    }
+
                 }
             }
         }
     }
+}
+
+.wattsap{
+	background-color: #01E675!important;
 }
 
 nav.menu{
