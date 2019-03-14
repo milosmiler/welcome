@@ -1,3 +1,7 @@
+section.covertura{
+    background: #C7DFEE;
+}
+
 .fixed_headers {
   max-width: 750px;
   table-layout: fixed;
@@ -25,7 +29,7 @@
   width: 350px;
 }
 .fixed_headers thead {
-  background-color: #333;
+  border-bottom: 1px solid #001434;
   color: #FDFDFD;
 }
 .fixed_headers thead tr {

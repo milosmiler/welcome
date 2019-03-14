@@ -371,6 +371,88 @@ label {
 
 /*** FONT FACE ***/
 /*** GENERAL ***/
+header {
+  width: 100%;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: justify;
+      justify-content: space-between;
+  -ms-flex-align: center;
+      align-items: center; }
+  header figure.logo-inicial {
+    max-width: 215px; }
+    header figure.logo-inicial img {
+      width: 100%; }
+  header aside ul li {
+    list-style: none;
+    display: inline-block;
+    margin-right: 15px; }
+    header aside ul li a {
+      color: #0D3156; }
+
+nav.menu {
+  width: 100%;
+  display: block;
+  height: 100%;
+  background-color: #fff;
+  max-width: 34%;
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: 3;
+  box-shadow: -5px 7px 12px -5px #cccccc;
+  transform: translateX(-950px);
+  transition: all 400ms  ease-in-out; }
+  nav.menu a {
+    display: block;
+    text-align: left;
+    margin-right: 0px;
+    padding: 3px 15px;
+    font-size: 18px;
+    text-transform: uppercase;
+    border-bottom: 1px solid #ccc;
+    text-decoration: none;
+    margin-right: 20px;
+    font-size: 16px;
+    color: #303030; }
+    nav.menu a:hover {
+      background-color: #303030;
+      color: #fff; }
+    nav.menu a.close {
+      text-align: right;
+      display: block; }
+      nav.menu a.close i.fa.fa-times {
+        font-size: 30px;
+        cursor: pointer; }
+      nav.menu a.close:hover {
+        background: transparent;
+        color: #303030; }
+  nav.menu.open {
+    transform: translateX(0px); }
+
+span.burger {
+  margin-top: 20px;
+  padding: 0px 10px;
+  cursor: pointer;
+  position: relative; }
+  span.burger i.fa.fa-bars {
+    font-size: 30px; }
+
+.overlay {
+  width: 100%;
+  position: fixed;
+  background: rgba(0, 0, 0, 0.8);
+  height: 100%;
+  opacity: 0;
+  z-index: -1;
+  transition: opacity 300ms linear; }
+  .overlay.open {
+    z-index: 1;
+    opacity: 1; }
+
+section.covertura {
+  background: #C7DFEE; }
+
 .fixed_headers {
   max-width: 750px;
   table-layout: fixed;
@@ -398,7 +480,7 @@ label {
   width: 350px; }
 
 .fixed_headers thead {
-  background-color: #333;
+  border-bottom: 1px solid #001434;
   color: #FDFDFD; }
 
 .fixed_headers thead tr {
@@ -442,6 +524,15 @@ section.digital .item-col {
         color: #3B3C3E;
         font-weight: 700; }
 
+section.valores {
+  padding-top: 15px;
+  background: #E4E4E4; }
+  section.valores h2 {
+    text-align: center;
+    font-size: 20px;
+    color: #0D3156;
+    margin-bottom: 20px; }
+
 section.solicitud {
   padding: 20px 15px; }
   section.solicitud .container h2 {
@@ -478,164 +569,207 @@ section.solicitud {
         font-size: 26px;
         font-weight: 300;
         color: #AEAFB1; }
-  section.solicitud .tab-content {
-    width: 100%; }
-    section.solicitud .tab-content .acordeon {
-      width: 100%;
-      margin: auto; }
-      section.solicitud .tab-content .acordeon__titulo {
+  section.solicitud form.flex {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -ms-flex-pack: distribute;
+        justify-content: space-around; }
+    section.solicitud form.flex .item-box {
+      background: #EDEDED;
+      margin-bottom: 20px;
+      padding: 10px 15px; }
+      section.solicitud form.flex .item-box label {
+        color: #3B3C3E; }
+      section.solicitud form.flex .item-box input.data {
+        background-color: transparent;
+        width: 100%;
+        height: 35px;
+        border: none; }
+      section.solicitud form.flex .item-box select {
+        width: 100%;
+        height: 35px;
+        background-color: transparent;
         color: white;
-        background: #001434;
-        line-height: 2.8;
-        padding: 0 1em;
-        font-size: 20px;
-        cursor: pointer;
-        text-align: left;
-        width: 100%; }
-      section.solicitud .tab-content .acordeon__contenido {
-        display: none;
-        margin: 0;
-        background: rgba(255, 255, 255, 0.5);
-        padding: 1em 1em 1.5em; }
-      section.solicitud .tab-content .acordeon form.flex {
-        -ms-flex-wrap: wrap;
-            flex-wrap: wrap;
-        -ms-flex-pack: distribute;
-            justify-content: space-around; }
-        section.solicitud .tab-content .acordeon form.flex .item-box {
-          background: #EDEDED;
-          margin-bottom: 20px;
-          padding: 10px 15px; }
-          section.solicitud .tab-content .acordeon form.flex .item-box label {
-            color: #3B3C3E; }
-          section.solicitud .tab-content .acordeon form.flex .item-box input.data {
-            background-color: transparent;
-            width: 100%;
-            height: 40px;
-            border: none; }
-          section.solicitud .tab-content .acordeon form.flex .item-box select {
-            width: 100%;
-            height: 50px;
-            background-color: transparent;
-            color: white;
-            border: none; }
-        section.solicitud .tab-content .acordeon form.flex .item-col {
-          width: 33%; }
-        section.solicitud .tab-content .acordeon form.flex .item-Titulo {
-          width: 100%; }
-          section.solicitud .tab-content .acordeon form.flex .item-Titulo span {
-            background-color: white;
-            z-index: 1;
-            position: relative;
-            padding: 3px 5px; }
-          section.solicitud .tab-content .acordeon form.flex .item-Titulo h3 {
-            width: 100%;
-            margin-bottom: 15px;
-            position: relative;
-            background-color: white; }
-            section.solicitud .tab-content .acordeon form.flex .item-Titulo h3:before {
-              content: '';
-              width: 100%;
-              height: 1px;
-              background-color: #3B3C3E;
-              right: 0px;
-              top: 11px;
-              position: absolute; }
-        section.solicitud .tab-content .acordeon form.flex .item-col-vert {
+        border: none; }
+    section.solicitud form.flex .item-col {
+      width: 33%; }
+    section.solicitud form.flex .item-Titulo {
+      width: 100%; }
+      section.solicitud form.flex .item-Titulo span {
+        background-color: white;
+        z-index: 1;
+        position: relative;
+        padding: 3px 5px; }
+      section.solicitud form.flex .item-Titulo h3 {
+        width: 100%;
+        margin-bottom: 15px;
+        position: relative;
+        background-color: white; }
+        section.solicitud form.flex .item-Titulo h3:before {
+          content: '';
           width: 100%;
-          -ms-flex-pack: justify;
-              justify-content: space-between; }
-          section.solicitud .tab-content .acordeon form.flex .item-col-vert .item-box {
-            width: 32%; }
-            section.solicitud .tab-content .acordeon form.flex .item-col-vert .item-box select {
-              color: #949598; }
-          section.solicitud .tab-content .acordeon form.flex .item-col-vert select {
-            width: 100%;
-            height: 50px;
-            background-color: transparent;
-            color: white;
-            border: none;
-            color: #949598; }
-          section.solicitud .tab-content .acordeon form.flex .item-col-vert .item-box-big {
-            width: 100%; }
-            section.solicitud .tab-content .acordeon form.flex .item-col-vert .item-box-big .item-check {
-              width: 20px; }
-          section.solicitud .tab-content .acordeon form.flex .item-col-vert .item-box-red {
-            width: 75%;
-            margin-left: 10px; }
-            section.solicitud .tab-content .acordeon form.flex .item-col-vert .item-box-red p {
-              background: red;
-              color: white;
-              padding: 10px;
-              font-size: 17px;
-              font-weight: 400;
-              padding: 16px 10px; }
-          section.solicitud .tab-content .acordeon form.flex .item-col-vert .item-box-xl {
-            background: #EDEDED;
-            margin-bottom: 20px;
-            padding: 10px 15px; }
-            section.solicitud .tab-content .acordeon form.flex .item-col-vert .item-box-xl label {
-              color: #3B3C3E; }
-            section.solicitud .tab-content .acordeon form.flex .item-col-vert .item-box-xl input.data {
-              background-color: transparent;
-              width: 100%;
-              height: 40px;
-              border: none; }
-          section.solicitud .tab-content .acordeon form.flex .item-col-vert .item-box-xls {
-            background: #EDEDED;
-            margin-bottom: 20px;
-            padding: 10px 15px; }
-            section.solicitud .tab-content .acordeon form.flex .item-col-vert .item-box-xls label {
-              color: #3B3C3E; }
-            section.solicitud .tab-content .acordeon form.flex .item-col-vert .item-box-xls input.data {
-              background-color: transparent;
-              width: 100%;
-              height: 40px;
-              border: none;
-              border-bottom: 1px solid #3B3C3E; }
-            section.solicitud .tab-content .acordeon form.flex .item-col-vert .item-box-xls .item-combo-text {
-              margin-right: 15px; }
-              section.solicitud .tab-content .acordeon form.flex .item-col-vert .item-box-xls .item-combo-text:last-child {
-                margin-right: 0px; }
-        section.solicitud .tab-content .acordeon form.flex .item-col-center {
-          width: 100%;
-          -ms-flex-pack: center;
-              justify-content: center; }
-          section.solicitud .tab-content .acordeon form.flex .item-col-center .cancelar {
-            width: 320px;
-            height: 50px;
-            margin-right: 10px;
-            border: none;
-            background-color: #3B3C3E;
-            border-radius: 5px;
-            color: white;
-            font-size: 21px; }
-          section.solicitud .tab-content .acordeon form.flex .item-col-center .enviar {
-            width: 320px;
-            height: 50px;
-            border: none;
-            border-radius: 5px;
-            background-color: #0BBFAC;
-            color: white;
-            font-size: 21px; }
-        section.solicitud .tab-content .acordeon form.flex .item-col-two {
+          height: 1px;
+          background-color: #3B3C3E;
+          right: 0px;
+          top: 11px;
+          position: absolute; }
+    section.solicitud form.flex .item-col-vert {
+      width: 100%;
+      -ms-flex-pack: justify;
+          justify-content: space-between; }
+      section.solicitud form.flex .item-col-vert .item-box {
+        width: 32%; }
+        section.solicitud form.flex .item-col-vert .item-box select {
+          color: #949598; }
+      section.solicitud form.flex .item-col-vert select {
+        width: 100%;
+        height: 35px;
+        background-color: transparent;
+        color: white;
+        border: none;
+        color: #949598; }
+      section.solicitud form.flex .item-col-vert .item-box-big {
+        width: 100%;
+        background: #EDEDED;
+        margin-bottom: 15px;
+        -ms-flex-pack: justify;
+            justify-content: space-between; }
+        section.solicitud form.flex .item-col-vert .item-box-big .combo-check {
+          width: 100px;
           -ms-flex-pack: justify;
               justify-content: space-between;
-          width: 100%; }
-          section.solicitud .tab-content .acordeon form.flex .item-col-two .item-box {
-            width: 49%; }
-          section.solicitud .tab-content .acordeon form.flex .item-col-two select {
-            color: #949598; }
+          display: -ms-flexbox;
+          display: flex; }
+          section.solicitud form.flex .item-col-vert .item-box-big .combo-check .item-check {
+            width: 50px;
+            height: 50px;
+            border: 1px solid #707070;
+            color: #3B3C3E;
+            text-align: center;
+            line-height: 50px;
+            position: relative;
+            cursor: pointer; }
+            section.solicitud form.flex .item-col-vert .item-box-big .combo-check .item-check:last-child {
+              right: 1px; }
+        section.solicitud form.flex .item-col-vert .item-box-big .item-text {
+          width: 40%;
+          padding: 5px; }
+          section.solicitud form.flex .item-col-vert .item-box-big .item-text p {
+            font-size: 18px; }
+            section.solicitud form.flex .item-col-vert .item-box-big .item-text p span {
+              font-size: 16px;
+              font-weight: 300; }
+      section.solicitud form.flex .item-col-vert .item-box-red {
+        width: 75%;
+        margin-left: 10px; }
+        section.solicitud form.flex .item-col-vert .item-box-red p {
+          background: red;
+          color: white;
+          padding: 10px;
+          font-size: 17px;
+          font-weight: 400;
+          padding: 16px 10px; }
+      section.solicitud form.flex .item-col-vert .item-box-xl {
+        background: #EDEDED;
+        margin-bottom: 20px;
+        padding: 10px 15px; }
+        section.solicitud form.flex .item-col-vert .item-box-xl label {
+          color: #3B3C3E; }
+        section.solicitud form.flex .item-col-vert .item-box-xl input.data {
+          background-color: transparent;
+          width: 100%;
+          height: 35px;
+          border: none; }
+      section.solicitud form.flex .item-col-vert .item-box-xls {
+        background: #EDEDED;
+        margin-bottom: 20px;
+        padding: 10px 15px; }
+        section.solicitud form.flex .item-col-vert .item-box-xls label {
+          color: #3B3C3E; }
+        section.solicitud form.flex .item-col-vert .item-box-xls input.data {
+          background-color: transparent;
+          width: 100%;
+          height: 35px;
+          border: none;
+          border-bottom: 1px solid #3B3C3E; }
+        section.solicitud form.flex .item-col-vert .item-box-xls .item-combo-text {
+          margin-right: 15px; }
+          section.solicitud form.flex .item-col-vert .item-box-xls .item-combo-text:last-child {
+            margin-right: 0px; }
+    section.solicitud form.flex .item-col-check {
+      width: 33%; }
+      section.solicitud form.flex .item-col-check .item-text {
+        width: 60% !important; }
+      section.solicitud form.flex .item-col-check .item-box-big {
+        padding: 22px 15px; }
+    section.solicitud form.flex .item-col-center {
+      width: 100%;
+      -ms-flex-pack: center;
+          justify-content: center; }
+      section.solicitud form.flex .item-col-center .cancelar {
+        width: 320px;
+        height: 50px;
+        margin-right: 10px;
+        border: none;
+        background-color: #3B3C3E;
+        border-radius: 5px;
+        color: white;
+        font-size: 21px; }
+      section.solicitud form.flex .item-col-center .enviar {
+        width: 320px;
+        height: 50px;
+        border: none;
+        border-radius: 5px;
+        background-color: #0BBFAC;
+        color: white;
+        font-size: 21px; }
+    section.solicitud form.flex .item-col-two {
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+      width: 100%; }
+      section.solicitud form.flex .item-col-two .item-box {
+        width: 49%; }
+      section.solicitud form.flex .item-col-two select {
+        color: #949598; }
+    section.solicitud form.flex .item-col-four {
+      width: 100%;
+      -ms-flex-pack: justify;
+          justify-content: space-between; }
+      section.solicitud form.flex .item-col-four .item-box {
+        width: 25%;
+        margin-left: 10px; }
+      section.solicitud form.flex .item-col-four .item-box-select {
+        width: 30%;
+        background: #EDEDED;
+        margin-bottom: 20px;
+        padding: 10px 15px; }
+        section.solicitud form.flex .item-col-four .item-box-select label {
+          color: #3B3C3E; }
+      section.solicitud form.flex .item-col-four select {
+        color: #949598;
+        background: transparent;
+        width: 100%;
+        border: none; }
   section.solicitud .item-instrucciones {
     width: 100%;
     margin-top: 50px;
     border-bottom: 1px solid #3B3C3E;
     padding-bottom: 5px;
-    margin-bottom: 15px; }
+    margin-bottom: 15px;
+    -ms-flex-pack: justify;
+        justify-content: space-between; }
     section.solicitud .item-instrucciones p {
       font-size: 14px;
       color: #3B3C3E;
       font-weight: 600; }
+    section.solicitud .item-instrucciones a.dowland {
+      color: #0BBFAC;
+      font-size: 14px;
+      text-decoration: none;
+      font-weight: 600; }
+      section.solicitud .item-instrucciones a.dowland i {
+        color: #0BBFAC;
+        margin-right: 5px; }
 
 .tab-pane {
   display: none; }
@@ -654,6 +788,64 @@ textarea {
   background: transparent;
   width: 100%;
   border: none; }
+
+.item-box-red {
+  width: 100%;
+  margin-bottom: 15px; }
+  .item-box-red p {
+    background: red;
+    color: white;
+    padding: 10px;
+    font-size: 16px;
+    font-weight: 400;
+    padding: 15px 10px; }
+
+.item-leyenda {
+  padding: 10px 15px;
+  background: #EDEDED;
+  margin-bottom: 15px; }
+  .item-leyenda p {
+    text-align: center;
+    font-size: 17px; }
+  .item-leyenda p.color-base {
+    color: #001434;
+    font-size: 21px; }
+
+.margin-derecho {
+  margin-right: 15px; }
+
+section.acordion ul {
+  margin: 2em auto;
+  width: 100%;
+  list-style: none; }
+  section.acordion ul li {
+    background: #446E98;
+    width: 100%;
+    border-top: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
+    padding: 5px 10px;
+    text-align: left;
+    font-size: 16px;
+    cursor: pointer;
+    height: 40px;
+    line-height: 32px; }
+    section.acordion ul li .fa-angle-down {
+      float: right;
+      font-size: 18px;
+      line-height: 34px; }
+    section.acordion ul li.active {
+      background: #001434;
+      font-weight: 700; }
+      section.acordion ul li.active .fa.fa-angle-down {
+        transform: rotate(181deg); }
+  section.acordion ul .item-content {
+    display: none;
+    margin-bottom: 10px;
+    position: relative;
+    transition: all .3s; }
+    section.acordion ul .item-content.active {
+      display: block;
+      padding: 15px 5px; }
 
 input.calendar {
   background-image: url("https://bytebucket.org/fuoricitta/form-best-practice/raw/197f5e38bea1d53b52102b6c98e0e6b129dd6908/Examples/assets/img/calendar.png?token=b57efe00e0e5d28327a3b62e263519c284c70d53");
@@ -690,11 +882,11 @@ section.formulario-asesor {
         section.formulario-asesor form .item-col .item-box input.data {
           background-color: transparent;
           width: 100%;
-          height: 50px;
+          height: 35px;
           border: none; }
         section.formulario-asesor form .item-col .item-box select {
           width: 100%;
-          height: 50px;
+          height: 35px;
           background-color: transparent;
           color: white;
           border: none; }
@@ -747,7 +939,7 @@ section.actualizar {
         section.actualizar .container form .item-box input.data {
           background-color: transparent;
           width: 100%;
-          height: 50px;
+          height: 35px;
           border: none; }
       section.actualizar .container form p {
         font-size: 21px;
@@ -763,11 +955,17 @@ section.actualizar {
 footer {
   background-color: var(--base-color-midnight);
   padding: 90px 15px 10px; }
+  footer figure.logo {
+    max-width: 215px; }
+    footer figure.logo img {
+      width: 100%; }
   footer a {
     color: white;
     text-decoration: none; }
-  footer h2, footer p {
+  footer h2, footer p, footer h3 {
     color: white; }
+  footer h3 {
+    margin-bottom: 10px; }
   footer .wattsap {
     background-color: #01E675 !important;
     color: white !important; }
@@ -810,13 +1008,13 @@ footer {
         color: var(--base-color-midnight); }
         footer .item-col ul li a.cicle {
           background-color: white;
-          width: 80px;
-          height: 80px;
-          line-height: 90px;
+          width: 70px;
+          height: 66px;
+          line-height: 77px;
           border-radius: 100px;
           text-align: center; }
         footer .item-col ul li a i {
-          font-size: 40px; }
+          font-size: 38px; }
 
 /********** RESPONSIVE ***********/
 @media only screen and (min-width: 1024px) and (max-width: 1280px) {
@@ -838,22 +1036,56 @@ footer {
     max-width: 959px !important; } }
 
 @media only screen and (max-width: 767px) {
-  body {
-    background: url("../images/tablet.jpg"); }
-  section.welcome nav {
+  footer > div.container.flex > div:nth-child(2) {
+    display: none; }
+  footer > div.container.flex > .item-col {
+    width: 100%; }
+  footer figure.logo {
+    margin: auto; }
+  footer h3 {
     text-align: center; }
-  section.welcome .item-info p {
-    font-size: 18px; }
-    section.welcome .item-info p span {
-      font-size: 17px; } }
-
-@media only screen and (max-width: 320px) {
-  body {
-    background: url("../images/mobile.jpg"); }
-  section.welcome .item-info p {
-    font-size: 17px; }
-    section.welcome .item-info p span {
-      font-size: 16px; } }
+  footer p {
+    text-align: center; }
+  footer > div.container.flex > .item-col h2 {
+    text-align: center; }
+  footer .item-col ul {
+    text-align: center; }
+  section.actualizar .container form .item-col, section.formulario-asesor form .item-col {
+    width: 100%; }
+  section.actualizar .container form button {
+    margin: auto;
+    margin-top: 15px; }
+  section.digital > .container {
+    -ms-flex-direction: column;
+        flex-direction: column; }
+  section.digital .item-col figure.digital {
+    width: 100%; }
+  section.solicitud form.flex .item-col-vert .item-box-xls {
+    -ms-flex-direction: column;
+        flex-direction: column; }
+  section.solicitud form.flex .item-col-vert .item-box-xls .item-combo-text {
+    padding-top: 15px; }
+  section.solicitud form.flex .item-col-vert {
+    -ms-flex-direction: column;
+        flex-direction: column; }
+  section.solicitud form.flex .item-col-vert .item-box {
+    width: 100%; }
+  section.solicitud form.flex .item-col-vert .item-box-big .item-text {
+    width: 80%; }
+  section.solicitud form.flex .item-col-vert .item-box-red, section.solicitud form.flex .item-col {
+    width: 100%; }
+  body > section.solicitud > div > div.item-nav.flex {
+    -ms-flex-direction: column;
+        flex-direction: column; }
+  section.solicitud .container h2, section.solicitud ul.nav {
+    width: 100%; }
+  .medio, .two-medio {
+    width: 100% !important; }
+  section.solicitud form.flex .item-col-two {
+    -ms-flex-direction: column;
+        flex-direction: column; }
+  section.solicitud form.flex .item-col-two .item-box {
+    width: 100%; } }
 
 /********** OWL SLIDER ***********/
 /*

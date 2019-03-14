@@ -1,31 +1,84 @@
 @media only screen and (max-width: 767px) {
 
-	body{
-		background: url('../images/tablet.jpg');
+	footer > div.container.flex > div:nth-child(2){
+		display: none;
+
 	}
-	section.welcome nav{
+	footer > div.container.flex > .item-col{
+		width: 100%;
+	}
+	footer figure.logo{
+		margin: auto;
+	}
+	footer h3{
 		text-align: center;
 	}
-	section.welcome .item-info p{
-		font-size: 18px;
-		span{
-			font-size: 17px;
-		}
+	footer p{
+		text-align: center;
 	}
-  
-   
+	footer > div.container.flex > .item-col h2{
+		text-align: center;
+	}
+	footer .item-col ul{
+		text-align: center;
+	}
+	section.actualizar .container form .item-col, section.formulario-asesor form .item-col{
+		width: 100%;
+	}
+	section.actualizar .container form button{
+		margin: auto;
+    	margin-top: 15px;
+	}
+	section.digital > .container{
+		flex-direction: column;
+	}
+	section.digital .item-col figure.digital{
+		width: 100%;
+	}
+	section.solicitud form.flex .item-col-vert .item-box-xls{
+		flex-direction: column;
+	}
+
+	section.solicitud form.flex .item-col-vert .item-box-xls .item-combo-text{
+		padding-top: 15px;
+	}
+	section.solicitud form.flex .item-col-vert{
+		flex-direction: column;
+	}
+	section.solicitud form.flex .item-col-vert .item-box{
+		width: 100%;
+	}
+	section.solicitud form.flex .item-col-vert .item-box-big .item-text{
+		width: 80%;
+	}
+	section.solicitud form.flex .item-col-vert .item-box-red, section.solicitud form.flex .item-col{
+		width: 100%;
+	}
+	body > section.solicitud > div > div.item-nav.flex{
+		flex-direction: column;
+	}
+	section.solicitud .container h2, section.solicitud ul.nav{
+		width: 100%;
+	}
+	.medio, .two-medio{
+		width: 100%!important;
+	}
+	section.solicitud form.flex .item-col-two{
+		flex-direction: column;
+	}
+	section.solicitud form.flex .item-col-two .item-box{
+		width: 100%;
+	}
+
+
+
+
+
+
 }
 
 
 @media only screen and (max-width: 320px) {
-	body{
-		background: url('../images/mobile.jpg');
-	}
-	section.welcome .item-info p{
-		font-size: 17px;
-		span{
-			font-size: 16px;
-		}
-	}
-	
+
+
 }
