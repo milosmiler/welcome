@@ -4,9 +4,16 @@ header{
     justify-content: space-between;
     align-items: center;
     padding: 14px 0px;
+    transition: all 400ms  ease-in-out;
     figure.logo-inicial{
         max-width: 215px;
         margin-left: 110px;
+        img{
+            width: 100%;
+        }
+    }
+    figure.logo-nav{
+        max-width: 200px;
         img{
             width: 100%;
         }
@@ -25,7 +32,7 @@ header{
                 margin-right: 5px;
                 a{
                 	color: white;
-                    
+
                     &.cicle{
                     	width: 29px;
 					    height: 29px;
@@ -51,7 +58,7 @@ nav.menu{
     width: 100%;
     display: block;
     height: 100%;
-    background-color: #fff;
+    background-color: #001434;
     max-width: 34%;
     position: fixed;
     left: 0;
@@ -60,18 +67,22 @@ nav.menu{
     box-shadow: -5px 7px 12px -5px rgba(204,204,204,1);
     transform: translateX(-950px);
     transition: all 400ms  ease-in-out;
+    .header-nav{
+        align-items: center;
+    }
 	a{
         display:block;
         text-align: left;
         margin-right: 0px;
         padding: 3px 15px;
-        font-size: 18px;
+        font-size: 21px;
         text-transform: uppercase;
-        border-bottom: 1px solid #ccc;
 		text-decoration: none;
 		margin-right: 20px;
 		font-size: 16px;
-		color: #303030;
+        font-weight: 500;
+		color: white;
+        margin-bottom: 20px;
 		&:hover{
 			background-color: #303030;
 			color: #fff;
@@ -79,7 +90,7 @@ nav.menu{
 		&.close{
 			text-align: right;
 			display: block;
-			i.fa.fa-times{
+			i.fa.fa-arrow-left{
 				font-size: 30px;
 				cursor: pointer;
 			}
@@ -117,4 +128,36 @@ span.burger{
 		z-index: 1;
 		opacity: 1;
 	}
+}
+.sticky{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: #001434;
+    z-index: 2;
+    span.burger{
+			i.fa.fa-bars{
+				color: white;
+			}
+    	}
+    aside{
+    	p{
+    		color: white;
+    	}
+        ul{
+            li{
+                a{
+                	color: #0D3156;
+                    &.cicle{
+                         background-color: white;
+                    }
+
+                }
+            }
+        }
+    }
+    .wattsap{
+    	color:white;
+    }
 }

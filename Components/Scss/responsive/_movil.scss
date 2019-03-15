@@ -83,6 +83,19 @@
 	nav.menu{
 		max-width: 60%;
 	}
+	section.nosotros .container{
+		flex-direction: column;
+	}
+	section.nosotros .item-nosotros{
+		width: 100%;
+	}
+	section.nosotros .item-slider{
+		margin-top: 5px;
+		width: 100%;
+	}
+	section.nosotros .item-nosotros{
+		margin-right: 0;
+	}
 
 
 

@@ -48,6 +48,21 @@ document.getElementById('toggle2').addEventListener('click', e => {
 		headAcordion2[i].classList.add('active');
 	}
 });
+// header
+window.onscroll = function() {fixed()};
+
+var header = document.querySelector('header');
+var sticky = header.offsetTop;
+
+function fixed() {
+  if (window.pageYOffset > sticky) {
+    header.classList.add("sticky");
+    document.getElementById("img1").src="images/logo-blanco.png";
+  } else {
+    header.classList.remove("sticky");
+    document.getElementById("img1").src="images/logo.png";
+  }
+}
 
 // menu
 
