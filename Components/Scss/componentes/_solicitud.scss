@@ -366,13 +366,14 @@ section.acordion{
 			cursor: pointer;
             height: 40px;
             line-height: 32px;
+            color: white;
 			.fa-angle-down{
 				float:right;
 				font-size: 18px;
                 line-height: 34px;
 			}
 			&.active{
-				
+
                 background: #001434;
 				font-weight: 700;
 				.fa.fa-angle-down{
@@ -382,6 +383,16 @@ section.acordion{
 
 		}
 		.item-content{
+			display: none;
+			margin-bottom: 10px;
+			position: relative;
+			transition: all .3s;
+			&.active{
+				display: block;
+				padding: 15px 5px;
+			}
+		}
+        .item-content-covertura{
 			display: none;
 			margin-bottom: 10px;
 			position: relative;

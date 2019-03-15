@@ -18,17 +18,8 @@
 
 
 
-
 })();
 
-$('.acordeon').on('click','h2',function(){
-  console.log('hola');
-    var t = $(this);
-    var tp = t.next();
-    var p = t.parent().siblings().find('.acordeon__contenido');
-    tp.slideToggle();
-    p.slideUp();
-});
 
 // acordion
 
@@ -44,6 +35,21 @@ document.getElementById('toggle').addEventListener('click', e => {
 		headAcordion[i].classList.add('active');
 	}
 });
+
+let headAcordion2 = Array.prototype.slice.apply(document.querySelectorAll('.acordion-item-covertura'));
+let contentAcordion2 = Array.prototype.slice.apply(document.querySelectorAll('.item-content-covertura'));
+
+document.getElementById('toggle2').addEventListener('click', e => {
+	if (e.target.classList.contains('acordion-item-covertura')) {
+		let i= headAcordion2.indexOf(e.target);
+		contentAcordion2.map(acor => acor.classList.remove('active'));
+		contentAcordion2[i].classList.toggle('active');
+		headAcordion2.map(head => head.classList.remove('active'));
+		headAcordion2[i].classList.add('active');
+	}
+});
+
+// menu
 
 let burger = document.querySelector(".burger"),
 	menu = document.querySelector('.menu'),
