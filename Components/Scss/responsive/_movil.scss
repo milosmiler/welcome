@@ -70,6 +70,20 @@
 		width: 100%;
 	}
 
+	header > aside{
+		display: none!important;
+	}
+	header figure.logo-inicial{
+		margin-right: 15px;
+		margin-left: 50px;
+		max-width: 117px;
+		padding-bottom: 10px;
+		padding-top: 10px;
+	}
+	nav.menu{
+		max-width: 60%;
+	}
+
 
 
 

@@ -5,6 +5,23 @@ section.valores{
         text-align: center;
         font-size: 20px;
         color: #0D3156;
-        margin-bottom: 20px;
+        margin-bottom: 60px;
     }
+    .item-valores{
+    	width: 80px;
+    	height: auto;
+    	p{
+    		color: #0D3156;
+    		font-size: 18px;
+    		font-weight: 300;
+    		text-align: center;
+    		margin-top: 5px;
+    	}
+    }
+}
+
+.container1 {
+    max-width: 998px;
+    margin: auto;
+    padding: 5px 15px;
 }

@@ -17,6 +17,8 @@
     el.addEventListener('click', onTabClick, false);
 
 
+
+
 })();
 
 $('.acordeon').on('click','h2',function(){
@@ -57,3 +59,29 @@ let burger = document.querySelector(".burger"),
 		menu.classList.remove('open');
 		overlay.classList.remove('open')
 	});
+
+
+$('.owl-carousel.owl-nosotros').owlCarousel({
+    loop:true,
+    dots: true,
+    items:1,
+    margin:10,
+    nav:false
+})
+
+var dot = $('.owl-carousel.owl-nosotros .owl-dots .owl-dot');
+    dot.each(function() {
+      var index = $(this).index() + 1;
+      if(index < 10){
+        $(this).html('0').append(index);
+      }else{
+         $(this).html(index);
+      }
+    });
+
+$('.owl-carousel.owl-valores').owlCarousel({
+    dots: true,
+    items:4,
+    margin:1,
+    nav:false
+})
