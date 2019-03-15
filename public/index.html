@@ -116,7 +116,7 @@
               <ul id="toggle">
                 <li class="acordion-item active">SOLICITUD PARA PERSONAS FÍSICAS<i class="fa fa-angle-down"></i></li>
                 <div class="item-content active">
-                  <form class="flex" method="POST" action="">
+                  <form class="flex" method="POST" action="php/arrendatario.php">
                     <div class="item-col">
                       <div class="item-box">
                         <label>NOMBRE</label> 
@@ -125,7 +125,7 @@
                       </div>
                       <div class="item-box">
                         <label>DOMICILIO</label>
-                        <input class="data" type="text" name="rfc">
+                        <input class="data" type="text" name="domicilio">
                       </div>
                       <div class="item-box">
                         <label>TELEFONO</label>
@@ -135,29 +135,29 @@
                     <div class="item-col">
                       <div class="item-box">
                         <label>RFC</label>
-                        <input class="data" type="text" name="telefono">
+                        <input class="data" type="text" name="rfc">
                       </div>
                       <div class="item-box">
                         <label>COLONIA</label>
-                        <input class="data" type="text" name="telefono">
+                        <input class="data" type="text" name="colonia">
                       </div>
                       <div class="item-box">
                         <label>CELULAR</label>
-                        <input class="data" type="text" name="telefono">
+                        <input class="data" type="text" name="celular">
                       </div>
                     </div>
                     <div class="item-col">
                       <div class="item-box">
                         <label>ESTADO CIVIL</label>
-                        <input class="data" type="text" name="telefono">
+                        <input class="data" type="text" name="estado_civil">
                       </div>
                       <div class="item-box">
                         <label>DELEGACIÓN O MUNICIPIO</label>
-                        <input class="data" type="text" name="telefono">
+                        <input class="data" type="text" name="municipio">
                       </div>
                       <div class="item-box">
                         <label>E-MAIL</label>
-                        <input class="data" type="text" name="telefono">
+                        <input class="data" type="text" name="email">
                       </div>
                     </div>
                     <div class="item-Titulo">
@@ -165,44 +165,44 @@
                     </div>
                     <div class="item-col">
                       <div class="item-box">
-                        <label>PROFECION</label>
-                        <input class="data" type="text" name="telefono">
+                        <label>PROFESION</label>
+                        <input class="data" type="text" name="profesion">
                       </div>
                       <div class="item-box">
                         <label>ANTIGUEDAD</label>
-                        <input class="data" type="text" name="telefono">
+                        <input class="data" type="text" name="antiguedad">
                       </div>
                       <div class="item-box">
                         <label>JEFE INMEDIATO</label>
-                        <input class="data" type="text" name="telefono">
+                        <input class="data" type="text" name="jefe_inmediato">
                       </div>
                     </div>
                     <div class="item-col">
                       <div class="item-box">
                         <label>INGRESO MENSUAL</label>
-                        <input class="data" type="text" name="telefono">
+                        <input class="data" type="text" name="ig_mensual">
                       </div>
                       <div class="item-box">
                         <label>PUESTOS</label>
-                        <input class="data" type="text" name="telefono">
+                        <input class="data" type="text" name="puestos">
                       </div>
                       <div class="item-box">
                         <label>PUESTO</label>
-                        <input class="data" type="text" name="telefono">
+                        <input class="data" type="text" name="puesto">
                       </div>
                     </div>
                     <div class="item-col">
                       <div class="item-box">
                         <label>EMPRESA DONDE TRABAJA</label>
-                        <input class="data" type="text" name="telefono">
+                        <input class="data" type="text" name="empresa">
                       </div>
                       <div class="item-box">
                         <label>HORARIO LABORAL</label>
-                        <input class="data" type="text" name="telefono">
+                        <input class="data" type="text" name="horario">
                       </div>
                       <div class="item-box">
                         <label>E-MAIL</label>
-                        <input class="data" type="text" name="telefono">
+                        <input class="data" type="text" name="email_trabajo">
                       </div>
                     </div>
                     <div class="item-Titulo">
@@ -211,25 +211,27 @@
                     <div class="item-col-vert flex">
                       <div class="item-box">
                         <label>COLONIA</label>
-                        <select>
+                        <!-- <select>
                           <option>Colonia</option>
-                        </select>
+                        </select> -->
+                        <input class="data" type="text" name="colonia_trabajo">
                       </div>
                       <div class="item-box">
                         <label>DELEGACIÓN O MUNICIPIO</label>
-                        <select>
+                        <!-- <select>
                           <option>SELECCIONE UNO</option>
-                        </select>
+                        </select> -->
+                        <input class="data" type="text" name="municipio_trabajo">
                       </div>
                       <div class="item-box">
                         <label>GIRO DE LA EMPRESA</label>
-                        <input class="data" type="text" name="telefono">
+                        <input class="data" type="text" name="giro_empresa">
                       </div>
                     </div>
                     <div class="item-col-vert flex">
                       <div class="item-box">
-                        <label>COLONIA</label>
-                        <input class="data" type="text" name="telefono">
+                        <label>DOMICILIO</label>
+                        <input class="data" type="text" name="domicilio_trabajo">
                       </div>
                       <div class="item-box-red">
                         <p> <strong>DOCUMENTOS REQUERIDOS : </strong>1 - IDENTIFICACIÓN OFICIAL (INE - PASAPORTE), 2 - COMPROBANTE DE INGRESOS, 3-ÚLTIMOS RECIBOS DE SALARIO O ESTADOS DE CUENTA BANCARIOS O ÚLTIMAS 2 DECLARACIONES DE IMPUESTOS, 3- CARTA DE CONSTANCIA DE LA EMPRESA QUE TRABAJA.</p>
@@ -252,27 +254,27 @@
                     <div class="item-col-vert flex">
                       <div class="item-box">
                         <label>NOMBRE DE SU ACTUAL ARRENDADOR</label>
-                        <input class="data" type="text" name="telefono">
+                        <input class="data" type="text" name="arrendador">
                       </div>
                       <div class="item-box">
                         <label>TELÉFONO</label>
-                        <input class="data" type="text" name="telefono">
+                        <input class="data" type="text" name="telefono_arrendador">
                       </div>
                       <div class="item-box">
                         <label>MONTO DE RENTA</label>
-                        <input class="data" type="text" name="telefono">
+                        <input class="data" type="text" name="monto_renta">
                       </div>
                     </div>
                     <div class="item-col-vert">
                       <div class="item-box-xl">
                         <label>DOMICILIO DEL INMUEBLE ARRENDADO</label>
-                        <input class="data" type="text" name="telefono">
+                        <input class="data" type="text" name="domicilio_inmueble">
                       </div>
                     </div>
                     <div class="item-col-vert">
                       <div class="item-box-xl">
                         <label>¿POR QUÉ DESEA CAMBIARSE DEL INMUEBLE?</label>
-                        <input class="data" type="text" name="telefono">
+                        <input class="data" type="text" name="motivo_cambio">
                       </div>
                     </div>
                     <div class="item-Titulo">
@@ -282,15 +284,15 @@
                       <div class="item-box-xls flex">
                         <div class="item-combo-text">
                           <label>NOMBRE DE FAMILIARES (QUE NO VIVAN CON USTED)</label>
-                          <input class="data" type="text" name="telefono" placeholder="1.-">
-                          <input class="data" type="text" name="telefono" placeholder="2.-">
-                          <input class="data" type="text" name="telefono" placeholder="3.-">
+                          <input class="data" type="text" name="fam1" placeholder="1.-">
+                          <input class="data" type="text" name="fam2" placeholder="2.-">
+                          <input class="data" type="text" name="fam3" placeholder="3.-">
                         </div>
                         <div class="item-combo-text">
                           <label>TELÉFONO</label>
-                          <input class="data" type="number" name="telefono">
-                          <input class="data" type="number" name="telefono">
-                          <input class="data" type="number" name="telefono">
+                          <input class="data" type="number" name="tel_fam1">
+                          <input class="data" type="number" name="tel_fam2">
+                          <input class="data" type="number" name="tel_fam3">
                         </div>
                       </div>
                     </div>
@@ -298,15 +300,15 @@
                       <div class="item-box-xls flex">
                         <div class="item-combo-text">
                           <label>NOMBRE DE FAMILIARES (QUE NO VIVAN CON USTED)</label>
-                          <input class="data" type="text" name="telefono" placeholder="1.-">
-                          <input class="data" type="text" name="telefono" placeholder="2.-">
-                          <input class="data" type="text" name="telefono" placeholder="3.-">
+                          <input class="data" type="text" name="fam4" placeholder="1.-">
+                          <input class="data" type="text" name="fam5" placeholder="2.-">
+                          <input class="data" type="text" name="fam6" placeholder="3.-">
                         </div>
                         <div class="item-combo-text">
                           <label>TELÉFONO</label>
-                          <input class="data" type="number" name="telefono">
-                          <input class="data" type="number" name="telefono">
-                          <input class="data" type="number" name="telefono">
+                          <input class="data" type="number" name="tel_fam4">
+                          <input class="data" type="number" name="tel_fam5">
+                          <input class="data" type="number" name="tel_fam6">
                         </div>
                       </div>
                     </div>
@@ -314,15 +316,15 @@
                       <div class="item-box-xls flex">
                         <div class="item-combo-text">
                           <label>NOMBRE DE FAMILIARES (QUE NO VIVAN CON USTED)</label>
-                          <input class="data" type="text" name="telefono" placeholder="1.-">
-                          <input class="data" type="text" name="telefono" placeholder="2.-">
-                          <input class="data" type="text" name="telefono" placeholder="3.-">
+                          <input class="data" type="text" name="fam7" placeholder="1.-">
+                          <input class="data" type="text" name="fam8" placeholder="2.-">
+                          <input class="data" type="text" name="fam9" placeholder="3.-">
                         </div>
                         <div class="item-combo-text">
                           <label>TELÉFONO</label>
-                          <input class="data" type="number" name="telefono">
-                          <input class="data" type="number" name="telefono">
-                          <input class="data" type="number" name="telefono">
+                          <input class="data" type="number" name="tel_fam7">
+                          <input class="data" type="number" name="tel_fam8">
+                          <input class="data" type="number" name="tel_fam9">
                         </div>
                       </div>
                     </div>
@@ -330,15 +332,15 @@
                       <div class="item-box-xls flex">
                         <div class="item-combo-text">
                           <label>NOMBRE DE FAMILIARES (QUE NO VIVAN CON USTED)</label>
-                          <input class="data" type="text" name="telefono" placeholder="1.-">
-                          <input class="data" type="text" name="telefono" placeholder="2.-">
-                          <input class="data" type="text" name="telefono" placeholder="3.-">
+                          <input class="data" type="text" name="fam10" placeholder="1.-">
+                          <input class="data" type="text" name="fam11" placeholder="2.-">
+                          <input class="data" type="text" name="fam12" placeholder="3.-">
                         </div>
                         <div class="item-combo-text">
                           <label>TELÉFONO</label>
-                          <input class="data" type="number" name="telefono">
-                          <input class="data" type="number" name="telefono">
-                          <input class="data" type="number" name="telefono">
+                          <input class="data" type="number" name="tel_fam10">
+                          <input class="data" type="number" name="tel_fam11">
+                          <input class="data" type="number" name="tel_fam12">
                         </div>
                       </div>
                     </div>
@@ -346,15 +348,15 @@
                       <div class="item-box-xls flex">
                         <div class="item-combo-text">
                           <label>NOMBRE DE FAMILIARES (QUE NO VIVAN CON USTED)</label>
-                          <input class="data" type="text" name="telefono" placeholder="1.-">
-                          <input class="data" type="text" name="telefono" placeholder="2.-">
-                          <input class="data" type="text" name="telefono" placeholder="3.-">
+                          <input class="data" type="text" name="fam13" placeholder="1.-">
+                          <input class="data" type="text" name="fam14" placeholder="2.-">
+                          <input class="data" type="text" name="fam15" placeholder="3.-">
                         </div>
                         <div class="item-combo-text">
                           <label>TELÉFONO</label>
-                          <input class="data" type="number" name="telefono">
-                          <input class="data" type="number" name="telefono">
-                          <input class="data" type="number" name="telefono">
+                          <input class="data" type="number" name="tel_fam13">
+                          <input class="data" type="number" name="tel_fam14">
+                          <input class="data" type="number" name="tel_fam15">
                         </div>
                       </div>
                     </div>
@@ -874,7 +876,7 @@
     </section>
     <section class="actualizar">
       <div class="container">
-        <form class="flex">
+        <form class="flex" method="post" action="php/contacto.php">
           <div class="item-col">
             <p>COMPLETE NUESTRO FORMULARIO <br><span>TODOS LOS CAMPOS SOIN OBLIGATORIOS</span></p>
             <div class="item-box">
@@ -883,13 +885,13 @@
             </div>
             <div class="item-box">
               <label>TELÉFONO</label>
-              <input class="data" type="number" name="telefono">
+              <input class="data" type="number" name="telefonoContacto">
             </div>
           </div>
           <div class="item-col">
             <div class="item-box">
               <label>NOMBRE DEL CONTACTO</label>
-              <input class="data" type="text" name="contacto">
+              <input class="data" type="text" name="nombreContacto">
             </div>
             <div class="item-box">
               <label>E-MAIL</label>
