@@ -811,6 +811,7 @@ section.solicitud {
       section.solicitud form.flex .item-col select {
         color: #949598; }
     section.solicitud form.flex .item-Titulo {
+        margin-bottom: 10px;
       width: 100%; }
       section.solicitud form.flex .item-Titulo span {
         background-color: white;
@@ -1425,6 +1426,10 @@ footer {
     background: transparent; }
   section.solicitud form.flex .item-Titulo h3:before {
     background: transparent; } }
+
+button.scroll_down{
+    display: none;
+}
 
 /********** OWL SLIDER ***********/
 /*
