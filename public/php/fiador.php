@@ -1,3 +1,5 @@
+<?php
+
 $host = "localhost";
     $user = "root";
     $db = "confia";
@@ -13,4 +15,6 @@ $host = "localhost";
     if(isset($_POST['nombre']) && isset($_POST['rfc']) &&
     isset($_POST['domicilio']) && isset($_POST['colonia']) &&
     isset($_POST['municipio']) && isset($_POST['celular']) &&
-    isset($_POST['email'])){
+    isset($_POST['email'])){}
+
+?>

@@ -46,9 +46,29 @@ $(document).ready(function() {
         });
     });
 
-    $('#recCompSi').click(function(){
+    $('#divFacSi').click(function(){
         var value = $(this).html();
         console.log(value);
+        $('#reqFac').val(value);
+        $('#divFacNo').css('color',"#3B3C3E");
+        $('#divFacNo').css('background',"#EDEDED");
+        $(this).css('background',"#3B3C3E");
+        $(this).css('color','#EDEDED');
+    });
+    
+    $('#divFacNo').click(function(){
+        var value = $(this).html();
+        console.log(value);
+        $('#reqFac').val(value);
+        $('#divFacSi').css('color',"#3B3C3E");
+        $('#divFacSi').css('background',"#EDEDED");
+        $(this).css('background',"#3B3C3E");
+        $(this).css('color','#EDEDED');
+    });
+
+///////SEGUNDOOOOO
+    $('#recCompSi').click(function(){
+        var value = $(this).html();
         $('#reqComp').val(value);
         $('#recCompNo').css('color',"#3B3C3E");
         $('#recCompNo').css('background',"#EDEDED");
@@ -58,7 +78,6 @@ $(document).ready(function() {
     
     $('#recCompNo').click(function(){
         var value = $(this).html();
-        console.log(value);
         $('#reqComp').val(value);
         $('#recCompSi').css('color',"#3B3C3E");
         $('#recCompSi').css('background',"#EDEDED");
