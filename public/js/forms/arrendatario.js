@@ -24,9 +24,7 @@ $(document).ready(function() {
 
     $(document).on('blur', '#cp_job', function(e){
         var cp = $(this).val();
-        console.log (cp);
         var url  = "https://api-codigos-postales.herokuapp.com/v2/codigo_postal/"+cp
-        console.log(url);
         $.ajax({
             type: 'GET',
             url: url,
