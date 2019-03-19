@@ -817,7 +817,6 @@ section.solicitud {
         padding: 3px 5px; }
       section.solicitud form.flex .item-Titulo h3 {
         width: 100%;
-        margin-bottom: 15px;
         position: relative;
         background-color: white; }
         section.solicitud form.flex .item-Titulo h3:before {
@@ -828,6 +827,12 @@ section.solicitud {
           right: 0px;
           top: 11px;
           position: absolute; }
+      section.solicitud form.flex .item-Titulo p {
+        font-size: 12px;
+        margin-bottom: 15px;
+        margin-top: 5px;
+        color: #707070;
+        margin-left: 5px; }
     section.solicitud form.flex .item-col-vert {
       width: 100%;
       -ms-flex-pack: justify;

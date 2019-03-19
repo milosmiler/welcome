@@ -87,7 +87,7 @@ section.solicitud {
                     }
                     h3{
                         width: 100%;
-                        margin-bottom: 15px;
+                        
                         position: relative;
                         background-color: white;
                         &:before{
@@ -99,6 +99,13 @@ section.solicitud {
                             top: 11px;
                             position: absolute;
                         }
+                    }
+                    p{
+                        font-size: 12px;
+                        margin-bottom: 15px;
+                        margin-top: 5px;
+                        color: #707070;
+                        margin-left: 5px;
                     }
                 }
                 .item-col-vert{

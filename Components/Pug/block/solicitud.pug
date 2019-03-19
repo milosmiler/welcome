@@ -8,7 +8,7 @@ section.solicitud#solicitud
 				li
 					a(href='#tab2') ARRENDADOR
 		.item-instrucciones.flex
-			p COMPLETE LOS SIGUIENTES CAMPOS, TODOS SON OBLIGATORIOS
+			p COMPLETE LOS SIGUIENTES CAMPOS
 			a.dowland(href="#")
 				i.fas.fa-download 
 				| DESCARGUE EL FORMATO
@@ -387,6 +387,8 @@ section.solicitud#solicitud
 							label TRAMITE DE PÓLIZA
 							select 
 								option SELECCIONE UNO
+								option BÁSICA
+								option PREMIUM
 					.item-Titulo
 						h3 
 							span DATOS DEL PROFESIONAL INMOBILIARIO
@@ -406,7 +408,7 @@ section.solicitud#solicitud
 							input.data(type="text" name="telefono")
 						.item-box
 							label E-MAIL
-							input.data(type="text" name="telefono")
+							input.data(type="text" name="email")
 					.item-col-vert.flex
 						.item-box
 							label FECHA DE LA SOLICITUD
@@ -439,6 +441,7 @@ section.solicitud#solicitud
 					.item-Titulo
 						h3 
 							span DATOS DEL PROPIETARIO
+						p DOCUMENTACIÓN SOLICITADA : CREDENCIAL DE ELECTOR - NOTA: LA DIRECCIÓN DEL PROPIETARIO DEBE SER DIFERENTE A LA DEL INMUEBLE A SER ARRENDADO.
 					.item-col-vert.flex
 						.item-box.medio
 							label NOMBRE
@@ -449,11 +452,11 @@ section.solicitud#solicitud
 							
 					.item-col-two.flex
 						.item-box
-							label DELEGACIÓN O MUNICIPIO
+							label COLONIA
 							select
 								option SELECCIONE UNO
 						.item-box
-							label PERSONA QUE LO SOLICITA
+							label DELEGACIÓN O MUNICIPIO
 							select
 								option SELECCIONE UNO
 					.item-col-four.flex
@@ -475,6 +478,7 @@ section.solicitud#solicitud
 							label PARA EL PAGO DE RENTAS EN:
 							select 
 								option DEPOSITO Y/O TRANSFERENCIA BANCARIA
+								option  DOMICILIO DEL ARRENDADOR
 					.item-col-two.flex
 						.item-box
 							label TITULAR DE LA CUENTA
@@ -525,6 +529,11 @@ section.solicitud#solicitud
 							label TIPO DE INMUEBLE
 							select 
 								option SELECCIONE UNO
+								option CASA
+								option DEPARTAMENTO
+								option LOCAL COMERCIAL
+								option OFICINA
+								option BODEGA
 
 
 					.item-Titulo
