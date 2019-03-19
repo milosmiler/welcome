@@ -86,6 +86,11 @@ cerrar.addEventListener("click", function () {
   overlay.classList.remove('open');
 });
 
+$('.cerrar').click(function () {
+  menu.classList.remove('open');
+  overlay.classList.remove('open');
+});
+
 $('.owl-carousel.owl-nosotros').owlCarousel({
   loop: true,
   dots: true,

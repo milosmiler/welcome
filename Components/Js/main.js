@@ -88,6 +88,11 @@ let burger = document.querySelector(".burger"),
     overlay.classList.remove('open')
   });
 
+  $('.cerrar').click(function(){
+      menu.classList.remove('open');
+      overlay.classList.remove('open');
+  });
+
 
 $('.owl-carousel.owl-nosotros').owlCarousel({
     loop:true,
