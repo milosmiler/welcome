@@ -76,6 +76,9 @@ section.solicitud {
                 }
                 .item-col{
                     width: 33%;
+                    select{
+                        color: #949598;
+                    }
                 }
                 .item-Titulo{
                     width: 100%;
@@ -87,7 +90,7 @@ section.solicitud {
                     }
                     h3{
                         width: 100%;
-                        
+
                         position: relative;
                         background-color: white;
                         &:before{
@@ -312,6 +315,10 @@ section.solicitud {
 }
 
 
+.relleno{
+    padding-top: 13px;
+    padding-bottom: 20px;
+}
 
 .medio{
     width: 30%!important;

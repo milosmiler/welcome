@@ -808,6 +808,8 @@ section.solicitud {
         border: none; }
     section.solicitud form.flex .item-col {
       width: 33%; }
+      section.solicitud form.flex .item-col select {
+        color: #949598; }
     section.solicitud form.flex .item-Titulo {
       width: 100%; }
       section.solicitud form.flex .item-Titulo span {
@@ -996,6 +998,10 @@ section.solicitud {
 
 .tab-pane.active {
   display: block; }
+
+.relleno {
+  padding-top: 13px;
+  padding-bottom: 20px; }
 
 .medio {
   width: 30% !important;
