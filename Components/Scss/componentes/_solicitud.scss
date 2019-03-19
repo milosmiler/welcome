@@ -194,6 +194,7 @@ section.solicitud {
                         background: #EDEDED;
                         margin-bottom: 20px;
                         padding: 10px 15px;
+                        justify-content: space-between;
                         label{
                             color: #3B3C3E;
                         }
@@ -312,6 +313,13 @@ section.solicitud {
 }
 .tab-pane.active {
     display: block;
+}
+
+.items-box-general{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
 }
 
 

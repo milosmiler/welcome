@@ -127,3 +127,8 @@ $('.owl-carousel.owl-valores').owlCarousel({
 });
 $('nav').localScroll();
 $('.item-col').localScroll();
+
+$('.item-Titulo').on('click', function () {
+  $('.items-box-general').hide();
+  $(this).next().slideToggle('active');
+});

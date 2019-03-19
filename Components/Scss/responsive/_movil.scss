@@ -42,7 +42,7 @@
 	section.solicitud form.flex .item-col-vert .item-box-xls .item-combo-text{
 		padding-top: 15px;
 	}
-	section.solicitud form.flex .item-col-vert{
+	section.solicitud form.flex .item-col-vert, .items-box-general{
 		flex-direction: column;
 	}
 	section.solicitud form.flex .item-col-vert .item-box{
@@ -142,6 +142,26 @@ section.nosotros .item-nosotros h2{
 }
 section.nosotros .item-nosotros{
 	padding: 30px 15px;
+}
+
+.items-box-general{
+	display: none;
+	&.active{
+		display: flex;
+	}
+}
+section.solicitud form.flex .item-Titulo{
+	cursor: pointer;
+	background: #DFE9F8;
+    padding: 10px 5px;
+    margin-bottom: 3px;
+}
+section.solicitud form.flex .item-Titulo span, section.solicitud form.flex .item-Titulo h3{
+	background: transparent;
+}
+
+section.solicitud form.flex .item-Titulo h3:before{
+	background: transparent;
 }
 
 

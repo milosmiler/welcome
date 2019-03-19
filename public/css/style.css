@@ -905,7 +905,9 @@ section.solicitud {
       section.solicitud form.flex .item-col-vert .item-box-xls {
         background: #EDEDED;
         margin-bottom: 20px;
-        padding: 10px 15px; }
+        padding: 10px 15px;
+        -ms-flex-pack: justify;
+            justify-content: space-between; }
         section.solicitud form.flex .item-col-vert .item-box-xls label {
           color: #3B3C3E; }
         section.solicitud form.flex .item-col-vert .item-box-xls input.data {
@@ -998,6 +1000,15 @@ section.solicitud {
 
 .tab-pane.active {
   display: block; }
+
+.items-box-general {
+  width: 100%;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap; }
 
 .relleno {
   padding-top: 13px;
@@ -1305,7 +1316,7 @@ footer {
         flex-direction: column; }
   section.solicitud form.flex .item-col-vert .item-box-xls .item-combo-text {
     padding-top: 15px; }
-  section.solicitud form.flex .item-col-vert {
+  section.solicitud form.flex .item-col-vert, .items-box-general {
     -ms-flex-direction: column;
         flex-direction: column; }
   section.solicitud form.flex .item-col-vert .item-box {
@@ -1378,7 +1389,21 @@ footer {
     font-size: 18px;
     margin-bottom: 15px; }
   section.nosotros .item-nosotros {
-    padding: 30px 15px; } }
+    padding: 30px 15px; }
+  .items-box-general {
+    display: none; }
+    .items-box-general.active {
+      display: -ms-flexbox;
+      display: flex; }
+  section.solicitud form.flex .item-Titulo {
+    cursor: pointer;
+    background: #DFE9F8;
+    padding: 10px 5px;
+    margin-bottom: 3px; }
+  section.solicitud form.flex .item-Titulo span, section.solicitud form.flex .item-Titulo h3 {
+    background: transparent; }
+  section.solicitud form.flex .item-Titulo h3:before {
+    background: transparent; } }
 
 /********** OWL SLIDER ***********/
 /*
