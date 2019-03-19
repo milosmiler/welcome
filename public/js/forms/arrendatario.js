@@ -1,0 +1,98 @@
+$(document).ready(function() {
+
+    $(document).on('blur', '#cp1', function(e){
+        var cp = $(this).val();
+        console.log (cp);
+        var url  = "https://api-codigos-postales.herokuapp.com/v2/codigo_postal/"+cp
+        console.log(url);
+        $.ajax({
+            type: 'GET',
+            url: url,
+            success: function(datos) {
+                console.log(datos);
+                var colonias = datos.colonias;
+                var municipio = datos.municipio;
+                var estado = datos.estado;
+                var colo = "";
+                $.each( colonias, function( index, value ){
+                    colo += "<option value='"+this+"'>"+this+"</option>";
+                });
+                $("#col1").html(colo);
+                $("#mun1").val(municipio);
+            }
+        });
+    });
+
+    $(document).on('blur', '#cp_job', function(e){
+        var cp = $(this).val();
+        console.log (cp);
+        var url  = "https://api-codigos-postales.herokuapp.com/v2/codigo_postal/"+cp
+        console.log(url);
+        $.ajax({
+            type: 'GET',
+            url: url,
+            success: function(datos) {
+                
+                var colonias = datos.colonias;
+                var municipio = datos.municipio;
+                var estado = datos.estado;
+                var colo = "";
+                $.each( colonias, function( index, value ){
+                    colo += "<option value='"+this+"'>"+this+"</option>";
+                });
+                $("#col_job").html(colo);
+                $("#mun_job").val(municipio);
+            }
+        });
+    });
+
+    $('#recCompSi').click(function(){
+        var value = $(this).html();
+        console.log(value);
+        $('#reqComp').val(value);
+        $('#recCompNo').css('color',"#3B3C3E");
+        $('#recCompNo').css('background',"#EDEDED");
+        $(this).css('background',"#3B3C3E");
+        $(this).css('color','#EDEDED');
+    });
+    
+    $('#recCompNo').click(function(){
+        var value = $(this).html();
+        console.log(value);
+        $('#reqComp').val(value);
+        $('#recCompSi').css('color',"#3B3C3E");
+        $('#recCompSi').css('background',"#EDEDED");
+        $(this).css('background',"#3B3C3E");
+        $(this).css('color','#EDEDED');
+    });
+
+    $('#saveCorrect').hide();
+
+    $("#arrendatario").submit(function(e){
+        e.preventDefault();
+        
+        var $inputs = $('#arrendatario :input');
+        
+        var values = {};
+        $inputs.each(function() {
+            values[this.name] = $(this).val();
+        });
+
+        $.ajax({
+            type: 'POST',
+            data:values,
+            url: '../public/php/arrendatario.php',
+            success: function(datos) {
+                if(datos == "registrados"){
+                    $('#saveCorrect').show();
+                }
+            }
+        });
+
+        
+
+
+    });
+
+
+});

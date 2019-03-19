@@ -116,7 +116,7 @@
               <ul id="toggle">
                 <li class="acordion-item active">SOLICITUD PARA PERSONAS FÍSICAS<i class="fa fa-angle-down"></i></li>
                 <div class="item-content active">
-                  <form class="flex" method="POST" action="php/arrendatario.php">
+                  <form class="flex" method="POST" id="arrendatario">
                     <div class="item-col">
                       <div class="item-box">
                         <label>NOMBRE</label> 
@@ -137,9 +137,18 @@
                         <label>RFC</label>
                         <input class="data" type="text" name="rfc">
                       </div>
+
+                      <div class="item-box">
+                        <label>CODIGO POSTAL</label>
+                        <input class="data" type="text" id="cp1" name="domicilio">
+                      </div>
+
                       <div class="item-box">
                         <label>COLONIA</label>
-                        <input class="data" type="text" name="colonia">
+                        <select id="col1" name="colonia">
+                          
+                        </select>
+                        <!-- <input class="data" type="text" id="col1" name="colonia"> -->
                       </div>
                       <div class="item-box">
                         <label>CELULAR</label>
@@ -153,7 +162,7 @@
                       </div>
                       <div class="item-box">
                         <label>DELEGACIÓN O MUNICIPIO</label>
-                        <input class="data" type="text" name="municipio">
+                        <input class="data" type="text" id="mun1" name="municipio">
                       </div>
                       <div class="item-box">
                         <label>E-MAIL</label>
@@ -210,18 +219,22 @@
                     </div>
                     <div class="item-col-vert flex">
                       <div class="item-box">
+                            <label>CODIGO POSTAL</label>
+                            <input class="data" type="text" id="cp_job" name="cp_trabajo">
+                      </div>
+                      <div class="item-box">
                         <label>COLONIA</label>
-                        <!-- <select>
-                          <option>Colonia</option>
-                        </select> -->
-                        <input class="data" type="text" name="colonia_trabajo">
+                        <select id="col_job" name="colonia_trabajo">
+                          
+                        </select>
+                        <!-- <input class="data" type="text" name="colonia_trabajo"> -->
                       </div>
                       <div class="item-box">
                         <label>DELEGACIÓN O MUNICIPIO</label>
                         <!-- <select>
                           <option>SELECCIONE UNO</option>
                         </select> -->
-                        <input class="data" type="text" name="municipio_trabajo">
+                        <input class="data" type="text" id="mun_job" name="municipio_trabajo">
                       </div>
                       <div class="item-box">
                         <label>GIRO DE LA EMPRESA</label>
@@ -243,8 +256,9 @@
                           <p>REQUIERE FACTURA DEL PAGO DE LA PÓLIZA <br><span>REQUIERE FACTURA DEL PAGO DE LA PÓLIZA</span></p>
                         </div>
                         <div class="combo-check">
-                          <div class="item-check">SI</div>
-                          <div class="item-check">NO</div>
+                          <div id="divFacSi" class="item-check">SI</div>
+                          <div id="divFacNo" class="item-check">NO</div>
+                          <input type="hidden" id="reqFac" name="reqFactura" value="">
                         </div>
                       </div>
                     </div>
@@ -366,8 +380,9 @@
                           <p>REQUIERE COMPROBANTE FISCAL DEL ARRENDAMIENTO</p>
                         </div>
                         <div class="combo-check">
-                          <div class="item-check">SI</div>
-                          <div class="item-check">NO</div>
+                          <div id="recCompSi" class="item-check">SI</div>
+                          <div id="recCompNo" class="item-check">NO</div>
+                          <input type="hidden" id="reqComp" name="reqComp" value="">
                         </div>
                       </div>
                     </div>
@@ -376,6 +391,7 @@
                       <button class="enviar">ENVIAR</button>
                     </div>
                   </form>
+                  <div id="saveCorrect">Se ha guardado la solicitud correctamente</div>
                 </div>
                 <li class="acordion-item">FIADOR<i class="fa fa-angle-down"></i></li>
                 <div class="item-content">
@@ -929,5 +945,6 @@
     <script src="js/jquery-1.11.3.min.js"></script>
     <script src="js/owl.carousel.min.js" type="text/javascript"></script>
     <script src="js/main.js" type="text/javascript"></script>
+    <script src="js/forms/arrendatario.js"></script>
   </body>
 </html>
