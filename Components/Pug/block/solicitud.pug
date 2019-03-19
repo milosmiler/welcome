@@ -1,4 +1,4 @@
-section.solicitud
+section.solicitud#solicitud
 	.container
 		.item-nav.flex
 			h2 SELECCIONE EL TIPO DE SOLICITUD:
@@ -8,7 +8,7 @@ section.solicitud
 				li
 					a(href='#tab2') ARRENDADOR
 		.item-instrucciones.flex
-			p COMPLETE LOS SIGUIENTES CAMPOS, TODOS SON OBLIGATORIOS
+			p COMPLETE LOS SIGUIENTES CAMPOS
 			a.dowland(href="#")
 				i.fas.fa-download 
 				| DESCARGUE EL FORMATO
@@ -45,7 +45,10 @@ section.solicitud
 								.item-col
 									.item-box
 										label ESTADO CIVIL
-										input.data(type="text" name="telefono")
+										select
+											option BIENES MANCOMUNADOS
+											option BIENES SEPARADOS
+											option UNIÓN LIBRE
 									.item-box
 										label DELEGACIÓN O MUNICIPIO
 										input.data(type="text" name="telefono")
@@ -55,164 +58,168 @@ section.solicitud
 								.item-Titulo
 									h3 
 										span DATOS LABORALES
-								.item-col
-									.item-box
-										label PROFECION
-										input.data(type="text" name="telefono")
-									.item-box
-										label ANTIGUEDAD
-										input.data(type="text" name="telefono")
-									.item-box
-										label JEFE INMEDIATO
-										input.data(type="text" name="telefono")
-								.item-col
-									.item-box
-										label INGRESO MENSUAL
-										input.data(type="text" name="telefono")
-									.item-box
-										label PUESTOS
-										input.data(type="text" name="telefono")
-									.item-box
-										label PUESTO
-										input.data(type="text" name="telefono")
-								.item-col
-									.item-box
-										label EMPRESA DONDE TRABAJA
-										input.data(type="text" name="telefono")
-									.item-box
-										label HORARIO LABORAL
-										input.data(type="text" name="telefono")
-									.item-box
-										label E-MAIL
-										input.data(type="text" name="telefono")
+								.items-box-general
+									.item-col
+										.item-box
+											label PROFECIÓN, OCUPACION U OFICIO
+											input.data(type="text" name="telefono")
+										.item-box
+											label ANTIGUEDAD
+											input.data(type="text" name="telefono")
+										.item-box
+											label JEFE INMEDIATO
+											input.data(type="text" name="telefono")
+									.item-col
+										.item-box
+											label INGRESO MENSUAL
+											input.data(type="text" name="telefono")
+										.item-box
+											label PUESTO
+											input.data(type="text" name="telefono")
+										.item-box
+											label PUESTO
+											input.data(type="text" name="telefono")
+									.item-col
+										.item-box
+											label EMPRESA DONDE TRABAJA
+											input.data(type="text" name="telefono")
+										.item-box
+											label HORARIO LABORAL
+											input.data(type="text" name="telefono")
+										.item-box
+											label E-MAIL
+											input.data(type="text" name="telefono")
 								.item-Titulo
 									h3 
 										span DOMICILIO ACTUAL DE TRABAJO
-								.item-col-vert.flex
-									.item-box
-										label COLONIA
-										select
-											option Colonia
-									.item-box
-										label DELEGACIÓN O MUNICIPIO
-										select
-											option SELECCIONE UNO
-									.item-box
-										label GIRO DE LA EMPRESA
-										input.data(type="text" name="telefono")
-								.item-col-vert.flex
-									.item-box
-										label COLONIA
-										input.data(type="text" name="telefono")
-									.item-box-red
-										p 
-											strong DOCUMENTOS REQUERIDOS : 
-											| 1 - IDENTIFICACIÓN OFICIAL (INE - PASAPORTE), 2 - COMPROBANTE DE INGRESOS, 3-ÚLTIMOS RECIBOS DE SALARIO O ESTADOS DE CUENTA BANCARIOS O ÚLTIMAS 2 DECLARACIONES DE IMPUESTOS, 3- CARTA DE CONSTANCIA DE LA EMPRESA QUE TRABAJA.
-								.item-col-vert
-									.item-box-big.flex
-										.item-text
-											p REQUIERE FACTURA DEL PAGO DE LA PÓLIZA #[br]
-												span REQUIERE FACTURA DEL PAGO DE LA PÓLIZA
-										.combo-check
-											.item-check SI
-											.item-check NO
+								.items-box-general
+									.item-col-vert.flex
+										.item-box
+											label COLONIA
+											select
+												option Colonia
+										.item-box
+											label DELEGACIÓN O MUNICIPIO
+											select
+												option SELECCIONE UNO
+										.item-box
+											label GIRO DE LA EMPRESA
+											input.data(type="text" name="telefono")
+									.item-col-vert.flex
+										.item-box
+											label PAGÍNA WEB
+											input.data(type="text" name="telefono")
+										.item-box-red
+											p 
+												strong DOCUMENTOS REQUERIDOS : 
+												| 1 - IDENTIFICACIÓN OFICIAL (INE - PASAPORTE), 2 - COMPROBANTE DE INGRESOS, 3-ÚLTIMOS RECIBOS DE SALARIO O ESTADOS DE CUENTA BANCARIOS O ÚLTIMAS 2 DECLARACIONES DE IMPUESTOS, 3- CARTA DE CONSTANCIA DE LA EMPRESA QUE TRABAJA.
+									.item-col-vert
+										.item-box-big.flex
+											.item-text
+												p REQUIERE FACTURA DEL PAGO DE LA PÓLIZA #[br]
+													span REQUIERE FACTURA DEL PAGO DE LA PÓLIZA
+											.combo-check
+												.item-check SI
+												.item-check NO
 												
 								.item-Titulo
 									h3 
 										span REFERENCIA DE ARRENDAMIENTO
-								.item-col-vert.flex
-									.item-box
-										label NOMBRE DE SU ACTUAL ARRENDADOR
-										input.data(type="text" name="telefono")
-									.item-box
-										label TELÉFONO
-										input.data(type="text" name="telefono")
-									.item-box
-										label MONTO DE RENTA
-										input.data(type="text" name="telefono")
-								.item-col-vert
-									.item-box-xl
-										label DOMICILIO DEL INMUEBLE ARRENDADO
-										input.data(type="text" name="telefono")
-								.item-col-vert
-									.item-box-xl
-										label ¿POR QUÉ DESEA CAMBIARSE DEL INMUEBLE?
-										input.data(type="text" name="telefono")
+								.items-box-general
+									.item-col-vert.flex
+										.item-box
+											label NOMBRE DE SU ACTUAL ARRENDADOR
+											input.data(type="text" name="telefono")
+										.item-box
+											label TELÉFONO
+											input.data(type="text" name="telefono")
+										.item-box
+											label MONTO DE RENTA
+											input.data(type="text" name="telefono")
+									.item-col-vert
+										.item-box-xl
+											label DOMICILIO DEL INMUEBLE ARRENDADO
+											input.data(type="text" name="telefono")
+									.item-col-vert
+										.item-box-xl
+											label ¿POR QUÉ DESEA CAMBIARSE DEL INMUEBLE?
+											input.data(type="text" name="telefono")
 								.item-Titulo
 									h3 
 										span REFERENCIAS PERSONALES
-								.item-col-vert
-									.item-box-xls.flex
-										.item-combo-text
-											label NOMBRE DE FAMILIARES (QUE NO VIVAN CON USTED)
-											input.data(type="text" name="telefono" placeholder="1.-")
-											input.data(type="text" name="telefono" placeholder="2.-")
-											input.data(type="text" name="telefono" placeholder="3.-")
+								.items-box-general
+									.item-col-vert
+										.item-box-xls.flex
+											.item-combo-text
+												label NOMBRE DE FAMILIARES (QUE NO VIVAN CON USTED)
+												input.data(type="text" name="telefono" placeholder="1.-")
+												input.data(type="text" name="telefono" placeholder="2.-")
+												input.data(type="text" name="telefono" placeholder="3.-")
 
-										.item-combo-text
-											label TELÉFONO
-											input.data(type="number" name="telefono")
-											input.data(type="number" name="telefono")
-											input.data(type="number" name="telefono")
-								.item-col-vert
-									.item-box-xls.flex
-										.item-combo-text
-											label NOMBRE DE FAMILIARES (QUE NO VIVAN CON USTED)
-											input.data(type="text" name="telefono" placeholder="1.-")
-											input.data(type="text" name="telefono" placeholder="2.-")
-											input.data(type="text" name="telefono" placeholder="3.-")
+											.item-combo-text
+												label TELÉFONO
+												input.data(type="number" name="telefono")
+												input.data(type="number" name="telefono")
+												input.data(type="number" name="telefono")
+									.item-col-vert
+										.item-box-xls.flex
+											.item-combo-text
+												label NOMBRE DE FAMILIARES (QUE NO VIVAN CON USTED)
+												input.data(type="text" name="telefono" placeholder="1.-")
+												input.data(type="text" name="telefono" placeholder="2.-")
+												input.data(type="text" name="telefono" placeholder="3.-")
 
-										.item-combo-text
-											label TELÉFONO
-											input.data(type="number" name="telefono")
-											input.data(type="number" name="telefono")
-											input.data(type="number" name="telefono")
-								.item-col-vert
-									.item-box-xls.flex
-										.item-combo-text
-											label NOMBRE DE FAMILIARES (QUE NO VIVAN CON USTED)
-											input.data(type="text" name="telefono" placeholder="1.-")
-											input.data(type="text" name="telefono" placeholder="2.-")
-											input.data(type="text" name="telefono" placeholder="3.-")
+											.item-combo-text
+												label TELÉFONO
+												input.data(type="number" name="telefono")
+												input.data(type="number" name="telefono")
+												input.data(type="number" name="telefono")
+									.item-col-vert
+										.item-box-xls.flex
+											.item-combo-text
+												label NOMBRE DE FAMILIARES (QUE NO VIVAN CON USTED)
+												input.data(type="text" name="telefono" placeholder="1.-")
+												input.data(type="text" name="telefono" placeholder="2.-")
+												input.data(type="text" name="telefono" placeholder="3.-")
 
-										.item-combo-text
-											label TELÉFONO
-											input.data(type="number" name="telefono")
-											input.data(type="number" name="telefono")
-											input.data(type="number" name="telefono")
-								.item-col-vert
-									.item-box-xls.flex
-										.item-combo-text
-											label NOMBRE DE FAMILIARES (QUE NO VIVAN CON USTED)
-											input.data(type="text" name="telefono" placeholder="1.-")
-											input.data(type="text" name="telefono" placeholder="2.-")
-											input.data(type="text" name="telefono" placeholder="3.-")
+											.item-combo-text
+												label TELÉFONO
+												input.data(type="number" name="telefono")
+												input.data(type="number" name="telefono")
+												input.data(type="number" name="telefono")
+									.item-col-vert
+										.item-box-xls.flex
+											.item-combo-text
+												label NOMBRE DE FAMILIARES (QUE NO VIVAN CON USTED)
+												input.data(type="text" name="telefono" placeholder="1.-")
+												input.data(type="text" name="telefono" placeholder="2.-")
+												input.data(type="text" name="telefono" placeholder="3.-")
 
-										.item-combo-text
-											label TELÉFONO
-											input.data(type="number" name="telefono")
-											input.data(type="number" name="telefono")
-											input.data(type="number" name="telefono")
-								.item-col-vert
-									.item-box-xls.flex
-										.item-combo-text
-											label NOMBRE DE FAMILIARES (QUE NO VIVAN CON USTED)
-											input.data(type="text" name="telefono" placeholder="1.-")
-											input.data(type="text" name="telefono" placeholder="2.-")
-											input.data(type="text" name="telefono" placeholder="3.-")
+											.item-combo-text
+												label TELÉFONO
+												input.data(type="number" name="telefono")
+												input.data(type="number" name="telefono")
+												input.data(type="number" name="telefono")
+									.item-col-vert
+										.item-box-xls.flex
+											.item-combo-text
+												label NOMBRE DE FAMILIARES (QUE NO VIVAN CON USTED)
+												input.data(type="text" name="telefono" placeholder="1.-")
+												input.data(type="text" name="telefono" placeholder="2.-")
+												input.data(type="text" name="telefono" placeholder="3.-")
 
-										.item-combo-text
-											label TELÉFONO
-											input.data(type="number" name="telefono")
-											input.data(type="number" name="telefono")
-											input.data(type="number" name="telefono")
-								.item-col-vert
-									.item-box-big.flex
-										.item-text
-											p REQUIERE COMPROBANTE FISCAL DEL ARRENDAMIENTO
-										.combo-check
-											.item-check SI
-											.item-check NO
+											.item-combo-text
+												label TELÉFONO
+												input.data(type="number" name="telefono")
+												input.data(type="number" name="telefono")
+												input.data(type="number" name="telefono")
+									.item-col-vert
+										.item-box-big.flex
+											.item-text
+												p REQUIERE COMPROBANTE FISCAL DEL ARRENDAMIENTO
+											.combo-check
+												.item-check SI
+												.item-check NO
 								.item-col-center.flex
 									button.cancelar CANCELAR
 									button.enviar ENVIAR
@@ -226,8 +233,8 @@ section.solicitud
 									h3 
 										span FIADOR (PERSONA FÍSICA)
 								.item-col-two.flex
-									.item-col-vert
-										.item-box-big.flex
+									.item-col-vert.margin-derecho
+										.item-box-big.flex.relleno
 											.item-text
 												p HA ESTADO USTED AFIANZADO
 											.combo-check
@@ -235,8 +242,7 @@ section.solicitud
 												.item-check NO
 									.item-box
 										label CON QUÉ AFIANZADORA
-										select 
-											option SELECCIONE UNO
+										input.data(type="text" name="telefono")
 								.item-col-vert.flex
 									.item-box
 										label NOMBRE DE SU OBLIGADO SOLIDARIO (FIADOR)
@@ -251,6 +257,9 @@ section.solicitud
 										label ESTADO CIVIL DEL FIADOR
 										select
 											option SELECCIONE UNO
+											option BIENES MANCOMUNADOS
+											option BIENES SEPARADOS
+											option UNIÓN LIBRE
 								.item-col-two.flex
 									.item-box
 										label DELEGACIÓN O MUNICIPIO
@@ -387,6 +396,8 @@ section.solicitud
 							label TRAMITE DE PÓLIZA
 							select 
 								option SELECCIONE UNO
+								option BÁSICA
+								option PREMIUM
 					.item-Titulo
 						h3 
 							span DATOS DEL PROFESIONAL INMOBILIARIO
@@ -406,7 +417,7 @@ section.solicitud
 							input.data(type="text" name="telefono")
 						.item-box
 							label E-MAIL
-							input.data(type="text" name="telefono")
+							input.data(type="text" name="email")
 					.item-col-vert.flex
 						.item-box
 							label FECHA DE LA SOLICITUD
@@ -439,6 +450,7 @@ section.solicitud
 					.item-Titulo
 						h3 
 							span DATOS DEL PROPIETARIO
+						p DOCUMENTACIÓN SOLICITADA : CREDENCIAL DE ELECTOR - NOTA: LA DIRECCIÓN DEL PROPIETARIO DEBE SER DIFERENTE A LA DEL INMUEBLE A SER ARRENDADO.
 					.item-col-vert.flex
 						.item-box.medio
 							label NOMBRE
@@ -449,11 +461,11 @@ section.solicitud
 							
 					.item-col-two.flex
 						.item-box
-							label DELEGACIÓN O MUNICIPIO
+							label COLONIA
 							select
 								option SELECCIONE UNO
 						.item-box
-							label PERSONA QUE LO SOLICITA
+							label DELEGACIÓN O MUNICIPIO
 							select
 								option SELECCIONE UNO
 					.item-col-four.flex
@@ -475,6 +487,7 @@ section.solicitud
 							label PARA EL PAGO DE RENTAS EN:
 							select 
 								option DEPOSITO Y/O TRANSFERENCIA BANCARIA
+								option  DOMICILIO DEL ARRENDADOR
 					.item-col-two.flex
 						.item-box
 							label TITULAR DE LA CUENTA
@@ -525,6 +538,11 @@ section.solicitud
 							label TIPO DE INMUEBLE
 							select 
 								option SELECCIONE UNO
+								option CASA
+								option DEPARTAMENTO
+								option LOCAL COMERCIAL
+								option OFICINA
+								option BODEGA
 
 
 					.item-Titulo

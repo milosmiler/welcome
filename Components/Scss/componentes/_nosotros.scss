@@ -1,0 +1,113 @@
+section.nosotros{
+	background-color: #001434;
+	.container{
+		align-items: center;
+	}
+	.item-nosotros{
+		width: 40%;
+		margin-right: 50px;
+		position: relative;
+		p{
+			font-size: 18px;
+			color: white;
+			font-weight: 300;
+		}
+		h2{
+			color: white;
+			font-size: 20px;
+		}
+	}
+	.item-slider{
+		width: 50%;
+		margin-top: -15px;
+		.item{
+			img{
+				width: 100%;
+			}
+		}
+	}
+	
+
+}
+
+.owl-carousel.owl-nosotros .owl-dots .owl-dot{
+	background-color: #001434;
+    color: white;
+    display: block!important;
+    width: 40px;
+    margin-bottom: 5px;
+    height: 25px;
+}
+.owl-carousel.owl-nosotros .owl-dots{
+  position: absolute;
+  bottom: 5px;
+  right: 5px;
+}
+
+
+
+button.scroll_down {
+  position: absolute;
+  margin-left: auto;
+  margin-right: auto;
+  left: 0;
+  right: 0;
+  height: 40px;
+  width: 20px;
+  bottom: -60px;
+  background-color: transparent;
+  border: 2px solid white;
+  border-radius: 20px;
+  cursor: pointer;
+  outline: none;
+}
+button.scroll_down:before {
+  position: absolute;
+  top: 10px;
+  left: 50%;
+  content: '';
+  width: 6px;
+  height: 6px;
+  margin-left: -3px;
+  background-color: #fff;
+  border-radius: 100%;
+  -webkit-animation: scroll_down_btn-animation 2s infinite;
+  animation: scroll_down_btn-animation 2s infinite;
+  box-sizing: border-box;
+}
+
+@keyframes scroll_down_btn-animation {
+  0% {
+    transform: translate(0, 0);
+    opacity: 0;
+  }
+  40% {
+    opacity: 1;
+  }
+  80% {
+    transform: translate(0, 20px);
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@-webkit-keyframes scroll_down_btn-animation {
+  0% {
+    -webkit-transform: translate(0, 0);
+    transform: translate(0, 0);
+    opacity: 0;
+  }
+  40% {
+    opacity: 1;
+  }
+  80% {
+    -webkit-transform: translate(0, 20px);
+    transform: translate(0, 20px);
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
+}

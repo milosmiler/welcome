@@ -3,32 +3,67 @@ header{
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding: 14px 0px;
+    transition: all 400ms  ease-in-out;
     figure.logo-inicial{
         max-width: 215px;
+        margin-left: 110px;
+        img{
+            width: 100%;
+        }
+    }
+    figure.logo-nav{
+        max-width: 200px;
         img{
             width: 100%;
         }
     }
     aside{
+    	align-items: center;
+    	p{
+    		font-size: 13px;
+    		color: #0D3156;
+    		margin-right: 10px;
+    	}
         ul{
             li{
                 list-style: none;
                 display: inline-block;
-                margin-right: 15px;
+                margin-right: 5px;
                 a{
-                    color: #0D3156;
+                	color: white;
+
+                    &.cicle{
+                    	width: 29px;
+					    height: 29px;
+					    background-color: #0D3156;
+					    font-size: 16px;
+					    display: inline-block;
+					    border-radius: 100px;
+					    text-align: center;
+					    line-height: 28px;
+                    }
+
                 }
             }
         }
     }
 }
 
+.wattsap{
+	background-color: #01E675!important;
+    i{
+        color: white!important;
+    }
+    
+}
+
 nav.menu{
     width: 100%;
     display: block;
     height: 100%;
-    background-color: #fff;
-    max-width: 34%;
+    background-color: #001434;
+    max-width: 39%;
     position: fixed;
     left: 0;
     top: 0;
@@ -36,26 +71,31 @@ nav.menu{
     box-shadow: -5px 7px 12px -5px rgba(204,204,204,1);
     transform: translateX(-950px);
     transition: all 400ms  ease-in-out;
+    .header-nav{
+        align-items: center;
+        margin-bottom: 30px;
+    }
 	a{
         display:block;
         text-align: left;
         margin-right: 0px;
-        padding: 3px 15px;
-        font-size: 18px;
+        padding: 5px 15px ;
+        font-size: 21px;
         text-transform: uppercase;
-        border-bottom: 1px solid #ccc;
 		text-decoration: none;
 		margin-right: 20px;
 		font-size: 16px;
-		color: #303030;
+        font-weight: 500;
+		color: white;
+        margin-bottom: 25px;
 		&:hover{
-			background-color: #303030;
 			color: #fff;
 		}
 		&.close{
 			text-align: right;
 			display: block;
-			i.fa.fa-times{
+            margin: 0;
+			i.fa.fa-arrow-left{
 				font-size: 30px;
 				cursor: pointer;
 			}
@@ -68,6 +108,42 @@ nav.menu{
 	&.open{
 		transform: translateX(0px);
 	}
+    aside.mobile{
+        margin-top: 80px;
+        ul{
+            text-align: center;
+            li{
+                a.cicle{
+                    width: 60px;
+                    height: 60px;
+                    background-color: white;
+                    line-height: 60px;
+                    i{
+                        color:#001434;
+                        font-size: 30px;
+                    }
+                }
+            }
+        }
+    }
+    .base{
+        margin-top: 40px;
+        width: 100%;
+        text-align: center;
+        justify-content: center;
+        a{
+            text-decoration: none;
+            margin-right: 5px;
+            font-weight: 600;
+            font-size: 12px;
+            padding: 0;
+            &:hover{
+                color: var(--color-fountain-blue);
+                transition-duration: 0.3s;
+            }
+
+        }
+    }
 
 }
 
@@ -89,8 +165,42 @@ span.burger{
 	opacity: 0;
 	z-index: -1;
 	transition: opacity 300ms linear;
+    top: 0;
 	&.open{
-		z-index: 1;
+		z-index: 2;
 		opacity: 1;
 	}
+}
+.sticky{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: #001434;
+    z-index: 3;
+    box-shadow: 0px 3px 6px 0px rgba(0,0,0,1);
+    span.burger{
+			i.fa.fa-bars{
+				color: white;
+			}
+    	}
+    aside{
+    	p{
+    		color: white;
+    	}
+        ul{
+            li{
+                a{
+                	color: #0D3156;
+                    &.cicle{
+                         background-color: white;
+                    }
+
+                }
+            }
+        }
+    }
+    .wattsap{
+    	color:white;
+    }
 }

@@ -1,10 +1,78 @@
 section.valores{
     padding-top: 15px;
+    padding-bottom: 15px;
     background: #E4E4E4;
     h2{
         text-align: center;
         font-size: 20px;
         color: #0D3156;
-        margin-bottom: 20px;
+        margin-bottom: 60px;
     }
+    .item-valores{
+    	height: auto;
+        .cicle{
+            width: 90px;
+            height: 90px;
+            margin: auto;
+            position: relative;
+            background: white;
+            border-radius: 100%;
+            img{
+                transform: translate(-50%,-50%);
+                position: absolute;
+                left: 50%;
+                bottom: -23px;
+                width: 70%;
+            }
+        }
+        .cicle2{
+            width: 90px;
+            height: 90px;
+            margin: auto;
+            position: relative;
+            background: white;
+            border-radius: 100%;
+            img{
+
+                transform: translate(-50%,-50%);
+                position: absolute;
+                left: 50%;
+                bottom: -14px;
+                width: 80%;
+            }
+        }
+    	p{
+    		color: #0D3156;
+    		font-size: 18px;
+    		font-weight: 300;
+    		text-align: center;
+    		margin-top: 5px;
+    	}
+    }
+}
+
+.container1 {
+    max-width: 998px;
+    margin: auto;
+    padding: 5px 15px;
+}
+
+.owl-carousel.owl-valores .owl-dots .owl-dot{
+    color: white;
+    width: 10px;
+    margin-bottom: 5px;
+    height: 10px;
+    margin-right: 10px;
+    border: 2px solid #3F3F40;
+    border-radius: 100px;
+}
+.owl-carousel.owl-valores .owl-dots{
+  position: absolute;
+  bottom: -28px;
+  left: 50%;
+}
+
+.owl-carousel.owl-valores .owl-carousel .owl-stage{
+  display: flex;
+  align-items: center;
 }
