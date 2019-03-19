@@ -6,13 +6,31 @@ header
             figure.logo-nav
                 img(src="images/logo-blanco.png")
             
-        a(href="") INICIO
-        a(href="") NOSOTROS
-        a(href="") COBERTURAS
-        a(href="") COSTOS
-        a(href="") SOLICITUDES
-        a(href="") ASESORES
-        a(href="") INMOBILIARIAS
+        a.cerrar(href="#") INICIO
+        a.cerrar(href="#nosotros") NOSOTROS
+        a.cerrar(href="#coverturas") COBERTURAS
+        //- a(href="#costos") COSTOS
+        a.cerrar(href="#solicitud") SOLICITUDES
+        a.cerrar(href="#asesores") ASESORES
+        a.cerrar(href="#inmobiliaria") INMOBILIARIAS
+        aside.mobile
+            ul
+                li
+                    a(href="").cicle
+                        i.fab.fa-facebook-f
+                li
+                    a(href="").cicle
+                        i.fas.fa-envelope-open
+                li
+                    a(href="").cicle
+                        i.fas.fa-phone
+                li
+                    a(href="").cicle.wattsap
+                        i.fab.fa-whatsapp
+        .base.flex
+            a(href="") TÉRMINOS Y CONDICIONES 
+            a |
+            a(href="") POLITICAS DEL SITIO
     span.burger
         i.fa.fa-bars
     figure.logo-inicial

@@ -383,22 +383,25 @@ section.acordion{
 
 		}
 		.item-content{
-			display: none;
 			margin-bottom: 10px;
 			position: relative;
-			transition: all .3s;
+			transition: height .5s;
+            height: 0;
+            overflow: hidden;
 			&.active{
-				display: block;
+				height: auto;
 				padding: 15px 5px;
 			}
 		}
         .item-content-covertura{
-			display: none;
 			margin-bottom: 10px;
 			position: relative;
 			transition: all .3s;
+            transition: height .5s;
+            height: 0;
+            overflow: hidden;
 			&.active{
-				display: block;
+				height: auto;
 				padding: 15px 5px;
 			}
 		}

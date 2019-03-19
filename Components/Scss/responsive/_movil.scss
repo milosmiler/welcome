@@ -81,7 +81,7 @@
 		padding-top: 10px;
 	}
 	nav.menu{
-		max-width: 60%;
+		max-width: 90%;
 	}
 	section.nosotros .container{
 		flex-direction: column;
@@ -96,6 +96,53 @@
 	section.nosotros .item-nosotros{
 		margin-right: 0;
 	}
+
+	section.valores{
+    padding-bottom: 30px;
+}
+section.solicitud .container h2{
+	font-size: 18px;
+	background: transparent;
+	color: #001434;
+	line-height: 44px;
+}
+section.solicitud ul li a{
+	font-size: 16px!important;
+}
+section.solicitud .item-instrucciones{
+	flex-direction: column-reverse;
+}
+section.solicitud .item-instrucciones a.dowland{
+	color: white;
+	background: #001434;
+	text-align: center;
+	padding: 5px;
+	font-size: 14px;
+	margin-bottom: 10px;
+}
+section.solicitud .item-instrucciones a.dowland i{
+	color: white;
+}
+
+section.acordion ul li{
+	font-size: 15px;
+}
+
+footer .item-col ul li a.cicle{
+	width: 64px;
+    height: 60px;
+}
+nav.menu aside.mobile ul li a.cicle{
+	margin-right: 5px;
+}
+
+section.nosotros .item-nosotros h2{
+	font-size: 18px;
+	margin-bottom: 15px;
+}
+section.nosotros .item-nosotros{
+	padding: 30px 15px;
+}
 
 
 

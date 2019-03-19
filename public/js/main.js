@@ -65,6 +65,7 @@ function fixed() {
 // menu
 
 let burger = document.querySelector(".burger"),
+    cerrar = document.querySelector("a.cerrar"),
     menu = document.querySelector('.menu'),
     close = document.querySelector('.close'),
     overlay = document.querySelector('.overlay');
@@ -75,6 +76,12 @@ burger.addEventListener("click", function () {
 });
 
 close.addEventListener("click", function () {
+  menu.classList.remove('open');
+  overlay.classList.remove('open');
+});
+
+cerrar.addEventListener("click", function () {
+  console.log('hola');
   menu.classList.remove('open');
   overlay.classList.remove('open');
 });
@@ -98,8 +105,25 @@ dot.each(function () {
 });
 
 $('.owl-carousel.owl-valores').owlCarousel({
-  dots: true,
-  items: 4,
+  dots: false,
+  items: 5,
   margin: 1,
-  nav: false
+  nav: false,
+  responsive: {
+    0: {
+      dots: true,
+      items: 2
+    },
+    600: {
+      items: 3,
+      nav: false
+    },
+    1000: {
+      items: 5,
+      nav: false,
+      loop: false
+    }
+  }
 });
+$('nav').localScroll();
+$('.item-col').localScroll();

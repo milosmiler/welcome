@@ -6,7 +6,8 @@ section.covertura{
 .container2 th h1 {
     font-weight: 500;
     font-size: 20px;
-    color: #001434
+    color: #001434;
+    text-align: center;
 }
 
 .container2 td {
@@ -47,7 +48,7 @@ section.covertura > div > table > tbody > tr:nth-child(even) > td:nth-child(3){
       border-bottom: 1px solid #001434;
 }
 
-.container2 td:first-child { color: #001434; }
+.container2 td:first-child { color: #001434; width: 44%; text-align: center; }
 .container2 td:last-child { text-align: center;}
 .container2 td:nth-child(2) {text-align: center;}
 
