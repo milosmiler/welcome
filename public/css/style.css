@@ -812,6 +812,7 @@ section.solicitud {
         color: #949598; }
     section.solicitud form.flex .item-Titulo {
         margin-bottom: 10px;
+        position: relative;
       width: 100%; }
       section.solicitud form.flex .item-Titulo span {
         background-color: white;
@@ -836,6 +837,13 @@ section.solicitud {
         margin-top: 5px;
         color: #707070;
         margin-left: 5px; }
+    section.solicitud form.flex .item-Titulo .fa-caret-down{
+        display: none;
+        font-size: 20px;
+        position: absolute;
+        right: 5px;
+        top: 1px;
+    }
     section.solicitud form.flex .item-col-vert {
       width: 100%;
       -ms-flex-pack: justify;
@@ -1425,11 +1433,25 @@ footer {
   section.solicitud form.flex .item-Titulo span, section.solicitud form.flex .item-Titulo h3 {
     background: transparent; }
   section.solicitud form.flex .item-Titulo h3:before {
-    background: transparent; } }
+    background: transparent; }
 
-button.scroll_down{
-    display: none;
+    button.scroll_down{
+        display: none;
+    }
+
+    section.solicitud form.flex .item-Titulo .fa-caret-down{
+        display: block;
+        font-size: 20px;
+        position: absolute;
+        right: 15px;
+        top: 10px;
+    }
+
+
+
 }
+
+
 
 /********** OWL SLIDER ***********/
 /*
