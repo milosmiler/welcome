@@ -182,13 +182,7 @@
                 $query15 = "INSERT INTO `referencia_arrendatario`(`id`, `nombre`, `telefono`, `id_arrendatario`) VALUES (0, '".$fam15."', '".$tel_fam15."', '".$last_id."')";
                 mysqli_query($mysqli, $query15);
             }
-
-            echo "<br>";
-            echo $fam4;
-            echo $tel_fam4;
-
             echo 'registrados';
-
         }else{
             echo 'algo ha salido mal';
         }
