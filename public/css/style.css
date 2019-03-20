@@ -511,19 +511,17 @@ span.burger {
     z-index: 2;
     opacity: 1; }
 
-    .overlay2 {
+    #saveCorrect {
       width: 100%;
       position: fixed;
       background: rgba(0, 0, 0, 0.8);
       height: 100%;
-      opacity: 0;
-      z-index: -1;
+      opacity: 1;
+     z-index: 2;
       transition: opacity 300ms linear;
       top: 0; }
-      .overlay2.open {
-        z-index: 2;
-        opacity: 1; }
-    .overlay2 .text{
+
+    #saveCorrect .text{
         background: white;
         text-align: center;
         padding: 31px;
