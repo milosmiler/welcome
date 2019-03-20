@@ -915,16 +915,20 @@
             </section>
           </div>
         </div>
+        <!-- ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+                                                FORMULARIO ARRENDADOR
+
+        //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// -->
         <div class="tab-content">
           <div class="tab-pane" id="tab2">
-            <form class="flex">
+            <form class="flex" id="arrendador">
               <div class="item-col-vert">
                 <div class="item-box-xl">
                   <label>TRAMITE DE PÓLIZA</label>
-                  <select>
+                  <select name="tipo_poliza">
                     <option>SELECCIONE UNO</option>
-                    <option>BÁSICA</option>
-                    <option>PREMIUM</option>
+                    <option value="BÁSICA">BÁSICA</option>
+                    <option value="PREMIUM">PREMIUM</option>
                   </select>
                 </div>
               </div>
@@ -935,45 +939,45 @@
                   <div class="item-col-two flex">
                     <div class="item-box">
                       <label>NOMBRE DE LA COMPAÑÍA</label>
-                      <input class="data" type="text" name="telefono">
+                      <input class="data" type="text" name="nombre_compania">
                     </div>
                     <div class="item-box">
                       <label>PERSONA QUE LO SOLICITA</label>
-                      <input class="data" type="text" name="telefono">
+                      <input class="data" type="text" name="persona_solicita">
                     </div>
                   </div>
                   <div class="item-col-vert flex">
                     <div class="item-box">
                       <label>TELÉFONO</label>
-                      <input class="data" type="text" name="telefono">
+                      <input class="data" type="text" name="telefono_compania">
                     </div>
                     <div class="item-box">
                       <label>CELULAR</label>
-                      <input class="data" type="text" name="telefono">
+                      <input class="data" type="text" name="celular_compania">
                     </div>
                     <div class="item-box">
                       <label>E-MAIL</label>
-                      <input class="data" type="text" name="email">
+                      <input class="data" type="text" name="email_compania">
                     </div>
                   </div>
                   <div class="item-col-vert flex">
                     <div class="item-box">
                       <label>FECHA DE LA SOLICITUD</label>
-                      <input class="data calendar" type="date" name="upload-release">
+                      <input class="data calendar" type="date" name="fecha_solicitud">
                     </div>
                     <div class="item-box">
                       <label>FECHA FIRMA</label>
-                      <input class="data calendar" type="date" name="upload-release">
+                      <input class="data calendar" type="date" name="fecha_firma">
                     </div>
                     <div class="item-box">
                       <label>HORA FIRMA</label>
-                      <input class="data" type="time" name="upload-release">
+                      <input class="data" type="time" name="hora_firma">
                     </div>
                   </div>
                   <div class="item-col-vert flex">
                     <div class="item-box">
                       <label>LUGAR PARA LA FIRMA</label>
-                      <input class="data" type="text" name="telefono">
+                      <input class="data" type="text" name="lugar_firma">
                     </div>
                     <div class="item-col-check">
                       <div class="item-box-big flex">
@@ -981,8 +985,9 @@
                           <p>ADMINISTRA EL <br> INMUEBLE</p>
                         </div>
                         <div class="combo-check">
-                          <div class="item-check">SI</div>
-                          <div class="item-check">NO</div>
+                            <div id="administra_inmuebleSi" class="item-check">SI</div>
+                            <div id="administra_inmuebleNo" class="item-check">NO</div>
+                            <input type="hidden" id="administra_inmueble" name="administra_inmueble" value="">
                         </div>
                       </div>
                     </div>
@@ -992,8 +997,9 @@
                           <p>ES ADMINISTRADOR <br> DE INMUEBLES</p>
                         </div>
                         <div class="combo-check">
-                          <div class="item-check">SI</div>
-                          <div class="item-check">NO</div>
+                            <div id="administrador_inmuebleSi" class="item-check">SI</div>
+                            <div id="administrador_inmuebleNo" class="item-check">NO</div>
+                            <input type="hidden" id="administrador_inmueble" name="administrador_inmueble" value="">
                         </div>
                       </div>
                     </div>
@@ -1007,76 +1013,74 @@
                   <div class="item-col-vert flex">
                     <div class="item-box medio">
                       <label>NOMBRE</label>
-                      <input class="data" type="text" name="upload-release">
+                      <input class="data" type="text" name="nombre">
                     </div>
                     <div class="item-box two-medio">
                       <label>DOMICILIO</label>
-                      <input class="data" type="text" name="upload-release">
+                      <input class="data" type="text" name="domicilio">
                     </div>
                   </div>
                   <div class="item-col-two flex">
+                    <div class="item-box two-medio">
+                          <label>CODIGO POSTAL</label>
+                          <input class="data" type="text" id="cp_arrendador" name="cp">
+                    </div>
                     <div class="item-box">
                       <label>COLONIA</label>
-                      <select>
+                      <select id="col_arrendr" name="colonia">
                         <option>SELECCIONE UNO</option>
                       </select>
                     </div>
                     <div class="item-box">
                       <label>DELEGACIÓN O MUNICIPIO</label>
-                      <select>
-                        <option>SELECCIONE UNO</option>
-                      </select>
+                      <input class="data" type="text" id="mun_arrendr" name="municipio">
                     </div>
                   </div>
                   <div class="item-col-four flex">
-                    <div class="item-box-select">
+                    <div class="item-box">
                       <label>ESTADO</label>
-                      <select>
-                        <option>SELECCIONE UNO</option>
-                      </select>
+                      <input class="data" type="text" id="edo_arrendr" name="estado">
                     </div>
                     <div class="item-box">
                       <label>TELEFONO</label>
-                      <input class="data" type="text" name="upload-release">
+                      <input class="data" type="text" name="telefono">
                     </div>
                     <div class="item-box">
                       <label>CEL</label>
-                      <input class="data" type="text" name="upload-release">
+                      <input class="data" type="text" name="celular">
                     </div>
                     <div class="item-box">
                       <label>EMAIL</label>
-                      <input class="data" type="text" name="upload-release">
+                      <input class="data" type="text" name="email">
                     </div>
                   </div>
                   <div class="item-col-vert">
                     <div class="item-box-xl">
                       <label>PARA EL PAGO DE RENTAS EN:</label>
-                      <select>
-                        <option>DEPOSITO Y/O TRANSFERENCIA BANCARIA</option>
-                        <option> DOMICILIO DEL ARRENDADOR</option>
+                      <select name="tipo_pago_rentas">
+                        <option value="DEPOSITO Y/O TRANSFERENCIA BANCARIA">DEPOSITO Y/O TRANSFERENCIA BANCARIA</option>
+                        <option value=DOMICILIO DEL ARRENDADOR"> DOMICILIO DEL ARRENDADOR</option>
                       </select>
                     </div>
                   </div>
                   <div class="item-col-two flex">
                     <div class="item-box">
                       <label>TITULAR DE LA CUENTA</label>
-                      <input class="data" type="text" name="text">
+                      <input class="data" type="text" name="titular_cuenta">
                     </div>
                     <div class="item-box">
                       <label>BANCO</label>
-                      <select>
-                        <option>SELECCIONE UNO</option>
-                      </select>
+                      <input class="data" type="text" name="banco">
                     </div>
                   </div>
                   <div class="item-col-two flex">
                     <div class="item-box">
                       <label>No. CUENTA</label>
-                      <input class="data" type="text" name="text">
+                      <input class="data" type="text" name="no_cuenta">
                     </div>
                     <div class="item-box">
                       <label>CUENTA CLABE</label>
-                      <input class="data" type="text" name="text">
+                      <input class="data" type="text" name="cuenta_clabe">
                     </div>
                   </div>
                   <div class="item-Titulo">
@@ -1085,11 +1089,11 @@
                   <div class="item-col-vert flex">
                     <div class="item-box">
                       <label>IMPORTE MENSUAL DE RENTA</label>
-                      <input class="data" type="text" name="telefono">
+                      <input class="data" type="text" name="importe_mensual_renta">
                     </div>
                     <div class="item-box">
                       <label>CUOTA DE MANTENIMIENTO</label>
-                      <input class="data" type="text" name="telefono">
+                      <input class="data" type="text" name="cuota_mantenimiento">
                     </div>
                     <div class="item-col-check">
                       <div class="item-box-big flex">
@@ -1097,8 +1101,9 @@
                           <p>LA CUOTA ESTA INCLUÍDA EN LA RENTA</p>
                         </div>
                         <div class="combo-check">
-                          <div class="item-check">SI</div>
-                          <div class="item-check">NO</div>
+                            <div id="cuota_incluida_rentaSi" class="item-check">SI</div>
+                            <div id="cuota_incluida_rentaNo" class="item-check">NO</div>
+                            <input type="hidden" id="cuota_incluida_renta" name="cuota_incluida_renta" value="">
                         </div>
                       </div>
                     </div>
@@ -1106,21 +1111,25 @@
                   <div class="item-col-vert flex">
                     <div class="item-box">
                       <label>DEPOSITO EN GARANTÍA</label>
-                      <input class="data" type="text" name="garantia">
+                      <input class="data" type="text" name="deposito_garantia">
                     </div>
                     <div class="item-box">
-                      <label>VIGENCIA DE CONTRARO</label>
-                      <input class="data calendar" type="date" name="upload-release">
+                      <label>VIGENCIA DE CONTRATO</label>
+                      <input class="data" type="text" name="vigencia_contrato">
                     </div>
                     <div class="item-box">
-                      <label>DEL : DD/MM/AA AL : DD/MM/AA</label>
-                      <input class="data calendar" type="date" name="upload-release">
+                      <label>DEL : DD/MM/AA</label>
+                      <input class="data calendar" type="date" name="contrato_de">
                     </div>
+                    <div class="item-box">
+                        <label>AL : DD/MM/AA</label>
+                        <input class="data calendar" type="date" name="contrato_hasta">
+                      </div>
                   </div>
                   <div class="item-col-vert">
                     <div class="item-box-xl">
                       <label>TIPO DE INMUEBLE</label>
-                      <select>
+                      <select name="tipo_inmueble">
                         <option>SELECCIONE UNO</option>
                         <option>CASA</option>
                         <option>DEPARTAMENTO</option>
@@ -1138,19 +1147,17 @@
                   <div class="item-col-two flex">
                     <div class="item-box">
                       <label>NOMBRE DE QUIEN SE EXTIENDE EL RECIBO DE PAGO DE PÓLIZA</label>
-                      <select>
-                        <option>SELECCIONE UNO</option>
-                      </select>
+                      <input class="data" type="text" name="nombre_de_recibo_poliza">
                     </div>
                     <div class="item-box">
                       <label>EN DADO DE SELECCIONAR OTRO PROPORCIONE EL DATO</label>
-                      <input class="data" type="text" name="text">
+                      <input class="data" type="text" name="otro_nombre_recibo_poliza">
                     </div>
                   </div>
                   <div class="item-col-vert">
                     <div class="item-box-xl">
                       <label>OBSERVACIONES</label>
-                      <textarea></textarea>
+                      <textarea name="observaciones"></textarea>
                     </div>
                   </div>
           </div>
@@ -1285,5 +1292,6 @@
     <script src="js/main.js" type="text/javascript"></script>
     <script src="js/forms/arrendatario.js"></script>
     <script src="js/forms/fiador.js"></script>
+    <script src="js/forms/arrendador.js"></script>
   </body>
 </html>
