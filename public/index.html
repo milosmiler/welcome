@@ -433,9 +433,9 @@
                       <div class="item-box">
                         <label>ESTADO CIVIL</label>
                         <select name="estado_civil">
-                          <option>BIENES MANCOMUNADOS</option>
-                          <option>BIENES SEPARADOS</option>
-                          <option>UNIÓN LIBRE</option>
+                          <option value="BIENES MANCOMUNADOS">BIENES MANCOMUNADOS</option>
+                          <option value="BIENES SEPARADOS">BIENES SEPARADOS</option>
+                          <option value="UNIÓN LIBRE">UNIÓN LIBRE</option>
                         </select>
                       </div>
                       <div class="item-box">
@@ -517,9 +517,7 @@
                         </div>
                         <div class="item-box">
                           <label>DELEGACIÓN O MUNICIPIO</label>
-                          <select name="municipio_trabajo" id="mun_job">
-                            <option>SELECCIONE UNO</option>
-                          </select>
+                          <input class="data" type="text" id="mun_job" name="municipio_trabajo">
                         </div>
                         <div class="item-box">
                           <label>GIRO DE LA EMPRESA</label>
@@ -685,7 +683,7 @@
                 </div>
                 <li class="acordion-item">FIADOR<i class="fa fa-angle-down"></i></li>
                 <div class="item-content">
-                  <form class="flex">
+                  <form class="flex" id="fiador">
                     <div class="item-Titulo">
                       <h3> <span>FIADOR (PERSONA FÍSICA)</span><i class="fas fa-caret-down"></i></h3>
                     </div>
@@ -697,30 +695,29 @@
                                 <p>HA ESTADO USTED AFIANZADO</p>
                               </div>
                               <div class="combo-check">
-                                <div class="item-check">SI</div>
-                                <div class="item-check">NO</div>
+                                  <div id="afianzadoSi" class="item-check">SI</div>
+                                  <div id="afianzadoNo" class="item-check">NO</div>
+                                  <input type="hidden" id="afianzado" name="afianzado" value="">
                               </div>
                             </div>
                           </div>
                           <div class="item-box">
                             <label>CON QUÉ AFIANZADORA</label>
-                            <input class="data" type="text" name="telefono">
+                            <input class="data" type="text" name="afianzadora">
                           </div>
                         </div>
                         <div class="item-col-vert flex">
                           <div class="item-box">
                             <label>NOMBRE DE SU OBLIGADO SOLIDARIO (FIADOR)</label>
-                            <input class="data" type="text" name="telefono">
+                            <input class="data" type="text" name="nombre_fiador">
                           </div>
                           <div class="item-box">
                             <label>¿QUÉ PARENTESCO TIENE CON EL FIADOR?</label>
-                            <select>
-                              <option>Colonia</option>
-                            </select>
+                            <input class="data" type="text" name="parentezco_fiador">
                           </div>
                           <div class="item-box">
                             <label>ESTADO CIVIL DEL FIADOR</label>
-                            <select>
+                            <select name="estado_civil_fiador">
                               <option>SELECCIONE UNO</option>
                               <option>BIENES MANCOMUNADOS</option>
                               <option>BIENES SEPARADOS</option>
@@ -735,15 +732,15 @@
                               </div>
                           <div class="item-box">
                             <label>DELEGACIÓN O MUNICIPIO</label>
-                            <select>
-                              <option>SELECCIONE UNO</option>
+                            <select  id="mun_fiador" name="municipio_fiador">
+                                <option>Municipio</option>
                             </select>
                           </div>
                           <div class="item-box">
                             <label>COLONIA</label>
-                            <select>
-                              <option>SELECCIONE UNO</option>
-                            </select>
+                            <select  id="col_fiador" name="colonia_fiador">
+                                <option>Colonia</option>
+                              </select>
                           </div>
                         </div>
                         <div class="item-col-vert flex">
@@ -753,11 +750,11 @@
                           </div>
                           <div class="item-box">
                             <label>CELULAR</label>
-                            <input class="data" type="text" name="telefono">
+                            <input class="data" type="text" name="celular">
                           </div>
                           <div class="item-box">
                             <label>E-MAIL</label>
-                            <input class="data" type="text" name="telefono">
+                            <input class="data" type="text" name="email">
                           </div>
                         </div>
                         <div class="item-box-red">
@@ -771,17 +768,17 @@
                         <div class="item-col-vert flex">
                           <div class="item-box two-medio margin-derecho">
                             <label>RAZÓN SOCIAL</label>
-                            <input class="data" type="text" name="upload-release">
+                            <input class="data" type="text" name="razon_social">
                           </div>
                           <div class="item-box medio">
                             <label>RFC</label>
-                            <input class="data" type="text" name="upload-release">
+                            <input class="data" type="text" name="rfc">
                           </div>
                         </div>
                         <div class="item-col-vert">
                           <div class="item-box-xl">
                             <label>DOMICILIO</label>
-                            <input class="data" type="text" name="domicilio">
+                            <input class="data" type="text" name="domicilio_moral">
                           </div>
                         </div>
                         <div class="item-col-two flex">
@@ -791,108 +788,108 @@
                           </div>
                           <div class="item-box">
                             <label>COLONIA</label>
-                            <select>
-                              <option>SELECCIONE UNO</option>
-                            </select>
+                            <select  id="col_fiadorM" name="colonia_fiadorM">
+                                <option>Colonia</option>
+                              </select>
                           </div>
                           <div class="item-box">
                             <label>DELEGACIÓN O MUNICIPIO</label>
-                            <select>
-                              <option>SELECCIONE UNO</option>
+                            <select  id="mun_fiadorM" name="municipop_fiadorM">
+                                <option>Municipio</option>
                             </select>
                           </div>
                         </div>
                         <div class="item-col-vert flex">
                           <div class="item-box">
                             <label>TELÉFONO</label>
-                            <input class="data" type="text" name="telefono">
+                            <input class="data" type="text" name="telefono_fiadorM">
                           </div>
                           <div class="item-box">
                             <label>GIRO DE LA EMPRESA</label>
-                            <input class="data" type="text" name="telefono">
+                            <input class="data" type="text" name="giro_empresa">
                           </div>
                           <div class="item-box">
                             <label>PÁGINA WEB</label>
-                            <input class="data" type="text" name="telefono">
+                            <input class="data" type="text" name="paginaweb">
                           </div>
                         </div>
                         <div class="item-col-vert flex">
                           <div class="item-box">
                             <label>REPRESENTANTE LEGAL</label>
-                            <input class="data" type="text" name="telefono">
+                            <input class="data" type="text" name="representante_legal">
                           </div>
                           <div class="item-box">
                             <label>PUESTO</label>
-                            <input class="data" type="text" name="telefono">
+                            <input class="data" type="text" name="puesto">
                           </div>
                           <div class="item-box">
                             <label>ACTA CONSTITUTIVA No.</label>
-                            <input class="data" type="text" name="telefono">
+                            <input class="data" type="text" name="acta_constitutiva">
                           </div>
                         </div>
                         <div class="item-col-vert flex">
                           <div class="item-box medio">
                             <label>PODER REP. LEGAL No.</label>
-                            <input class="data" type="text" name="upload-release">
+                            <input class="data" type="text" name="poder_representante">
                           </div>
                           <div class="item-box two-medio">
                             <label>DOMICILIO PARTICULAR DEL REP. LEGAL</label>
-                            <input class="data" type="text" name="upload-release">
+                            <input class="data" type="text" name="domicilio_representante">
                           </div>
                         </div>
                         <div class="item-col-two flex">
                           <div class="item-box">
                               <label>CP</label>
-                              <input class="data" type="text" id="cp_fiadorM2" name="cp_fiadorM2">
+                              <input class="data" type="text" id="cp_representante" name="cp_representante">
                           </div>
                           <div class="item-box">
                             <label>COLONIA</label>
-                            <select>
-                              <option>SELECCIONE UNO</option>
+                            <select  id="col_representante" name="colonia_representante">
+                                <option>Colonia</option>
                             </select>
                           </div>
                           <div class="item-box">
                             <label>DELEGACIÓN O MUNICIPIO</label>
-                            <select>
-                              <option>SELECCIONE UNO</option>
+                            <select  id="mun_representante" name="municipio_representante">
+                                <option>Municipio</option>
                             </select>
                           </div>
                         </div>
                         <div class="item-col-vert flex">
                           <div class="item-box">
                             <label>TELÉFONO PARTICULAR</label>
-                            <input class="data" type="text" name="telefono">
+                            <input class="data" type="text" name="telefono_particular">
                           </div>
                           <div class="item-box">
                             <label>CEL</label>
-                            <input class="data" type="text" name="telefono">
+                            <input class="data" type="text" name="celular_representante">
                           </div>
                           <div class="item-box">
                             <label>E-MAIL</label>
-                            <input class="data" type="text" name="telefono">
+                            <input class="data" type="text" name="email_representante">
                           </div>
                         </div>
                         <div class="item-col-vert">
                           <div class="item-box-xl">
                             <label>DOMICILIO DEL INMUEBLE EN GARANTÍA</label>
-                            <input class="data" type="text" name="domicilio">
+                            <input class="data" type="text" name="domicilio_garantia">
                           </div>
                         </div>
                         <div class="item-col-two flex">
                           <div class="item-box">
                                 <label>CP</label>
-                                <input class="data" type="text" id="inmueble_garantia" name="inmueble_garantia">
+                                <input class="data" type="text" id="cp_garantia" name="cp_garantia">
                           </div>
                           <div class="item-box">
                             <label>COLONIA</label>
-                            <select>
-                              <option>SELECCIONE UNO</option>
+                            <select  id="col_garantia" name="colonia_garantia">
+                                <option>Colonia</option>
                             </select>
                           </div>
                           <div class="item-box">
                             <label>DELEGACIÓN O MUNICIPIO</label>
-                            <select>
-                              <option>SELECCIONE UNO</option>
+                            <select  id="mun_garantia" name="mun_garantia">
+                                <option>Municipio</option>
                             </select>
                           </div>
                         </div>

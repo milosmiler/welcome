@@ -104,9 +104,6 @@
         
         if(mysqli_query($mysqli, $query)){
             $last_id = mysqli_insert_id($mysqli);
-            echo $fam1;
-            echo $tel_fam1;
-            
 
             if(isset($fam1) && isset($tel_fam1) && $fam1 != "" && $tel_fam1 != ""){
                 $query1 = "INSERT INTO `referencia_arrendatario`(`id`, `nombre`, `telefono`, `id_arrendatario`) VALUES (0, '".$fam1."', '".$tel_fam1."', '".$last_id."')";
