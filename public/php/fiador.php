@@ -24,6 +24,7 @@ $host = "localhost";
         $estado_civil_fiador = $_POST['estado_civil_fiador'];
         $municipio_fiador = $_POST['municipio_fiador'];
         $colonia_fiador = $_POST['colonia_fiador'];
+        $telefono = $_POST['telefono'];
         $celular = $_POST['celular'];
         $email = $_POST['email'];
         $razon_social = $_POST['razon_social'];
@@ -51,11 +52,21 @@ $host = "localhost";
         $query = "INSERT INTO `fiador`(`id`, `afianzado`, `afianzadora`, `nombre_fiador`, `parentezco_fiador`, `estado_civil_fiador`, `municipio`,
                                             `colonia`, `telefono`, `celular`, `email`, `razon_social`, `rfc`, `domicilio`,
                                             `colonia_moral`, `municipio_moral`, `telefono_moral`, `giro_empresa`, `pagina_web`, `representante_legal`,
-                                            `giroEmpresa`, `direccionTrabajo`, `nombreArrendador`, `montoRenta`, `DomicilioArrendado`,
-                                            `causasCambio`, `telfonoArrendador`) VALUES (0, '".$nombre."', '".$rfc."', '".$estado_civil."', '".$domicilio."',
-                                            '".$municipio."', '".$telefono."', '".$celular."', '".$email."', '".$profesion."', '".$ig_mensual."',
-                                            '".$empresa."', '".$antiguedad."', '".$puestos."', '".$horario."', '".$jefe_inmediato."', '".$puesto."',
-                                            '".$email_trabajo."', '".$colonia_trabajo."', '".$municipio_trabajo."', '".$giro_empresa."', '".$domicilio_trabajo."',
-                                            '".$arrendador."', '".$monto_renta."', '".$domicilio_inmueble."', '".$motivo_cambio."', '".$telefono_arrendador."')";
+                                            `puesto_representante_legal`, `acta_constitutiva`, `poder_representante_legal`,  `domicilio_representante`,
+                                            `colonia_representante`, `municipio_representante`, `telefono_representante`, `celular_representante`,
+                                            `email_representante`, `domicilio_inmueble_garantia`, `colonia_inmueble_garantia`, `municipio_inmueble_garantia`) VALUES (0, '".$afianzado."',
+                                            '".$afianzadora."', '".$nombre_fiador."', '".$parentezco_fiador."',
+                                            '".$estado_civil_fiador."', '".$municipio_fiador."', '".$colonia_fiador."', '".$telefono."', '".$celular."', '".$email."', '".$razon_social."',
+                                            '".$rfc."', '".$domicilio_moral."', '".$colonia_fiadorM."', '".$municipop_fiadorM."', '".$telefono_fiadorM."', '".$giro_empresa."',
+                                            '".$paginaweb."', '".$representante_legal."', '".$puesto."', '".$acta_constitutiva."', '".$poder_representante."',
+                                            '".$domicilio_representante."', '".$colonia_representante."', '".$municipio_representante."', '".$telefono_particular."',
+                                            '".$celular_representante."', '".$email_representante."', '".$domicilio_garantia."', '".$colonia_garantia."', '".$mun_garantia."')";
+
+        
+        if(mysqli_query($mysqli, $query)){
+            echo 'registrado';
+        }else{
+            echo 'algo ha salido mal';
+        }
 
 ?>

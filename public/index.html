@@ -681,6 +681,11 @@
                   </form>
                   <div id="saveCorrect">Se ha guardado la solicitud correctamente</div>
                 </div>
+<!-- 
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+                            FORM FIADOR
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// -->
+
                 <li class="acordion-item">FIADOR<i class="fa fa-angle-down"></i></li>
                 <div class="item-content">
                   <form class="flex" id="fiador">
@@ -728,13 +733,14 @@
                         <div class="item-col-two flex">
                             <div class="item-box">
                                 <label>CP</label>
-                                <input class="data" type="text" name="cp_fiador">
+                                <input class="data" type="text" id="cp_fiador" name="cp_fiador">
                               </div>
                           <div class="item-box">
                             <label>DELEGACIÓN O MUNICIPIO</label>
-                            <select  id="mun_fiador" name="municipio_fiador">
+                            <input class="data" type="text" id="mun_fiador" name="municipio_fiador">
+                            <!-- <select  id="mun_fiador" name="municipio_fiador">
                                 <option>Municipio</option>
-                            </select>
+                            </select> -->
                           </div>
                           <div class="item-box">
                             <label>COLONIA</label>
@@ -794,9 +800,8 @@
                           </div>
                           <div class="item-box">
                             <label>DELEGACIÓN O MUNICIPIO</label>
-                            <select  id="mun_fiadorM" name="municipop_fiadorM">
-                                <option>Municipio</option>
-                            </select>
+                            <input class="data" type="text" id="mun_fiadorM" name="municipop_fiadorM">
+                            
                           </div>
                         </div>
                         <div class="item-col-vert flex">
@@ -850,9 +855,10 @@
                           </div>
                           <div class="item-box">
                             <label>DELEGACIÓN O MUNICIPIO</label>
-                            <select  id="mun_representante" name="municipio_representante">
+                            <input class="data" type="text" id="mun_representante" name="municipio_representante">
+                            <!-- <select  id="mun_representante" name="municipio_representante">
                                 <option>Municipio</option>
-                            </select>
+                            </select> -->
                           </div>
                         </div>
                         <div class="item-col-vert flex">
@@ -888,9 +894,7 @@
                           </div>
                           <div class="item-box">
                             <label>DELEGACIÓN O MUNICIPIO</label>
-                            <select  id="mun_garantia" name="mun_garantia">
-                                <option>Municipio</option>
-                            </select>
+                            <input class="data" type="text" id="mun_garantia" name="mun_garantia">
                           </div>
                         </div>
                         <div class="item-box-red">
@@ -1280,5 +1284,6 @@
     <script src="js/owl.carousel.min.js" type="text/javascript"></script>
     <script src="js/main.js" type="text/javascript"></script>
     <script src="js/forms/arrendatario.js"></script>
+    <script src="js/forms/fiador.js"></script>
   </body>
 </html>
