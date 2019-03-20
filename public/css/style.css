@@ -523,8 +523,6 @@ span.burger {
       .overlay2.open {
         z-index: 2;
         opacity: 1; }
-
-
     .overlay2 .text{
         background: white;
         text-align: center;
