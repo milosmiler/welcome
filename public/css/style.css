@@ -524,6 +524,7 @@ span.burger {
     #saveCorrect .text{
         background: white;
         text-align: center;
+        position: relative;
         padding: 31px;
         font-size: 18px;
         max-width: 365px;
@@ -532,6 +533,14 @@ span.burger {
         left: 50%;
         top: 50%;
         transform: translate(-50%,-50%);
+    }
+    #saveCorrect .text .fa-times-circle{
+        position: absolute;
+        top: -13px;
+        right: -16px;
+        font-size: 22px;
+        z-index: 5;
+        color: white;
     }
 
 .sticky {
