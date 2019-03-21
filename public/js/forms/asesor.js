@@ -14,8 +14,10 @@ $(document).ready(function() {
             type: 'POST',
             data:values,
             url: '../public/php/asesor.php',
+            dataType: "json",
             success: function(datos) {
-                if(datos == "registrados"){
+                console.log(datos)
+                if(datos.success == "true"){
                     $('#saveCorrect').show();
                     $("#asesor")[0].reset();
                 } 
