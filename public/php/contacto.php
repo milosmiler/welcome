@@ -1,5 +1,7 @@
 <?php
 
+    // require ('sendMail.php');
+
     $host = "localhost";
     $user = "root";
     $db = "confia";
@@ -26,8 +28,10 @@
 
 
         $query = "INSERT INTO `contacto`(`id`, `empresa`, `nombreContacto`, `telefonoContacto`, `email`, `comentarios`) VALUES (0, '".$empresa."', '".$nombreContacto."', '".$telefonoContacto."', '".$email."', '".$comentarios."')";
-         if(mysqli_query($mysqli, $query)){
+        // $mail = new SendMail();
+        if(mysqli_query($mysqli, $query)){
             echo 'se inserto';
+            // $mail->sendMail();
          }else{
              echo 'no se inserto';
          }

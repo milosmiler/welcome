@@ -1181,30 +1181,36 @@
         </div>
       </div>
     </section>
+
+    <!--
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+                            FORM ASESOR
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// -->
     <section class="formulario-asesor" id="asesores">
       <div class="container">
-        <form class="flex">
+        <form class="flex" id="asesor">
           <div class="item-col">
             <p>COMPLETE NUESTRO FORMULARIO <br><span>TODOS LOS CAMPOS SON OBLIGATORIOS</span></p>
             <div class="item-box">
               <label>NOMBRE</label>
-              <input class="data" type="text" name="nombre" data-parsley-required>
+              <input class="data" type="text" name="nombre_asesor" data-parsley-required>
             </div>
             <div class="item-box">
               <label>TELÉFONO (CASA O CELULAR)</label>
-              <input class="data" type="text" name="telefono" data-parsley-required>
+              <input class="data" type="text" name="telefono_asesor">
             </div>
           </div>
           <div class="item-col">
             <div class="item-box">
               <label>TIPO</label>
-              <select>
+              <select name="tipo_asesor">
                 <option>SELECCIONE UNO</option>
+                <option value="mobiliario">mobiliario</option>
               </select>
             </div>
             <div class="item-box">
               <label>E-MAIL</label>
-              <input class="data" type="text" name="email" data-parsley-required data-parsley-type="email">
+              <input class="data" type="text" name="email_asesor" data-parsley-required data-parsley-type="email">
             </div>
           </div>
           <div class="item-box">
@@ -1228,7 +1234,7 @@
     </section>
     <section class="actualizar" id="inmobiliaria">
       <div class="container">
-        <form class="flex">
+        <form class="flex" id="contacto">
           <div class="item-col">
             <p>COMPLETE NUESTRO FORMULARIO <br><span>TODOS LOS CAMPOS SOIN OBLIGATORIOS</span></p>
             <div class="item-box">
@@ -1260,7 +1266,7 @@
     </section>
     <div id="saveCorrect">
         <div class="text">
-            <i class="fas fa-times-circle"></i>
+            <i id="close-modal" class="fas fa-times-circle"></i>
             <p>Su mensaje se ha enviado con éxito. <br> Muchas gracias. </p>
         </div>
     </div>
@@ -1293,5 +1299,7 @@
     <script src="js/forms/arrendatario.js"></script>
     <script src="js/forms/fiador.js"></script>
     <script src="js/forms/arrendador.js"></script>
+    <script src="js/forms/asesor.js"></script>
+    <script src="js/forms/contacto.js"></script>
   </body>
 </html>

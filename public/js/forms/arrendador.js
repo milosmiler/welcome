@@ -104,7 +104,6 @@ $(document).ready(function() {
         $(this).css('color','#EDEDED');
     });
 
-    $('#saveCorrect').hide();
 
     $("#arrendador").submit(function(e){
         e.preventDefault();
@@ -123,6 +122,7 @@ $(document).ready(function() {
             success: function(datos) {
                 if(datos == "registrados"){
                     $('#saveCorrect').show();
+                    $("#arrendador")[0].reset();
                 }
             }
         });
