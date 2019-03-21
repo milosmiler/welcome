@@ -1,5 +1,7 @@
 <?php
 
+require ('sendMail.php');
+
 $host = "localhost";
     $user = "root";
     $db = "confia";
@@ -62,9 +64,10 @@ $host = "localhost";
                                             '".$domicilio_representante."', '".$colonia_representante."', '".$municipio_representante."', '".$telefono_particular."',
                                             '".$celular_representante."', '".$email_representante."', '".$domicilio_garantia."', '".$colonia_garantia."', '".$mun_garantia."')";
 
-        
+        $mail = new SendMail();
         if(mysqli_query($mysqli, $query)){
             echo 'registrado';
+            $mail->sendMail();
         }else{
             echo 'algo ha salido mal';
         }

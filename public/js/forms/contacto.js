@@ -2,7 +2,7 @@ $(document).ready(function() {
 
     $("#contacto").submit(function(e){
         e.preventDefault();
-        
+        alert('enviado');
         var $inputs = $('#contacto :input');
         
         var values = {};
