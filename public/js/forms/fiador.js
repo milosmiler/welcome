@@ -106,7 +106,7 @@ $(document).ready(function() {
         $(this).css('color','#EDEDED');
     });
 
-    $('#saveCorrect').hide();
+    
 
     $("#fiador").submit(function(e){
         e.preventDefault();
@@ -125,6 +125,7 @@ $(document).ready(function() {
             success: function(datos) {
                 if(datos == "registrados"){
                     $('#saveCorrect').show();
+                    $("#fiador")[0].reset();
                 }
             }
         });

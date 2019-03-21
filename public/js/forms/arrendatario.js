@@ -84,6 +84,10 @@ $(document).ready(function() {
 
     $('#saveCorrect').hide();
 
+    $('#close-modal').click(function(){
+        $('#saveCorrect').fadeOut(300);
+    });
+
     $("#arrendatario").submit(function(e){
         e.preventDefault();
         
@@ -101,6 +105,7 @@ $(document).ready(function() {
             success: function(datos) {
                 if(datos == "registrados"){
                     $('#saveCorrect').show();
+                    $("#arrendatario")[0].reset();
                 }
             }
         });
