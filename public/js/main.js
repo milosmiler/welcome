@@ -130,6 +130,9 @@ $('.owl-carousel.owl-valores').owlCarousel({
     }
   }
 });
+ $('form').parsley();
+
+
 // $('nav').localScroll();
 // $('.item-col').localScroll();
 

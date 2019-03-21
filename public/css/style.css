@@ -542,6 +542,17 @@ span.burger {
         z-index: 5;
         color: white;
     }
+.parsley-errors-list{
+    list-style: none;
+    margin: 0!important;
+}
+.parsley-errors-list .parsley-required{
+    color: red;
+    background: transparent;
+}
+.parsley-error{
+    border-bottom: 1px solid red!important;
+}
 
 .sticky {
   position: fixed;
