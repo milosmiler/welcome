@@ -549,6 +549,15 @@ span.burger {
 .parsley-errors-list .parsley-required{
     color: red;
     background: transparent;
+    border-bottom: none;
+    padding: 0;
+    line-height: 15px;
+    font-size: 12px;
+    position: absolute;
+    top: 1px;
+    right: 5px;
+    display: inline-block;
+    width: auto;
 }
 .parsley-error{
     border-bottom: 1px solid red!important;
@@ -833,6 +842,7 @@ section.solicitud {
     -ms-flex-pack: distribute;
         justify-content: space-around; }
     section.solicitud form.flex .item-box {
+        position: relative;
       background: #EDEDED;
       margin-bottom: 20px;
       padding: 10px 15px; }
@@ -944,6 +954,7 @@ section.solicitud {
           font-weight: 400;
           padding: 16px 10px; }
       section.solicitud form.flex .item-col-vert .item-box-xl {
+          position: relative;
         background: #EDEDED;
         margin-bottom: 20px;
         padding: 10px 15px; }
@@ -1176,6 +1187,7 @@ section.formulario-asesor {
           font-weight: 300;
           font-size: 16px; }
       section.formulario-asesor form .item-col .item-box {
+          position: relative;
         background-color: var(--color-calypso);
         margin-bottom: 20px;
         border: 1px solid #707070;
@@ -1253,6 +1265,7 @@ section.actualizar {
           position: absolute;
           right: 10px; }
       section.actualizar .container form .item-box {
+         position: relative;
         background-color: var(--color-gothic);
         padding: 5px;
         margin-bottom: 20px;
