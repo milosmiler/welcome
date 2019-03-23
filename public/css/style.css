@@ -397,6 +397,12 @@ header {
       font-size: 13px;
       color: #0D3156;
       margin-right: 10px; }
+    header aside p span{
+      color: #3B3C3E;
+      font-weight: 300;
+      margin: 0 3px;
+      font-size: 22px;
+    }
     header aside ul li {
       list-style: none;
       display: inline-block;
@@ -512,6 +518,7 @@ span.burger {
     opacity: 1; }
 
     #saveCorrect {
+      display: none;
       width: 100%;
       position: fixed;
       background: rgba(0, 0, 0, 0.8);
@@ -581,6 +588,9 @@ span.burger {
       background-color: white; }
   .sticky .wattsap {
     color: white; }
+  .sticky aside p span{
+    color: white;
+  }
 
 section.nosotros {
   background-color: #001434; }
@@ -605,8 +615,8 @@ section.nosotros {
       width: 100%; }
 
 .owl-carousel.owl-nosotros .owl-dots .owl-dot {
-  background-color: #001434;
-  color: white;
+  background-color: white;
+  color: #001434;
   display: block !important;
   width: 40px;
   margin-bottom: 5px;
@@ -616,6 +626,11 @@ section.nosotros {
   position: absolute;
   bottom: 5px;
   right: 5px; }
+
+#sync2 > div.owl-dots > button.owl-dot.active{
+  color: white!important;
+  background-color: #001434!important;
+}
 
 button.scroll_down {
   position: absolute;
@@ -738,8 +753,21 @@ section.valores {
   section.valores h2 {
     text-align: center;
     font-size: 20px;
+    
     color: #0D3156;
     margin-bottom: 60px; }
+  section.valores h2 span{
+    position: relative;
+  }
+  section.valores h2 span:before{
+    width: 30%;
+    height: 1px;
+    content: '';
+    background: #1E81CE;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+  }
   section.valores .item-valores {
     height: auto; }
     section.valores .item-valores .cicle {
@@ -801,7 +829,7 @@ section.valores {
       align-items: center; }
 
 section.solicitud {
-  padding: 20px 15px; }
+  padding: 20px 0px; }
   section.solicitud .container h2 {
     background: #AEB2B2;
     color: #FCFCFC;
@@ -1204,13 +1232,13 @@ section.formulario-asesor {
           color: white;
           border: none; }
           section.formulario-asesor .container form [type="submit"] {
-            color: #4E6E7D;
+            color: white;
             font-size: 21px;
             margin-top: 35px;
             width: 300px;
             text-align: left;
             border: none;
-            border-bottom: 1px solid #4E6E7D;
+            border-bottom: 1px solid white;
             background-color: transparent;
             padding-bottom: 20px;
             font-weight: 600;
@@ -1221,7 +1249,7 @@ section.formulario-asesor {
             }
             #asesores > div > form > div.item-box .fa-arrow-right {
               position: absolute;
-              color: #4E6E7D;
+              color: white;
               bottom: 21px;
               right: 10px; }
 
