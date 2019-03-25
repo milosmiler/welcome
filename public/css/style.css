@@ -775,6 +775,31 @@ section.valores {
       text-align: center;
       margin-top: 5px; }
 
+p.resaltar{
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+h2.aviso{
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+section.aviso p{
+    color: #3B3C3E;
+}
+
+section.aviso > div > p > a{
+    color: #3B3C3E;
+}
+
+body > section > div > p.left{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    text-align: right;
+}
+
 .container1 {
   max-width: 998px;
   margin: auto;
