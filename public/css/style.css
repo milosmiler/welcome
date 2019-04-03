@@ -902,7 +902,6 @@ section.solicitud {
         padding: 3px 5px; }
       section.solicitud form.flex .item-Titulo h3 {
         width: 100%;
-        position: relative;
         background-color: white; }
         section.solicitud form.flex .item-Titulo h3:before {
           content: '';
