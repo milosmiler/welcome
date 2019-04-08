@@ -29,7 +29,6 @@ $(document).ready(function() {
             type: 'GET',
             url: url,
             success: function(datos) {
-                
                 var colonias = datos.colonias;
                 var municipio = datos.municipio;
                 var estado = datos.estado;
@@ -107,23 +106,25 @@ $(document).ready(function() {
     });
 
     
-
+    $('#spinner').hide();
     $("#fiador").submit(function(e){
         e.preventDefault();
         
         var $inputs = $('#fiador :input');
         
         var values = {};
+        $('#spinner').show();
         $inputs.each(function() {
             values[this.name] = $(this).val();
         });
-
+        $("#fiador")[0].reset();
         $.ajax({
             type: 'POST',
             data:values,
             url: '../public/php/fiador.php',
             success: function(datos) {
-                if(datos == "registrados"){
+                if(datos == "registrado"){
+                    $('#spinner').hide();
                     $('#saveCorrect').show();
                     $("#fiador")[0].reset();
                 }

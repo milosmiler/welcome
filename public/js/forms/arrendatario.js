@@ -94,6 +94,7 @@ $(document).ready(function() {
         var $inputs = $('#arrendatario :input');
         
         var values = {};
+        $('#spinner').show();
         $inputs.each(function() {
             values[this.name] = $(this).val();
         });
@@ -104,6 +105,7 @@ $(document).ready(function() {
             url: '../public/php/arrendatario.php',
             success: function(datos) {
                 if(datos == "registrados"){
+                    $('#spinner').hide();
                     $('#saveCorrect').show();
                     $("#arrendatario")[0].reset();
                 }

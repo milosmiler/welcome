@@ -9,7 +9,7 @@ $(document).ready(function() {
         $inputs.each(function() {
             values[this.name] = $(this).val();
         });
-
+        $('#spinner').show();
         $.ajax({
             type: 'POST',
             data:values,
@@ -18,6 +18,7 @@ $(document).ready(function() {
             success: function(datos) {
                 console.log(datos)
                 if(datos.success == "true"){
+                    $('#spinner').hide();
                     $('#saveCorrect').show();
                     $("#asesor")[0].reset();
                 } 

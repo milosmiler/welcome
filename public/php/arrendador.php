@@ -3,10 +3,15 @@
      require ('phpmailer/PHPMailer.php');
      require ('phpmailer/SMTP.php');
 
-    $host = "localhost";
-    $user = "confia_userR";
-    $db = "confia";
-    $pass = "v-rsD^DN}sbe";
+     $host = "localhost";
+     $user = "confia_userR";
+     $db = "confia";
+     $pass = "v-rsD^DN}sbe";
+ 
+    //   $host = "localhost";
+    //  $user = "root";
+    //  $db = "confia";
+    //  $pass = "root";
 
     // Conectar a la base
     //  la variable $myslqi contendrá el objeto con la conexión
@@ -138,7 +143,7 @@
             $mail->Password = "RaKman1493";
             $mailToSend = $email;
             $mail->SetFrom("contacto@confia.com");
-            $mail->Subject = "¡Registro exitoso! - Confia";
+            $mail->Subject = "Registro exitoso - Confia";
             $mail->Body = $html;
             $mail->AddAddress($mailToSend);
 

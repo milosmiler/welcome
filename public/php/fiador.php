@@ -9,6 +9,11 @@
     $db = "confia";
     $pass = "v-rsD^DN}sbe";
 
+    //  $host = "localhost";
+    // $user = "root";
+    // $db = "confia";
+    // $pass = "root";
+
     // Conectar a la base
     //  la variable $myslqi contendrá el objeto con la conexión
     $mysqli = mysqli_connect($host, $user, $pass, $db);
@@ -128,7 +133,7 @@
             $mail->Password = "RaKman1493";
             $mailToSend = $email;
             $mail->SetFrom("contacto@confia.com");
-            $mail->Subject = "¡Registro exitoso! - Confia";
+            $mail->Subject = "Registro exitoso - Confia";
             $mail->Body = $html;
             $mail->AddAddress($mailToSend);
 

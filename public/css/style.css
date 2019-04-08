@@ -520,7 +520,7 @@ span.burger {
     z-index: 2;
     opacity: 1; }
 
-    #saveCorrect {
+    .saveCorrect {
       display: none;
       width: 100%;
       position: fixed;
@@ -531,7 +531,7 @@ span.burger {
       transition: opacity 300ms linear;
       top: 0; }
 
-    #saveCorrect .text{
+    .saveCorrect .text{
         background: white;
         text-align: center;
         position: relative;
@@ -544,7 +544,21 @@ span.burger {
         top: 50%;
         transform: translate(-50%,-50%);
     }
-    #saveCorrect .text .fa-times-circle{
+
+    .spinner{
+        text-align: center;
+        position: relative;
+        padding: 31px;
+        font-size: 18px;
+        max-width: 365px;
+        height: 150px;
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%,-50%);
+    }
+
+    .saveCorrect .text .fa-times-circle{
         position: absolute;
         top: -13px;
         right: -16px;
