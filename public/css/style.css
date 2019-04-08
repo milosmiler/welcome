@@ -322,6 +322,9 @@ img {
 .flex {
   display: -ms-flexbox;
   display: flex; }
+.desaparece{
+  display: none;
+}
 
 .hidden {
   display: none !important; }
@@ -1572,6 +1575,15 @@ footer {
         width: 100%;
         margin-bottom: 10px;
     }
+
+    .desaparece{
+      display: block;
+    }
+
+    section.solicitud form.flex .item-col-vert .item-box-red p span{
+      display: block;
+    }
+
 
 
 
